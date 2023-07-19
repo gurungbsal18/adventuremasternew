@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700;800;900&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 h1,
 h2,
-h3,
-h4,
-h5 {
+h3 {
   font-family: "Bitter", serif;
 }
 
-p {
-  font-family: "Poppins", sans-serif;
+p,
+h4,
+h5 {
+  font-family: "Libre Franklin", sans-serif;
 }
 
 .top-nav {
@@ -28,17 +28,30 @@ p {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  .header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .search-bar {
-  width: 350px;
-  background: #ffffff69;
-  padding: 15px;
+  // width: 350px;
+  // background: #ffffff69;
+  // padding: 15px;
+  // border-radius: 10px;
+  // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  // position: absolute;
+  // right: 10vw;
+  // top: 35vh;
+
+  padding: 20px 10px;
+  position: absolute;
+  bottom: 30px;
+  background: #ffffffb3;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  position: absolute;
-  right: 10vw;
-  top: 35vh;
+
   p {
     margin: 0;
     color: #5f5f5f;
@@ -49,10 +62,13 @@ p {
     font-weight: 600;
     margin-bottom: 10px;
   }
-  input {
+  input,
+  select,
+  option {
     border-radius: 5px;
     border: 0.5px solid #1e1e1e;
-    width: 100%;
+    width: 200px;
+    height: 30px;
     padding: 2px 5px;
   }
 }
@@ -68,9 +84,9 @@ p {
 
 .trips {
   background-color: #000;
-  height: 90vh;
+  height: 100vh;
   color: #fff;
-  margin: 30px;
+  border: 30px solid #fff;
 
   .main-title {
     font-size: 3rem;
@@ -78,21 +94,43 @@ p {
     padding: 20px 0 0 20px;
   }
   .trip-box-content {
-    height: 60vh;
+    height: 70vh;
     display: flex;
     align-items: center;
   }
   .trip-box {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     border: 1px solid #fff;
-    width: 20vw;
+    border-bottom: 0;
+    width: 25vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 0 auto;
-    padding: 25px;
+    // padding: 25px;
+    &-title {
+      padding: 15px;
+      padding-bottom: 0;
+    }
+    &-sub-title {
+      color: rgba(248, 249, 250, 0.7);
+    }
+  }
+  .trip-link {
+    border: 1px solid #fff;
+    border-right: 0;
+    border-left: 0;
+    padding: 5px;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      background-color: #ffc107;
+      color: #202222;
+      transition: 0.3s ease-in-out;
+    }
   }
 }
 
@@ -108,6 +146,12 @@ p {
   background-position: center center;
   background-size: cover;
 }
+.trip-3 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/MardiHimal/mardiHimal.jpg);
+  background-position: center center;
+  background-size: cover;
+}
 
 @media (max-width: 567px) {
   .logo img {
@@ -117,9 +161,239 @@ p {
     display: flex;
     justify-content: center;
   }
-  .search-bar {
-    bottom: 20px;
-    top: auto;
-    right: auto;
+  // .search-bar {
+  //   bottom: 20px;
+  //   top: auto;
+  //   right: auto;
+  // }
+}
+
+// footer starts
+.footer {
+  background-color: #fff;
+  // background-image: url(../../../image/footer1.png);
+  background-size: cover;
+  background-position: center;
+  color: #202222;
+  padding: 40px 0 5px 0;
+  list-style: none;
+  scroll-snap-align: start;
+  scroll-snap-align: end;
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    a {
+      color: #202222;
+      &:hover {
+        color: #0b707e;
+      }
+    }
+    .activities,
+    .useful-link,
+    .destinations {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          text-decoration: none;
+          color: #202222 !important;
+          font-size: 18px;
+          line-height: 2;
+          a {
+            text-decoration: none;
+            color: #292929;
+            &:hover {
+              color: #0b707e;
+            }
+          }
+        }
+      }
+    }
+
+    p {
+      line-height: 2;
+      font-family: "open sans";
+      font-size: 18px;
+    }
+  }
+
+  .footer-contact a {
+    text-decoration: none;
+  }
+
+  &-content {
+    width: fit-content !important;
+    text-align: left !important;
+  }
+  .copyright {
+    text-align: center;
+    font-size: 14px !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    p {
+      // letter-spacing: 0.5px;
+      margin-bottom: 0;
+      line-height: 2;
+    }
+    a {
+      text-decoration: none;
+      color: #202222;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #0b707e;
+    }
+  }
+
+  &-title {
+    font-size: 22px;
+    color: #202222;
+    font-family: "open sans";
+    ul {
+      list-style: none;
+    }
+  }
+
+  &-headquater {
+    a {
+      text-decoration: none;
+      color: #202222;
+      &:hover {
+        color: #0b707e;
+      }
+    }
   }
 }
+
+.footer-affiliated {
+  .affiliated-img {
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+    ul li {
+      display: inline;
+    }
+    img {
+      height: 55px;
+      width: auto;
+    }
+  }
+}
+
+.payment-img img {
+  height: 18px;
+  width: auto;
+}
+
+.footer-social-icon {
+  gap: 5px;
+  .fbIcon a {
+    font-size: 18px;
+    color: #202222;
+    &:hover {
+      color: #3b5998;
+      cursor: pointer;
+    }
+  }
+  .twitterIcon a {
+    font-size: 18px;
+    color: #202222;
+    &:hover {
+      color: #00acee;
+    }
+  }
+  .instaIcon a {
+    color: #202222;
+    font-size: 18px;
+    &:hover {
+      color: #8a3ab9;
+    }
+  }
+
+  .linkedinIcon {
+    font-size: 18px;
+    color: #202222;
+    &:hover {
+      color: #0072b1;
+    }
+  }
+}
+
+.global-title {
+  font-size: 28px;
+  // text-transform: uppercase;
+  font-family: "open sans";
+}
+
+.tripadvisor-footer {
+  display: flex;
+  justify-content: center;
+  // img {
+  //   width: 200px;
+  // }
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-social-icon {
+    .col-1 {
+      padding: 0 !important;
+    }
+  }
+
+  .tripadvisor-widget-custom {
+    #CDSWIDSSP {
+      width: 100% !important;
+    }
+  }
+
+  .footer {
+    .footer-row {
+      justify-content: center !important;
+    }
+    &-content {
+      text-align: center !important;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .trip-advisor-small {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .affiliated-img {
+    img {
+      height: 30px;
+      width: auto;
+    }
+  }
+
+  .footer-social-icon {
+    gap: 10px;
+    span {
+      font-size: 20px;
+    }
+  }
+
+  .footer-row {
+    .footer {
+      &-affiliated,
+      &-connect {
+        margin: 30px auto !important;
+        text-align: center !important;
+      }
+    }
+  }
+}
+// footer ends

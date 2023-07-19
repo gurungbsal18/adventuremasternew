@@ -13,6 +13,11 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <!-- fontawesome 6 cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
 
   <body>
@@ -26,22 +31,43 @@
 
       <div class="header">
         <div class="search-bar">
-          <p class="title">Find my trip</p>
-          <label for="trip-name">Trip Name</label>
-          <br />
-          <input type="text" />
-          <br />
-          <label for="date" class="mt-4">Date</label><br />
-          <input type="date" />
-          <button class="btn btn-dark mt-4">Search</button>
+          <h2 class="title">Find my trip</h2>
+          <div class="row">
+            <div class="col-auto">
+              <label for="destination">Destination</label><br />
+              <select>
+                <option value="Nepal">Nepal</option>
+                <option value="Tibet">Tibet</option>
+                <option value="Bhutan">Bhutan</option>
+              </select>
+            </div>
+            <div class="col-auto">
+              <label for="Activities">Activities</label>
+              <br />
+              <select name="" id="">
+                <option value="Trekking">Trekking</option>
+                <option value="Helicopter Tour">Helicopter Tour</option>
+                <option value="Sightseeing">Sightseeing</option>
+                <option value="Rafting">Rafting</option>
+                <option value="Jungle Safari">Jungle Safari</option>
+              </select>
+            </div>
+            <div class="col-auto">
+              <label for="trip-name">Trip Name</label>
+              <br />
+              <input type="text" />
+            </div>
+
+            <div class="col-auto">
+              <label for="date">Date</label>
+              <br />
+              <input type="date" />
+            </div>
+          </div>
+          <button class="btn btn-dark mt-4 flex-end">Search</button>
         </div>
       </div>
     </div>
-    <!-- hero section ends -->
-
-    <!-- <div class="container my-5 activities">
-      <h4>Our activities</h4>
-    </div> -->
 
     <div class="packages">
       <div class="trip-container">
@@ -49,9 +75,12 @@
           <h2 class="main-title">EVEREST BASE CAMP HELICOPTER TOUR</h2>
           <div class="trip-box-content">
             <div class="trip-box">
-              <h4>Everest Base Camp Helicopter Tour</h4>
-              <p>Sharing: US$ 950/- pp</p>
-              <button class="btn btn-outline-light">View Detail</button>
+              <div class="trip-box-title">
+                <h4 class="">Everest Base Camp Helicopter Tour</h4>
+                <p><span class="text-warning">Activity: </span>Heli Tour</p>
+                <p><span class="text-warning">Sharing: </span> US$ 950/- pp</p>
+              </div>
+              <a href="#" class="trip-link mt-3">View Detail</a>
             </div>
           </div>
         </div>
@@ -59,14 +88,272 @@
           <h2 class="main-title">EVEREST BASE CAMP TREK</h2>
           <div class="trip-box-content">
             <div class="trip-box">
-              <h4>Everest Base Camp Trek</h4>
-              <p>Sharing: US$ 950/- pp</p>
-              <button class="btn btn-outline-light">View Detail</button>
+              <div class="trip-box-title">
+                <h4>Everest Base Camp Trek</h4>
+                <p><span class="text-warning">Activity: </span>Trekking</p>
+                <p><span class="text-warning">Price: </span> US$ 1400/- pp</p>
+                <button class="btn btn-warning">View Fix Departure Date</button>
+              </div>
+              <a href="#" class="trip-link mt-3">View Detail</a>
+            </div>
+          </div>
+        </div>
+        <div class="trips trip-3">
+          <h2 class="main-title">MARDI HIMAL BASE CAMP TREK</h2>
+          <div class="trip-box-content">
+            <div class="trip-box">
+              <div class="trip-box-title">
+                <h4>Mardi Himal Base Camp Trek</h4>
+                <p><span class="text-warning">Activity: </span>Trekking</p>
+                <p><span class="text-warning">Price: </span> US$ 950/- pp</p>
+                <button class="btn btn-warning">View Fix Departure Date</button>
+              </div>
+              <a href="#" class="trip-link mt-3">View Detail</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- footer starts -->
+    <!-- <footer>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-3">
+          <h4>Adventure Master Trek</h4>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-3"></div>
+        <div class="col-sm-12 col-md-12 col-lg-3"></div>
+        <div class="col-sm-12 col-md-12 col-lg-3"></div>
+      </div>
+    </footer> -->
+
+    <div class="footer">
+      <div class="container">
+        <div class="row footer-row">
+          <div class="col-sm-12 col-md-12 col-lg-3 mb-3 footer-content">
+            <h4 class="footer-title">Adventure Master Trek</h4>
+            <p class="footer-contact">
+              <a
+                href="https://api.whatsapp.com/send/?phone=9779851033195&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa-brands fa-whatsapp"></i> +977 9851033195
+              </a>
+              <br />
+              <a
+                href="mailto:info@adventuremastertrek.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa-regular fa-envelope"></i>
+                info@adventuremastertrek.com
+              </a>
+              <br />
+              <a
+                href="mailto:advmt2009@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa-regular fa-envelope"></i> advmt2009@gmail.com
+              </a>
+              <br />
+              <a
+                href="mailto:adventuremastertrek@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa-regular fa-envelope"></i>
+                adventuremastertrek@gmail.com
+              </a>
+            </p>
+          </div>
+          <div
+            class="col-sm-12 col-md-6 col-lg-3 mb-3 useful-link footer-content footer-useful-link"
+          >
+            <h4 class="footer-title">Useful Links</h4>
+            <ul>
+              <li>
+                <HashLink smooth to="/contact" class="link">
+                  Contact us
+                </HashLink>
+              </li>
+              <li>
+                <HashLink smooth to="/about" class="link"> About us </HashLink>
+              </li>
+              <li>
+                <HashLink smooth to="/travel-insurance" class="link">
+                  Travel Insurance
+                </HashLink>
+              </li>
+              <li>
+                <HashLink smooth to="/termsandcondition" class="link">
+                  Terms and condition
+                </HashLink>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-12 col-lg-3 mb-3 footer-affiliated">
+            <h4 class="footer-title">We are affiliated</h4>
+            <div class="affiliated-img mt-3">
+              <ul>
+                <li><img src="images/FooterImg/1.png" alt="footer" /></li>
+                <li>
+                  <img src="images/FooterImg/nma.png" alt="footer" />
+                </li>
+                <li>
+                  <img src="images/FooterImg/ntb.png" alt="footer" />
+                </li>
+                <li>
+                  <img src="images/FooterImg/taan.png" alt="footer" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-3 mb-3 footer-content footer-connect">
+            <h4 class="footer-title">Connect with us</h4>
+            <div
+              class="row footer-social-icon d-flex justify-content-center justify-content-md-start"
+            >
+              <div class="col-auto">
+                <span class="instaIcon">
+                  <a
+                    href="https://www.instagram.com/adventuremastertrek/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaInstagram />
+                  </a>
+                </span>
+              </div>
+              <div class="col-auto">
+                <span class="fbIcon">
+                  <a href="https://www.facebook.com/Advmt2009" target="_blank">
+                    <FaFacebook />
+                  </a>
+                </span>
+              </div>
+              <div class="col-auto">
+                <span class="twitterIcon">
+                  <a href="https://twitter.com/AdvMasterTreks" target="_blank">
+                    <FaTwitter />
+                  </a>
+                </span>
+              </div>
+              <div class="col-auto">
+                <span class="linkedinIcon">
+                  <a
+                    href="https://www.linkedin.com/in/adventure-mastertrek-077963130/"
+                    target="_blank"
+                  >
+                    <FaLinkedinIn />
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div class="mt-3">
+              We accept:
+              <br />
+              <span class="payment-img">
+                <img src="images/FooterImg/payment.png" alt="footer" />
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <h4>Recommended On</h4>
+          <div class="tripadvisor-footer">
+            <TripAdvisorReview />
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <h1>Meet our leadership team</h1>
+          <img
+            src="images/FooterImg/teamFooter.png"
+            alt="adventure master team"
+            style="width: 600px"
+            class="img-fluid"
+          />
+        </div>
+        <h4 class="text-center pt-5 mb-4 footer-title global-title mb-4">
+          Our Global Headquaters
+        </h4>
+        <div class="row wrap footer-headquater flex-wrap">
+          <div class="col-6 col-md-3 col-lg-3 mb-3 text-center">
+            <h5 class="footer-title">Nepal</h5>
+            <p>
+              <a
+                href="https://api.whatsapp.com/send/?phone=9779849780311&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa-brands fa-whatsapp"></i> +977 9851 033195
+              </a>
+            </p>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3 mb-3 text-center">
+            <h5 class="footer-title">UK</h5>
+
+            <p>
+              <a
+                href="https://api.whatsapp.com/send/?phone=447983806200&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa-brands fa-whatsapp"></i> +44 7983 806200
+              </a>
+            </p>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-3 mb-3 text-center">
+            <h5 class="footer-title">Bahrain</h5>
+            <p>
+              <a
+                href="https://api.whatsapp.com/send/?phone=97334383250&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa-brands fa-whatsapp"></i> +973 3438 3250
+              </a>
+              <br />
+            </p>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3 mb-3 text-center">
+            <h5 class="footer-title">Russia</h5>
+            <p>
+              <a
+                href="https://api.whatsapp.com/send/?phone=79531748198&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa-brands fa-whatsapp"></i> +79 5317 48198
+              </a>
+              <br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container copyright">
+        <p>&copy; Copyright 2023 Adventure Master Trek</p>
+        <p>
+          <strong>
+            Registration No: 74651/067/068 | Tourism Registration No: 1180-067
+          </strong>
+        </p>
+        <p style="font-size: 18px">
+          <HashLink smooth to="/termsandcondition" class="link">
+            <strong>Terms and Conditions</strong>
+          </HashLink>
+        </p>
+
+        <p>
+          <a href="https://itsansaar.com.np" target="_blank" rel="noreferrer">
+            Develop By: IT Sansaar
+          </a>
+        </p>
+      </div>
+    </div>
+    <!-- footer ends -->
     <!-- Bootstrap js cdn -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
