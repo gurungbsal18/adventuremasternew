@@ -20,7 +20,7 @@ window.onscroll = function () {
   scrollFunction();
 };
 
-function scrollMobilePrice() {
+function scrollFunction() {
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
     scrollToTop.style.display = "block";
   } else {
