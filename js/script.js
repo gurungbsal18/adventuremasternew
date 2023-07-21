@@ -28,7 +28,7 @@ function scrollMobilePrice() {
 //   }
 // }
 
-scrollToTop.addEventListener("click", function () {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-});
+// scrollToTop.addEventListener("click", function () {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// });
