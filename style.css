@@ -512,7 +512,7 @@ p {
     display: none !important;
   }
   .trip-nav-menu-item {
-    gap: 20px;
+    gap: 30px;
   }
   .mobile-trip-price {
     display: none;
@@ -565,4 +565,10 @@ p {
   .trip-header .trip-box-content {
     height: 91vh;
   }
+}
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: red;
 }/*# sourceMappingURL=style.css.map */

@@ -6,7 +6,7 @@ window.onscroll = function () {
 };
 
 function scrollMobilePrice() {
-  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     mobilePrice.style.display = "block";
     // scrollToTop.sylte.display = "block";
   } else {
@@ -32,3 +32,16 @@ function scrollMobilePrice() {
 //   document.body.scrollTop = 0;
 //   document.documentElement.scrollTop = 0;
 // });
+
+window.addEventListener("scroll", function () {
+  let navBar = document.querySelector(".trip-nav");
+  if (
+    document.body.scrollTop > 797 ||
+    document.documentElement.scrollTop > 797
+  ) {
+    // console.log("testing scroll");
+    navBar.classList.add("sticky-nav");
+  } else {
+    navBar.classList.remove("sticky-nav");
+  }
+});
