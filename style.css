@@ -512,7 +512,7 @@ p {
     display: none !important;
   }
   .trip-nav-menu-item {
-    gap: 30px;
+    gap: 20px;
   }
   .mobile-trip-price {
     display: none;
