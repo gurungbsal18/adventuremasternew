@@ -1,3 +1,4 @@
+// trip price only on mobile view while scrolling
 window.onscroll = function () {
   let mobilePrice = document.querySelector(".mobile-trip-price");
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -7,6 +8,7 @@ window.onscroll = function () {
   }
 };
 
+// scroll to the top
 window.addEventListener("scroll", function () {
   let scrollToTop = document.querySelector(".scroll-top");
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
@@ -16,6 +18,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
+// trip navbar sticky
 let navBar = document.querySelector(".trip-nav");
 const initialOffset = navBar.offsetTop;
 window.addEventListener("scroll", function () {
@@ -23,8 +26,27 @@ window.addEventListener("scroll", function () {
   const scrollPos = window.scrollY;
 
   if (scrollPos >= initialOffset) {
+    navBar.style.position = "fixed";
     navBar.classList.add("sticky-trip-nav");
+    // navBar.style.width = "100%";
+    // navBar.style.top = "0";
   } else {
+    navBar.style.position = "relative";
     navBar.classList.remove("sticky-trip-nav");
   }
+});
+
+// cost include exclude and trip highlight tab section
+let costIncludeTab = document.querySelector(".cost-include-tab");
+let costExcludeTab = document.querySelector(".cost-exclude-tab");
+let tripHighlightTab = document.querySelector(".trip-highlight-tab");
+
+costIncludeTab.addEventListener("click", function () {
+  document.querySelector(".cost-include-tab-content").style.display = "block";
+  document.querySelector(".cost-exclude-tab-content").style.display = "none";
+  costExcludeTab.classList.add("active");
+});
+costExcludeTab.addEventListener("click", function () {
+  document.querySelector(".cost-exclude-tab-content").style.display = "block";
+  document.querySelector(".cost-include-tab-content").style.display = "none";
 });

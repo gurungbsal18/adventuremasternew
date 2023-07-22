@@ -1,15 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700;800;900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+* {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 18px;
+}
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Bitter", serif;
 }
 
 p,
-h4,
 h5 {
   font-family: "Libre Franklin", sans-serif;
 }
@@ -17,6 +20,13 @@ p {
   line-height: 1.7;
   font-size: 18px;
 }
+
+$success: #198754;
+$danger: #dc3545;
+$warning: #ffc107;
+$info: #0dcaf0;
+$black: #000;
+$white: #fff;
 
 .top-nav {
   display: flex;
@@ -480,6 +490,82 @@ p {
   right: 20px;
 }
 
+.sticky-trip-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.gallery img {
+  object-fit: cover;
+  height: 300px;
+}
+
+.carousel-control-prev {
+  justify-content: flex-start !important;
+}
+.carousel-control-next {
+  justify-content: flex-end !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+  background-color: #fff;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+  background-color: #fff;
+  border-radius: 100px;
+  margin-left: 5px;
+}
+
+.overview-outline-itinerary {
+  list-style: none;
+  padding: 0;
+  align-items: baseline;
+  display: flex;
+  gap: 10px;
+  line-height: 1.7;
+  &-days {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.cost-exclude-tab-content,
+.trip-highlight-tab-content {
+  display: none;
+}
+
+.cost-include-icon {
+  color: $success;
+}
+.trip-highlight-icon {
+  color: $info;
+}
+
+.cost-exclude-icon {
+  color: $danger;
+}
+
+.itinerary-fact {
+  margin-top: 20px;
+  ul {
+    list-style: none;
+    padding-left: 0 !important;
+  }
+  i {
+    margin-top: 5px;
+  }
+}
+.itinerary-fact-icon {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
 @media (max-width: 567px) {
   p {
     font-size: 14px;
@@ -533,15 +619,10 @@ p {
   .trip-nav-menu {
     overflow-x: scroll;
   }
-  // .trip-nav-menu-item {
-  //   width: 900px !important;
-  // }
+
   .trip-nav-price {
     display: none;
   }
-  // .trip-nav {
-  //   overflow-y: scroll;
-  // }
 
   .trip-header .trip-box-content {
     height: 94vh;
@@ -551,7 +632,9 @@ p {
     display: none !important;
   }
   .trip-nav-menu-item {
-    gap: 30px;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
   }
   .mobile-trip-price {
     display: none;
@@ -588,11 +671,20 @@ p {
     .footer-row {
       justify-content: center !important;
     }
-    &-content {
+    &-content,
+    &-contact,
+    &-title {
       text-align: center !important;
     }
   }
+
+  .itinerary-fact-button {
+    button {
+      margin-right: 0px;
+    }
+  }
 }
+
 @media (max-width: 900px) {
   .affiliated-img {
     img {
@@ -618,11 +710,4 @@ p {
   .trip-header .trip-box-content {
     height: 91vh;
   }
-}
-
-.sticky-trip-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: red;
 }
