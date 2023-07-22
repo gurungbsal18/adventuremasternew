@@ -500,7 +500,6 @@ p {
   align-items: baseline;
   display: flex;
   gap: 10px;
-  line-height: 1.7;
 }
 .overview-outline-itinerary-days {
   display: flex;
@@ -538,7 +537,7 @@ p {
 .itinerary-fact-icon {
   display: flex;
   gap: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 567px) {
