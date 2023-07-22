@@ -16,21 +16,15 @@ window.addEventListener("scroll", function () {
   }
 });
 
-window.addEventListener("click", function () {
-  let scrollToTop = document.querySelector(".scroll-top");
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-});
-
+let navBar = document.querySelector(".trip-nav");
+const initialOffset = navBar.offsetTop;
 window.addEventListener("scroll", function () {
-  let navBar = document.querySelector(".trip-nav");
-  if (
-    document.body.scrollTop > 797 ||
-    document.documentElement.scrollTop > 797
-  ) {
-    // console.log("testing scroll");
-    navBar.classList.add("sticky-nav");
+  // Get the current scroll position
+  const scrollPos = window.scrollY;
+
+  if (scrollPos >= initialOffset) {
+    navBar.classList.add("sticky-trip-nav");
   } else {
-    navBar.classList.remove("sticky-nav");
+    navBar.classList.remove("sticky-trip-nav");
   }
 });
