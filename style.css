@@ -638,6 +638,9 @@ p {
   .itinerary-fact-button button {
     margin-right: 0px;
   }
+  .outline-itinerary-section ul {
+    line-height: 1.7;
+  }
 }
 @media (max-width: 900px) {
   .affiliated-img img {
