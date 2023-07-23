@@ -19,7 +19,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
-
   <body>
     <nav class="top-nav row">
       <div class="col-auto logo">
@@ -33,112 +32,63 @@
         <div class="navbar"><i class="fa-solid fa-bars fs-5"></i></div>
       </div>
     </nav>
-    <div class="hero">
-      <div class="header">
-        <div class="search-bar">
-          <!-- <h2 class="title">Find my trip</h2> -->
-          <div class="row align-items-center">
-            <div class="col-sm-12 col-md-auto">
-              <label for="destination">Destination</label><br />
-              <select>
-                <option value="Nepal">Nepal</option>
-                <option value="Tibet">Tibet</option>
-                <option value="Bhutan">Bhutan</option>
-              </select>
+    <header class="trip-header trip-2">
+      <div class="trip-box-content">
+        <div class="trip-box">
+          <div class="trip-box-title">
+            <h1>Everest Base Camp Trek</h1>
+            <p><span class="text-warning">Activity: </span>Trekking</p>
+            <p><span class="text-warning">Price: </span> US$ 1400/- pp</p>
+            <button class="btn btn-warning">View Fix Departure Date</button>
+          </div>
+          <div class="d-flex justify-content-between w-100">
+            <a href="#" class="trip-link mt-3 border-end">Book Now</a>
+            <a href="#" class="trip-link mt-3">Send Inquiry</a>
+          </div>
+        </div>
+      </div>
+      <div class="trip-nav bg-dark text-light p-3" style="z-index: 1">
+        <div class="container">
+          <div
+            class="row d-flex justify-content-between align-items-lg-center align-items-md-end"
+          >
+            <div class="col-auto trip-nav-menu">
+              <div class="row trip-nav-menu-item">
+                <div class="col-auto link-hover-white fw-bold p-0">
+                  <a href="ebctrek.html">INFO</a>
+                </div>
+                <div class="col-auto link-hover-white fw-bold p-0">
+                  <a href="trip-overview.html">OVERVIEW</a>
+                </div>
+                <div class="col-auto link-hover-white fw-bold p-0">
+                  <a href="trip-itinerary.html">ITINERARY</a>
+                </div>
+                <div class="col-auto link-hover-white fw-bold p-0">
+                  <a href="#">DETAIL</a>
+                </div>
+                <!-- <div class="col-auto">Gallery</div>
+                <div class="col-auto">Useful Info</div>
+                <div class="col-auto">FAQs</div>
+                <div class="col-auto">Reviews</div> -->
+              </div>
             </div>
-            <div class="col-sm-12 col-md-auto">
-              <label for="Activities">Activities</label>
-              <br />
-              <select name="" id="">
-                <option value="Trekking">Trekking</option>
-                <option value="Helicopter Tour">Helicopter Tour</option>
-                <option value="Sightseeing">Sightseeing</option>
-                <option value="Rafting">Rafting</option>
-                <option value="Jungle Safari">Jungle Safari</option>
-              </select>
-            </div>
-            <!-- <div class="col-sm-12 col-md-auto">
-              <label for="trip-name">Trip Name</label>
-              <br />
-              <input type="text" />
-            </div> -->
-
-            <div class="col-sm-12 col-md-auto">
-              <label for="date">Date</label>
-              <br />
-              <input type="date" />
-            </div>
-            <div class="col-sm-12 col-md-auto d-flex justify-content-end">
-              <button class="btn btn-dark mt-4 flex-end">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
+            <div class="col-auto trip-nav-price">
+              <div
+                class="row d-flex justify-content-end align-items-lg-center align-items-md-start flex-md-column flex-lg-row"
+              >
+                <div class="col-auto"><p class="m-0">Price: US$ 1400</p></div>
+                <div class="col-auto">
+                  <button class="btn btn-outline-warning">
+                    Plan Your Trip
+                  </button>
+                  <button class="btn btn-warning">Book Now</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="packages">
-      <div class="trip-container">
-        <div class="trips trip-1">
-          <h2 class="main-title">EVEREST BASE CAMP HELICOPTER TOUR</h2>
-          <div class="trip-box-content">
-            <div class="trip-box">
-              <div class="trip-box-title">
-                <h4 class="">Everest Base Camp Helicopter Tour</h4>
-                <p><span class="text-warning">Activity: </span>Heli Tour</p>
-                <p><span class="text-warning">Sharing: </span> US$ 950/- pp</p>
-              </div>
-              <a href="#" class="trip-link mt-3">View Detail</a>
-            </div>
-          </div>
-        </div>
-        <div class="trips trip-2">
-          <h2 class="main-title">EVEREST BASE CAMP TREK</h2>
-          <div class="trip-box-content">
-            <div class="trip-box">
-              <div class="trip-box-title">
-                <h4>Everest Base Camp Trek</h4>
-                <p><span class="text-warning">Activity: </span>Trekking</p>
-                <p><span class="text-warning">Price: </span> US$ 1400/- pp</p>
-                <button class="btn btn-warning departure-date-btn">
-                  View Fix Departure Date
-                </button>
-              </div>
-              <a href="ebctrek.html" class="trip-link mt-3">View Detail</a>
-            </div>
-          </div>
-        </div>
-        <div class="trips trip-3">
-          <h2 class="main-title">MARDI HIMAL BASE CAMP TREK</h2>
-          <div class="trip-box-content">
-            <div class="trip-box">
-              <div class="trip-box-title">
-                <h4>Mardi Himal Base Camp Trek</h4>
-                <p><span class="text-warning">Activity: </span>Trekking</p>
-                <p><span class="text-warning">Price: </span> US$ 950/- pp</p>
-                <button class="btn btn-warning departure-date-btn">
-                  View Fix Departure Date
-                </button>
-              </div>
-              <a href="#" class="trip-link mt-3">View Detail</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- footer starts -->
-    <!-- <footer>
-      <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-3">
-          <h4>Adventure Master Trek</h4>
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-3"></div>
-        <div class="col-sm-12 col-md-12 col-lg-3"></div>
-        <div class="col-sm-12 col-md-12 col-lg-3"></div>
-      </div>
-    </footer> -->
+    </header>
 
     <footer class="footer mt-5">
       <div class="container">
@@ -353,12 +303,29 @@
         </p>
       </div>
     </footer>
-    <!-- footer ends -->
+
+    <div class="mobile-trip-price d-md-none d-sm-block">
+      <p class="m-0 trip-title">Everest Base Camp Trel - 14 Days</p>
+      <div class="d-flex justify-content-between">
+        <div>
+          <p>Price: US$ 1400</p>
+        </div>
+        <div>
+          <button class="btn btn-sm btn-outline-warning">Plan Your Trip</button>
+          <button class="btn btn-sm btn-warning">Book Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="to-top">
+      <button class="scroll-top"><i class="fa-solid fa-up-long"></i></button>
+    </div>
     <!-- Bootstrap js cdn -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

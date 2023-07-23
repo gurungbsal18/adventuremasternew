@@ -39,12 +39,10 @@ window.addEventListener("scroll", function () {
 // cost include exclude and trip highlight tab section
 let costIncludeTab = document.querySelector(".cost-include-tab");
 let costExcludeTab = document.querySelector(".cost-exclude-tab");
-let tripHighlightTab = document.querySelector(".trip-highlight-tab");
 
 costIncludeTab.addEventListener("click", function () {
   document.querySelector(".cost-include-tab-content").style.display = "block";
   document.querySelector(".cost-exclude-tab-content").style.display = "none";
-  costExcludeTab.classList.add("active");
 });
 costExcludeTab.addEventListener("click", function () {
   document.querySelector(".cost-exclude-tab-content").style.display = "block";

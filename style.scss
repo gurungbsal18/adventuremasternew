@@ -40,12 +40,22 @@ $white: #fff;
     height: 150px;
   }
   .navbar {
-    color: #fff;
+    color: $white;
+  }
+  .nav-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
   }
 }
 
 .hero {
-  background-image: url(./images/hero-image.jpeg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(./images/hero-image.jpeg);
   height: 100vh;
   background-attachment: fixed;
   background-size: cover;
@@ -61,7 +71,7 @@ $white: #fff;
   padding: 10px;
   position: absolute;
   bottom: 30px;
-  background: #ffffffb3;
+  background: #ffffff6f;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
@@ -92,10 +102,10 @@ $white: #fff;
 }
 
 .trips {
-  background-color: #000;
+  background-color: $black;
   height: 100vh;
-  color: #fff;
-  border: 30px solid #fff;
+  color: $white;
+  border: 30px solid $white;
   .trip-box-content {
     height: 70vh;
     display: flex;
@@ -110,8 +120,8 @@ $white: #fff;
 }
 
 .trip-box {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  border: 1px solid #fff;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  border: 1px solid $white;
   border-bottom: 0;
   width: 25%;
   display: flex;
@@ -130,12 +140,12 @@ $white: #fff;
   }
 
   .trip-link {
-    border: 1px solid #fff;
+    border: 1px solid $white;
     border-right: 0;
     border-left: 0;
     padding: 5px;
     width: 100%;
-    color: #fff;
+    color: $white;
     text-decoration: none;
     &:hover {
       background-color: #ffc107;
@@ -146,28 +156,28 @@ $white: #fff;
 }
 
 .trip-1 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(./images/EBCHeli/ebchelitour.jpg);
   background-position: center center;
   object-fit: cover;
 }
 .trip-2 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(./images/EBCTrek/ebctrek.jpg);
   background-position: center center;
   background-size: cover;
 }
 .trip-3 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(images/MardiHimal/mardiHimal.jpg);
   background-position: center center;
   background-size: cover;
 }
 
 .trip-header {
-  background-color: #000;
+  background-color: $black;
   height: 100vh;
-  color: #fff;
+  color: $white;
   background-attachment: fixed;
   .trip-box-content {
     height: 92vh;
@@ -178,7 +188,7 @@ $white: #fff;
 
 // footer starts
 .footer {
-  background-color: #fff;
+  background-color: $white;
   // background-image: url(../../../image/footer1.png);
   background-size: cover;
   background-position: center;
@@ -341,9 +351,6 @@ $white: #fff;
 .tripadvisor-footer {
   display: flex;
   justify-content: center;
-  // img {
-  //   width: 200px;
-  // }
   ul {
     padding: 0;
   }
@@ -392,7 +399,7 @@ $white: #fff;
 
 .price-header {
   background-color: #202222;
-  color: #fff;
+  color: $white;
 }
 
 .price-icon {
@@ -402,14 +409,14 @@ $white: #fff;
   gap: 60px;
   a {
     text-decoration: none;
-    color: #fff;
+    color: $white;
   }
 }
 
 .link-hover-white {
   display: inline-block;
   position: relative;
-  color: #fff;
+  color: $white;
   cursor: pointer;
 }
 
@@ -421,7 +428,7 @@ $white: #fff;
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: $white;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -433,7 +440,7 @@ $white: #fff;
 .link-hover-black {
   // display: inline-block;
   position: relative;
-  color: #000;
+  color: $black;
   cursor: pointer;
 }
 
@@ -445,7 +452,7 @@ $white: #fff;
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: $black;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -509,13 +516,13 @@ $white: #fff;
 
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
-  background-color: #fff;
+  background-color: $white;
   border-radius: 100px;
   margin-right: 5px;
 }
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
-  background-color: #fff;
+  background-color: $white;
   border-radius: 100px;
   margin-left: 5px;
 }
@@ -597,15 +604,22 @@ $white: #fff;
   }
 }
 
+.trekking-map {
+  img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 567px) {
   p {
     font-size: 14px;
   }
   .top-nav {
     padding: 0;
+    margin: 0 auto !important;
   }
   .logo img {
-    height: 100px;
+    height: 90px !important;
   }
   .header {
     display: flex;
@@ -672,7 +686,7 @@ $white: #fff;
     position: fixed;
     background: #202222;
     bottom: 0;
-    color: #fff;
+    color: $white;
     width: 100%;
     padding: 0 10px;
     p {
