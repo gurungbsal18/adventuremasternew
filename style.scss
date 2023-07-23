@@ -456,8 +456,7 @@ $white: #fff;
 }
 
 .trip-info-title h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .trip-info-sub-title {
@@ -567,6 +566,35 @@ $white: #fff;
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
+}
+
+.faq {
+  .accordion-button,
+  .accordion-body {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+  .accordion-button:focus {
+    box-shadow: none !important;
+  }
+}
+
+.detail-itinerary {
+  &-content {
+    text-align: justify;
+    margin-bottom: 2rem;
+  }
+  &-icon-title {
+    font-size: 16px;
+  }
+  &-icon-content {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 567px) {

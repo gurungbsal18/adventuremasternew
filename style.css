@@ -432,8 +432,7 @@ p {
 }
 
 .trip-info-title h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .trip-info-sub-title h4 {
@@ -542,6 +541,30 @@ p {
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
+}
+
+.faq .accordion-button,
+.faq .accordion-body {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.faq .accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.faq .accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.detail-itinerary-content {
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+.detail-itinerary-icon-title {
+  font-size: 16px;
+}
+.detail-itinerary-icon-content {
+  font-size: 14px;
 }
 
 @media (max-width: 567px) {
