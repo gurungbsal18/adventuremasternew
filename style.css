@@ -96,7 +96,7 @@ p {
 .search-bar input :focus-visible,
 .search-bar select :focus-visible,
 .search-bar option :focus-visible {
-  offset: none;
+  offset: 0 !important;
 }
 
 .packages {
@@ -588,6 +588,12 @@ p {
   width: 100%;
 }
 
+.review-section {
+  background: #f8f9fa;
+}
+.review-section .cdsROW.wide .cdsRating {
+  padding-right: 0 !important;
+}
 .review .header {
   font-size: 2.5rem;
 }
@@ -599,13 +605,38 @@ p {
      object-fit: cover;
 }
 
-.review-header {
+.header {
   font-size: 3rem;
   font-weight: 600;
 }
 
 .review-date {
   font-size: 14px;
+}
+
+.blog-section .card-title {
+  font-size: 16px;
+}
+.blog-section .card-title a {
+  text-decoration: none;
+}
+.blog-section .card-title a:hover {
+  color: #000 !important;
+}
+.blog-section .card-date {
+  font-size: 14px;
+}
+
+.blog-card-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.blog-card {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 @media (max-width: 567px) {

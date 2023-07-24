@@ -102,7 +102,7 @@ $white: #fff;
     padding: 2px 5px;
     background: #ffffff6f;
     :focus-visible {
-      offset: none;
+      offset: 0 !important;
     }
   }
 }
@@ -623,6 +623,12 @@ $white: #fff;
 }
 
 .review {
+  &-section {
+    background: #f8f9fa;
+    .cdsROW.wide .cdsRating {
+      padding-right: 0 !important;
+    }
+  }
   .header {
     font-size: 2.5rem;
   }
@@ -634,13 +640,40 @@ $white: #fff;
   object-fit: cover;
 }
 
-.review-header {
+.header {
   font-size: 3rem;
   font-weight: 600;
 }
 
 .review-date {
   font-size: 14px;
+}
+
+.blog-section {
+  .card-title {
+    font-size: 16px;
+    a {
+      text-decoration: none;
+      &:hover {
+        color: #000 !important;
+      }
+    }
+  }
+  .card-date {
+    font-size: 14px;
+  }
+}
+
+.blog-card-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.blog-card {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 @media (max-width: 567px) {
