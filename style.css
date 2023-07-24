@@ -91,6 +91,12 @@ p {
   width: 200px;
   height: 30px;
   padding: 2px 5px;
+  background: rgba(255, 255, 255, 0.4352941176);
+}
+.search-bar input :focus-visible,
+.search-bar select :focus-visible,
+.search-bar option :focus-visible {
+  offset: none;
 }
 
 .packages {

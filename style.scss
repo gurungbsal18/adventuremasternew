@@ -100,6 +100,10 @@ $white: #fff;
     width: 200px;
     height: 30px;
     padding: 2px 5px;
+    background: #ffffff6f;
+    :focus-visible {
+      offset: none;
+    }
   }
 }
 
