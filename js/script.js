@@ -1,3 +1,17 @@
+// review more and less
+let reviewContent = document.querySelector(".review-content");
+var reviewMoreBtn = document.getElementById("review-more-btn");
+
+reviewMoreBtn.onclick = function () {
+  if (reviewContent.className === "more") {
+    reviewContent.className = "";
+    reviewMoreBtn.innerHTML = "Show More";
+  } else {
+    reviewContent.className = "more";
+    reviewMoreBtn.innerHTML = "Show Less";
+  }
+};
+
 // trip price only on mobile view while scrolling
 window.onscroll = function () {
   let mobilePrice = document.querySelector(".mobile-trip-price");
