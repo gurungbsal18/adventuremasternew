@@ -9,13 +9,18 @@ window.onscroll = function () {
 };
 
 // scroll to the top
+let scrollToTop = document.querySelector(".scroll-top");
 window.addEventListener("scroll", function () {
-  let scrollToTop = document.querySelector(".scroll-top");
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
     scrollToTop.style.display = "block";
   } else {
     scrollToTop.style.display = "none";
   }
+});
+
+scrollToTop.addEventListener("click", function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 });
 
 // trip navbar sticky
