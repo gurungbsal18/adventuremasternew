@@ -133,7 +133,7 @@ p {
 }
 
 .trip-box {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   border: 1px solid #fff;
   border-bottom: 0;
   width: 25%;
@@ -652,6 +652,22 @@ p {
 .luxury-icon {
   display: flex;
   justify-content: center;
+}
+.luxury-icon-title a {
+  text-decoration: none;
+}
+.luxury-icon .modal-body {
+  text-align: left;
+  color: #000;
+}
+.luxury-icon .modal-body span {
+  display: flex;
+  gap: 10px;
+}
+.luxury-icon .modal-body ul {
+  list-style-type: none;
+  line-height: 1.7;
+  padding: 0;
 }
 
 @media (max-width: 567px) {
