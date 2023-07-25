@@ -383,6 +383,9 @@ $white: #fff;
   li {
     list-style: none;
   }
+  .trip-advisor-traveler-choice img {
+    height: 125px;
+  }
 }
 
 .footer-social-icon {
@@ -751,7 +754,7 @@ $white: #fff;
     padding: 0;
     margin: 0 auto !important;
   }
-  .logo img {
+  .top-nav .logo img {
     height: 90px !important;
   }
   .header {
@@ -849,12 +852,6 @@ $white: #fff;
   .footer-social-icon {
     .col-1 {
       padding: 0 !important;
-    }
-  }
-
-  .tripadvisor-widget-custom {
-    #CDSWIDSSP {
-      width: 100% !important;
     }
   }
 
