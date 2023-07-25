@@ -429,6 +429,34 @@ $white: #fff;
 .price-icon {
   font-size: 40px;
 }
+
+.trip-nav {
+  z-index: 2 !important;
+  .nav-tabs {
+    --bs-nav-tabs-border-width: 0;
+  }
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active {
+    color: $warning;
+    background-color: transparent;
+    border: none !important;
+  }
+  .nav-tabs .nav-link:focus,
+  .nav-tabs .nav-link:hover {
+    border: none;
+  }
+  .nav-link:focus-visible {
+    box-shadow: none;
+  }
+  .nav-link:hover {
+    color: $warning;
+  }
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .trip-nav-menu-item {
   gap: 60px;
   a {
@@ -763,6 +791,19 @@ $white: #fff;
     display: none;
   }
 
+  .trip-nav {
+    .nav-link {
+      padding: 0;
+    }
+    &-row {
+      justify-content: center;
+    }
+    &-menu {
+      width: 100% !important;
+      justify-content: center !important;
+    }
+  }
+
   .trip-nav-menu {
     overflow-x: scroll;
   }
@@ -860,5 +901,9 @@ $white: #fff;
 
   .trip-header .trip-box-content {
     height: 91vh;
+  }
+
+  .trip-nav-menu-item {
+    gap: 10px;
   }
 }
