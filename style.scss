@@ -457,6 +457,7 @@ $white: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
   }
 }
 .trip-nav-menu-item {
@@ -823,7 +824,7 @@ $white: #fff;
   }
   .trip-nav-menu-item {
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     margin: 0 auto;
   }
   .mobile-trip-price {
