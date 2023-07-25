@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   font-family: "Libre Franklin", sans-serif;
-  font-size: 18px;
 }
 h1,
 h2,
@@ -18,7 +17,6 @@ h5 {
 }
 p {
   line-height: 1.7;
-  font-size: 18px;
 }
 
 $success: #198754;
@@ -95,6 +93,7 @@ $white: #fff;
   input,
   select,
   option {
+    font-size: 14px;
     border-radius: 5px;
     border: 0.5px solid #1e1e1e;
     width: 200px;
@@ -104,6 +103,9 @@ $white: #fff;
     :focus-visible {
       offset: 0 !important;
     }
+  }
+  label {
+    font-size: 14px !important;
   }
 }
 
@@ -625,8 +627,8 @@ $white: #fff;
 .review {
   &-section {
     background: #f8f9fa;
-    .cdsROW.wide .cdsRating {
-      padding-right: 0 !important;
+    #TA_cdsratingsonlynarrow708 {
+      font-family: Trip Sans VF, Trip Sans, Arial, sans-serif !important;
     }
   }
   .header {
@@ -674,6 +676,11 @@ $white: #fff;
   display: flex;
   justify-content: center;
   gap: 30px;
+}
+
+.luxury-icon {
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 567px) {
