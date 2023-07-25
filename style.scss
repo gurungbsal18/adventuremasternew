@@ -76,7 +76,7 @@ $white: #fff;
   padding: 10px;
   position: absolute;
   bottom: 30px;
-  background: #ffffff6f;
+  background: #ffffff8a;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
@@ -90,16 +90,27 @@ $white: #fff;
     font-weight: 600;
     margin-bottom: 10px;
   }
+
+  &-row {
+    display: flex;
+    gap: 10px;
+  }
+  &-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
   input,
   select,
   option {
     font-size: 14px;
-    border-radius: 5px;
-    border: 0.5px solid #1e1e1e;
+    // border-radius: 5px;
+    // border: 0.5px solid #1e1e1e;
+    border: 0;
     width: 200px;
     height: 30px;
     padding: 2px 5px;
-    background: #ffffff6f;
+    background: #ffffff8c;
     :focus-visible {
       offset: 0 !important;
     }
