@@ -67,7 +67,7 @@ $white: #fff;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  .header {
+  &-header {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -685,12 +685,19 @@ $white: #fff;
 .review {
   &-section {
     background: #f8f9fa;
+    height: auto;
     #TA_cdsratingsonlynarrow708 {
       font-family: Trip Sans VF, Trip Sans, Arial, sans-serif !important;
     }
+    .review-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
-  .header {
-    font-size: 2.5rem;
+
+  .traveler-review {
+    font-size: 18px;
   }
 }
 
@@ -701,6 +708,7 @@ $white: #fff;
 }
 
 .header {
+  font-family: "Bitter", serif;
   font-size: 3rem;
   font-weight: 600;
 }
@@ -791,10 +799,6 @@ $white: #fff;
   }
   .top-nav .logo img {
     height: 90px !important;
-  }
-  .header {
-    display: flex;
-    justify-content: center;
   }
 
   .search-bar {
@@ -917,6 +921,20 @@ $white: #fff;
   .outline-itinerary-section ul {
     line-height: 1.7;
   }
+  .review-section {
+    .review-header {
+      svg {
+        width: 100%;
+      }
+      .header {
+        text-align: center;
+      }
+    }
+  }
+
+  .blog-card-section {
+    gap: 10px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -947,5 +965,10 @@ $white: #fff;
 
   .trip-nav-menu-item {
     gap: 10px;
+  }
+  .review-section {
+    .header {
+      text-align: center;
+    }
   }
 }

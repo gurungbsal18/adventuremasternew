@@ -1,4 +1,4 @@
-// trip price only on mobile view while scrolling
+// // trip price only on mobile view while scrolling
 window.onscroll = function () {
   let mobilePrice = document.querySelector(".mobile-trip-price");
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -8,7 +8,7 @@ window.onscroll = function () {
   }
 };
 
-// scroll to the top
+// // scroll to the top
 let scrollToTop = document.querySelector(".scroll-top");
 window.addEventListener("scroll", function () {
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
@@ -23,7 +23,7 @@ scrollToTop.addEventListener("click", function () {
   document.documentElement.scrollTop = 0;
 });
 
-// trip navbar sticky
+// // trip navbar sticky
 let navBar = document.querySelector(".trip-nav");
 const initialOffset = navBar.offsetTop;
 window.addEventListener("scroll", function () {
