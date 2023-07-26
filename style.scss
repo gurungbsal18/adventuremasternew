@@ -226,6 +226,7 @@ $white: #fff;
   .footer-row {
     display: flex;
     justify-content: space-between;
+    font-family: "Libre Franklin", sans-serif;
     a {
       color: #202222;
     }
@@ -261,6 +262,7 @@ $white: #fff;
 
   .footer-contact a {
     text-decoration: none;
+    font-family: "Libre Franklin", sans-serif;
   }
 
   &-content,
@@ -436,7 +438,7 @@ $white: #fff;
 }
 
 .trip-nav {
-  z-index: 2 !important;
+  z-index: 1;
   .nav-tabs {
     --bs-nav-tabs-border-width: 0;
   }
@@ -537,7 +539,18 @@ $white: #fff;
   }
 }
 
-// trip page ends
+.newsletter {
+  background-color: #f8f9fa;
+}
+
+.newsletter-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  input {
+    width: 200px;
+  }
+}
 
 .footer {
   background-color: #f8f9fa;
@@ -714,7 +727,6 @@ $white: #fff;
 .blog-card-section {
   display: flex;
   justify-content: center;
-  gap: 30px;
 }
 
 .blog-card {

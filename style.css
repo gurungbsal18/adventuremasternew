@@ -211,6 +211,7 @@ p {
 .footer .footer-row {
   display: flex;
   justify-content: space-between;
+  font-family: "Libre Franklin", sans-serif;
 }
 .footer .footer-row a {
   color: #202222;
@@ -248,6 +249,7 @@ p {
 }
 .footer .footer-contact a {
   text-decoration: none;
+  font-family: "Libre Franklin", sans-serif;
 }
 .footer-content, .footer-affiliated, .footer-contact, .footer-useful-link {
   width: -moz-fit-content !important;
@@ -410,7 +412,7 @@ p {
 }
 
 .trip-nav {
-  z-index: 2 !important;
+  z-index: 1;
 }
 .trip-nav .nav-tabs {
   --bs-nav-tabs-border-width: 0;
@@ -506,6 +508,19 @@ p {
 
 .trip-info-content p {
   text-align: justify !important;
+}
+
+.newsletter {
+  background-color: #f8f9fa;
+}
+
+.newsletter-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.newsletter-fields input {
+  width: 200px;
 }
 
 .footer {
@@ -673,7 +688,6 @@ p {
 .blog-card-section {
   display: flex;
   justify-content: center;
-  gap: 30px;
 }
 
 .blog-card {
