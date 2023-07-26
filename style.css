@@ -695,6 +695,9 @@ p {
   justify-content: center;
   gap: 30px;
 }
+.blog-card .card-body {
+  background-color: #f8f9fa;
+}
 .blog-card img {
   position: relative;
 }

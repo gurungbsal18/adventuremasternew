@@ -733,6 +733,9 @@ $white: #fff;
   display: flex;
   justify-content: center;
   gap: 30px;
+  .card-body {
+    background-color: #f8f9fa;
+  }
   img {
     position: relative;
   }
