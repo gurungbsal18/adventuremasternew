@@ -695,6 +695,24 @@ p {
   justify-content: center;
   gap: 30px;
 }
+.blog-card img {
+  position: relative;
+}
+.blog-card .blog-category-news {
+  position: absolute;
+  background: #dc3545;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 0 0 5px 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.blog-card .blog-category-article {
+  position: absolute;
+  background: #ffc107;
+  padding: 2px 5px;
+  border-radius: 0 0 5px 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
 .luxury-icon {
   display: flex;

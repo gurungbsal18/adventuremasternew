@@ -733,6 +733,26 @@ $white: #fff;
   display: flex;
   justify-content: center;
   gap: 30px;
+  img {
+    position: relative;
+  }
+  .blog-category-news {
+    position: absolute;
+    // bottom: 0;
+    background: $danger;
+    color: $white;
+    padding: 2px 5px;
+    border-radius: 0 0 5px 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .blog-category-article {
+    position: absolute;
+    // bottom: 0;
+    background: #ffc107;
+    padding: 2px 5px;
+    border-radius: 0 0 5px 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
 }
 
 .luxury-icon {
