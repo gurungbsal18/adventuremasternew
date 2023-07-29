@@ -156,7 +156,7 @@
     justify-content: flex-start;
     gap: 0px;
     .blog-card {
-      width: 90%;
+      width: 80%;
     }
   }
 }
@@ -209,6 +209,11 @@
     gap: 0px;
     .blog-card {
       width: 90%;
+    }
+  }
+  .gallery {
+    img {
+      height: 200px !important;
     }
   }
 }

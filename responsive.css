@@ -868,7 +868,7 @@ p {
     gap: 0px;
   }
   .blog-card-section .blog-card {
-    width: 90%;
+    width: 80%;
   }
 }
 @media (max-width: 900px) {
@@ -912,5 +912,8 @@ p {
   }
   .blog-card-section .blog-card {
     width: 90%;
+  }
+  .gallery img {
+    height: 200px !important;
   }
 }/*# sourceMappingURL=responsive.css.map */
