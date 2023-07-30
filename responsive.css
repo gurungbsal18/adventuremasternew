@@ -214,34 +214,6 @@ p {
 .fix-departure-date-table tbody .fix-departure-date-table-btn-disable {
   text-align: left;
 }
-@media screen and (max-width: 600px) {
-  .fix-departure-date-table table thead {
-    display: none;
-  }
-  .fix-departure-date-table tbody td {
-    display: block;
-    width: 50%;
-    box-sizing: border-box;
-    float: left;
-  }
-  .fix-departure-date-table tbody td .fix-deparute-content {
-    display: flex;
-    flex-direction: column;
-  }
-  .fix-departure-date-table tbody td .fix-deparute-content-header-sm {
-    display: block;
-  }
-  .fix-departure-date-table tbody .fix-departure-date-table-btn {
-    width: 100%;
-    background-color: #198754;
-    text-align: center;
-  }
-  .fix-departure-date-table tbody .fix-departure-date-table-btn-disable {
-    width: 100%;
-    background-color: #6c757d;
-    text-align: center;
-  }
-}
 
 .trip-1 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/EBCHeli/ebchelitour.jpg);
@@ -722,6 +694,9 @@ p {
   width: 100%;
 }
 
+.review {
+  justify-content: center;
+}
 .review-section {
   background: #f8f9fa;
   height: auto;
@@ -736,6 +711,15 @@ p {
 }
 .review .traveler-review {
   font-size: 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 100px;
+}
+.review .review-read-btn {
+  width: -moz-max-content !important;
+  width: max-content !important;
 }
 
 .review-image img {
@@ -945,6 +929,32 @@ p {
   }
   .blog-card-section .blog-card {
     width: 80%;
+  }
+  .fix-departure-date-table table thead {
+    display: none;
+  }
+  .fix-departure-date-table tbody td {
+    display: block;
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+  }
+  .fix-departure-date-table tbody td .fix-deparute-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .fix-departure-date-table tbody td .fix-deparute-content-header-sm {
+    display: block;
+  }
+  .fix-departure-date-table tbody .fix-departure-date-table-btn {
+    width: 100%;
+    background-color: #198754;
+    text-align: center;
+  }
+  .fix-departure-date-table tbody .fix-departure-date-table-btn-disable {
+    width: 100%;
+    background-color: #6c757d;
+    text-align: center;
   }
 }
 @media (max-width: 900px) {

@@ -159,6 +159,35 @@
       width: 80%;
     }
   }
+  .fix-departure-date-table {
+    table thead {
+      display: none;
+    }
+
+    tbody td {
+      display: block;
+      width: 50%;
+      box-sizing: border-box;
+      float: left;
+      .fix-deparute-content {
+        display: flex;
+        flex-direction: column;
+        &-header-sm {
+          display: block;
+        }
+      }
+    }
+    tbody .fix-departure-date-table-btn {
+      width: 100%;
+      background-color: $success;
+      text-align: center;
+    }
+    tbody .fix-departure-date-table-btn-disable {
+      width: 100%;
+      background-color: $secondary;
+      text-align: center;
+    }
+  }
 }
 
 @media (max-width: 900px) {
