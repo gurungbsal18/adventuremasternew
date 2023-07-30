@@ -75,13 +75,15 @@
                   </div>
                   <div class="modal-body">
                     <table class="table table-hover">
-                      <tbody>
+                      <thead>
                         <tr>
                           <td>Date</td>
                           <td>Avaibility</td>
                           <td>Status</td>
                           <td>Action</td>
                         </tr>
+                      </thead>
+                      <tbody>
                         <tr>
                           <td>
                             <i class="fa-regular fa-calendar-check me-1"></i>
@@ -175,9 +177,9 @@
                     class="nav-link active"
                     id="ex1-tab-1"
                     data-bs-toggle="tab"
-                    href="#ex1-tabs-1"
+                    href="#info-tab"
                     role="tab"
-                    aria-controls="ex1-tabs-1"
+                    aria-controls="info-tab"
                     aria-selected="false"
                     >INFO</a
                   >
@@ -190,9 +192,9 @@
                     class="nav-link"
                     id="ex1-tab-2"
                     data-bs-toggle="tab"
-                    href="#ex1-tabs-2"
+                    href="#overview-tab"
                     role="tab"
-                    aria-controls="ex1-tabs-2"
+                    aria-controls="overview-tab"
                     aria-selected="false"
                     >OVERVIEW</a
                   >
@@ -205,9 +207,9 @@
                     class="nav-link"
                     id="ex1-tab-3"
                     data-bs-toggle="tab"
-                    href="#ex1-tabs-3"
+                    href="#itinerary-tab"
                     role="tab"
-                    aria-controls="ex1-tabs-3"
+                    aria-controls="itinerary-tab"
                     aria-selected="false"
                     >ITINERARY</a
                   >
@@ -217,9 +219,9 @@
                     class="nav-link"
                     id="ex1-tab-4"
                     data-bs-toggle="tab"
-                    href="#ex1-tabs-4"
+                    href="#detail-tab"
                     role="tab"
-                    aria-controls="ex1-tabs-4"
+                    aria-controls="detail-tab"
                     aria-selected="false"
                     >DETAIL</a
                   >
@@ -246,7 +248,7 @@
         <!-- trip info content -->
         <div
           class="tab-pane fade show active trip-tab-nav-content"
-          id="ex1-tabs-1"
+          id="info-tab"
           role="tabpanel"
           aria-labelledby="ex1-tab-1"
         >
@@ -448,7 +450,7 @@
         <!-- trip overview content starts -->
         <div
           class="tab-pane fade trip-tab-nav-content"
-          id="ex1-tabs-2"
+          id="overview-tab"
           role="tabpanel"
           aria-labelledby="ex1-tab-2"
         >
@@ -1254,8 +1256,76 @@
             </div>
           </div>
 
+          <!-- fix departure date table starts -->
           <div class="container mt-5">
-            <h4 class="fw-bold">
+            <h4 class="fw-bold text-muted">
+              <i class="fa-regular fa-calendar-check fs-5 me-2"></i>Fix
+              Departure Date
+            </h4>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <td>Date</td>
+                  <td>Avaibility</td>
+                  <td>Status</td>
+                  <td>Action</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <i class="fa-regular fa-calendar-check me-1"></i>
+                    April 5, 2023
+                  </td>
+                  <td><i class="fa-solid fa-users me-1"></i>2/12</td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn fix-departure-date-tooltip"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-title="Trip is available and you can book your trip"
+                    >
+                      <i class="fa-solid fa-circle-check me-1 text-success"></i>
+                      Available
+                    </button>
+                  </td>
+                  <td>
+                    <button class="btn btn-sm btn-outline-dark">
+                      Book Now
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="fa-regular fa-calendar-check me-1"></i>
+                    April 25, 2023
+                  </td>
+                  <td><i class="fa-solid fa-users me-1"></i>12/12</td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn fix-departure-date-tooltip"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-title="Trip is available and you can book your trip"
+                    >
+                      <i class="fa-solid fa-circle-xmark me-1 text-danger"></i>
+                      Close
+                    </button>
+                  </td>
+                  <td>
+                    <button class="btn btn-sm btn-danger disabled">
+                      Unavailable
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="container mt-5">
+            <h4 class="fw-bold text-muted">
               <i class="fa-regular fa-circle-question me-2 fs-5"></i>FAQ
             </h4>
             <div class="faq">
@@ -1347,7 +1417,7 @@
         <!-- trip itinerary content starts -->
         <div
           class="tab-pane fade trip-tab-nav-content"
-          id="ex1-tabs-3"
+          id="itinerary-tab"
           role="tabpanel"
           aria-labelledby="ex1-tab-3"
         >

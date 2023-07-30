@@ -174,10 +174,10 @@ p {
   padding: 0 !important;
 }
 
-.fix-departure-date-table table tbody tr {
+.fix-departure-date-table table tr {
   text-align: left !important;
 }
-.fix-departure-date-table table tbody td {
+.fix-departure-date-table table td {
   vertical-align: middle;
 }
 
