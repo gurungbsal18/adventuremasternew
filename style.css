@@ -167,6 +167,20 @@ p {
   transition: 0.3s ease-in-out;
 }
 
+.fix-departure-date-tooltip {
+  background: transparent !important;
+  border: none;
+  color: #000;
+  padding: 0 !important;
+}
+
+.fix-departure-date-table table tbody tr {
+  text-align: left !important;
+}
+.fix-departure-date-table table tbody td {
+  vertical-align: middle;
+}
+
 .trip-1 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/EBCHeli/ebchelitour.jpg);
   background-position: center center;

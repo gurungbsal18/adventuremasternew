@@ -356,9 +356,130 @@
                 <p>
                   <span class="text-warning">Budget Price: </span> US$ 1090/- pp
                 </p>
-                <button class="btn btn-warning departure-date-btn">
+                <!-- <button class="btn btn-warning departure-date-btn">
+                  View Fix Departure Date
+                </button> -->
+                <!-- Fix departure date Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#EBCFixDateModal"
+                >
                   View Fix Departure Date
                 </button>
+
+                <!-- fix depadture date Modal -->
+                <div
+                  class="modal fade fix-departure-date-table"
+                  id="EBCFixDateModal"
+                  tabindex="-1"
+                  aria-labelledby="EBCFixDateModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1
+                          class="modal-title text-dark fs-5"
+                          id="EBCFixDateModalLabel"
+                        >
+                          Fix Departure Date
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <table class="table table-hover">
+                          <tbody>
+                            <tr>
+                              <td>Date</td>
+                              <td>Avaibility</td>
+                              <td>Status</td>
+                              <td>Action</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <i
+                                  class="fa-regular fa-calendar-check me-1"
+                                ></i>
+                                April 5, 2023
+                              </td>
+                              <td>
+                                <i class="fa-solid fa-users me-1"></i>2/12
+                              </td>
+                              <td>
+                                <button
+                                  type="button"
+                                  class="btn fix-departure-date-tooltip"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="top"
+                                  data-bs-title="Trip is available and you can book your trip"
+                                >
+                                  <i
+                                    class="fa-solid fa-circle-check me-1 text-success"
+                                  ></i>
+                                  Available
+                                </button>
+                              </td>
+                              <td>
+                                <button class="btn btn-sm btn-outline-dark">
+                                  Book Now
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <i
+                                  class="fa-regular fa-calendar-check me-1"
+                                ></i>
+                                April 25, 2023
+                              </td>
+                              <td>
+                                <i class="fa-solid fa-users me-1"></i>12/12
+                              </td>
+                              <td>
+                                <button
+                                  type="button"
+                                  class="btn fix-departure-date-tooltip"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="top"
+                                  data-bs-title="Trip is available and you can book your trip"
+                                >
+                                  <i
+                                    class="fa-solid fa-circle-xmark me-1 text-danger"
+                                  ></i>
+                                  Close
+                                </button>
+                              </td>
+                              <td>
+                                <button class="btn btn-sm btn-danger disabled">
+                                  Unavailable
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-sm btn-dark">
+                          Send Inquiry
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <a href="trip.html" class="trip-link mt-3">View Detail</a>
             </div>
@@ -2412,7 +2533,16 @@
       data-loadtrk
       onload="this.loadtrk=true"
     ></script>
-
     <script src="js/script.js"></script>
+
+    <!-- enable tooltip -->
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
   </body>
 </html>
