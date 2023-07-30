@@ -45,7 +45,7 @@
               type="button"
               class="btn btn-warning"
               data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+              data-bs-target="#EBCFixDepartureModal"
             >
               View Fix Departure Date
             </button>
@@ -53,15 +53,18 @@
             <!-- Modal -->
             <div
               class="modal fade"
-              id="exampleModal"
+              id="EBCFixDepartureModal"
               tabindex="-1"
-              aria-labelledby="exampleModalLabel"
+              aria-labelledby="EBCFixDepartureModalLabel"
               aria-hidden="true"
             >
               <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title text-dark" id="exampleModalLabel">
+                    <h5
+                      class="modal-title text-dark"
+                      id="EBCFixDepartureModalLabel"
+                    >
                       Fix Departure Date
                     </h5>
                     <button
@@ -1331,66 +1334,114 @@
                 </li>
               </ul>
             </div>
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <td>Date</td>
-                  <td>Avaibility</td>
-                  <td>Status</td>
-                  <td>Action</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <i class="fa-regular fa-calendar-check me-1"></i>
-                    April 5, 2023
-                  </td>
-                  <td><i class="fa-solid fa-users me-1"></i>2/12</td>
-                  <td>
-                    <button
-                      type="button"
-                      class="btn fix-departure-date-tooltip"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      data-bs-title="Trip is available and you can book your trip"
+            <div class="fix-departure-date-table my-5">
+              <table class="table table-bordered">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Date</th>
+                    <th>Group</th>
+                    <th>Status</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="fix-deparute-content">
+                        <span class="fw-bold fix-deparute-content-header-sm"
+                          >Date</span
+                        >
+                        <span class="text-muted">August 15, 2023</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="fix-deparute-content">
+                        <span class="fw-bold fix-deparute-content-header-sm"
+                          >Group</span
+                        >
+                        <span class="text-muted"
+                          ><i class="fa-solid fa-user-group me-1"></i>2/12</span
+                        >
+                      </span>
+                    </td>
+                    <td>
+                      <span class="fix-deparute-content">
+                        <span class="fw-bold fix-deparute-content-header-sm"
+                          >Status</span
+                        >
+                        <span class="text-muted"
+                          ><i
+                            class="fa-regular fa-circle-check me-1 text-success"
+                          ></i
+                          >Available</span
+                        >
+                      </span>
+                    </td>
+                    <td>
+                      <span class="fix-deparute-content">
+                        <span class="fw-bold fix-deparute-content-header-sm"
+                          >Price</span
+                        >
+                        <span class="text-muted">US$ 1090/- pp</span>
+                      </span>
+                    </td>
+                    <td class="text-center fix-departure-date-table-btn">
+                      <button class="btn btn-success">Book Now</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="fix-deparute-content">
+                        <span class="fw-bold fix-deparute-content-header-sm"
+                          >Date</span
+                        >
+                        <span class="text-muted">August 25, 2023</span>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="fix-deparute-content">
+                        <span class="fw-bold fix-deparute-content-header-sm"
+                          >Group</span
+                        >
+                        <span class="text-muted"
+                          ><i class="fa-solid fa-user-group me-1"></i
+                          >12/12</span
+                        >
+                      </span>
+                    </td>
+                    <td>
+                      <span class="fix-deparute-content">
+                        <span class="fw-bold fix-deparute-content-header-sm"
+                          >Status</span
+                        >
+                        <span class="text-muted"
+                          ><i
+                            class="fa-regular fa-circle-xmark me-1 text-danger"
+                          ></i
+                          >Closed</span
+                        >
+                      </span>
+                    </td>
+                    <td>
+                      <span class="fix-deparute-content">
+                        <span class="fw-bold fix-deparute-content-header-sm"
+                          >Price</span
+                        >
+                        <span class="text-muted">US$ 1090/- pp</span>
+                      </span>
+                    </td>
+                    <td
+                      class="text-center fix-departure-date-table-btn-disable"
                     >
-                      <i class="fa-solid fa-circle-check me-1 text-success"></i>
-                      Available
-                    </button>
-                  </td>
-                  <td>
-                    <button class="btn btn-sm btn-outline-dark">
-                      Book Now
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <i class="fa-regular fa-calendar-xmark me-1"></i>
-                    April 25, 2023
-                  </td>
-                  <td><i class="fa-solid fa-users me-1"></i>12/12</td>
-                  <td>
-                    <button
-                      type="button"
-                      class="btn fix-departure-date-tooltip"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      data-bs-title="Trip is available and you can book your trip"
-                    >
-                      <i class="fa-solid fa-circle-xmark me-1 text-danger"></i>
-                      Close
-                    </button>
-                  </td>
-                  <td>
-                    <button class="btn btn-sm btn-danger disabled">
-                      Unavailable
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                      <button class="btn btn-secondary disabled">
+                        Unavailable
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
 
           <div class="container mt-5">
