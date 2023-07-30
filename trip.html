@@ -116,11 +116,20 @@
                                   class="fw-bold fix-deparute-content-header-sm"
                                   >Status</span
                                 >
-                                <span class="text-muted"
+                                <span
+                                  class="text-muted fix-departure-date-status"
                                   ><i
                                     class="fa-regular fa-circle-check me-1 text-success"
                                   ></i
-                                  >Available</span
+                                  ><button
+                                    type="button"
+                                    class="btn"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    data-bs-title="Trip is avaliable"
+                                  >
+                                    Available
+                                  </button></span
                                 >
                               </span>
                             </td>
@@ -167,11 +176,20 @@
                                   class="fw-bold fix-deparute-content-header-sm"
                                   >Status</span
                                 >
-                                <span class="text-muted"
+                                <span
+                                  class="text-muted fix-departure-date-status"
                                   ><i
                                     class="fa-regular fa-circle-xmark me-1 text-danger"
                                   ></i
-                                  >Closed</span
+                                  ><button
+                                    type="button"
+                                    class="btn"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    data-bs-title="Seat are not avaliable"
+                                  >
+                                    Closed
+                                  </button></span
                                 >
                               </span>
                             </td>
@@ -1370,11 +1388,19 @@
                         <span class="fw-bold fix-deparute-content-header-sm"
                           >Status</span
                         >
-                        <span class="text-muted"
+                        <span class="text-muted fix-departure-date-status"
                           ><i
                             class="fa-regular fa-circle-check me-1 text-success"
                           ></i
-                          >Available</span
+                          ><button
+                            type="button"
+                            class="btn"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            data-bs-title="Trip is avaliable"
+                          >
+                            Available
+                          </button></span
                         >
                       </span>
                     </td>
@@ -1415,11 +1441,19 @@
                         <span class="fw-bold fix-deparute-content-header-sm"
                           >Status</span
                         >
-                        <span class="text-muted"
+                        <span class="text-muted fix-departure-date-status"
                           ><i
                             class="fa-regular fa-circle-xmark me-1 text-danger"
                           ></i
-                          >Closed</span
+                          ><button
+                            type="button"
+                            class="btn"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            data-bs-title="Seat are not avaliable"
+                          >
+                            Closed
+                          </button></span
                         >
                       </span>
                     </td>
@@ -2326,5 +2360,15 @@
     ></script>
 
     <script src="js/script.js"></script>
+
+    <!-- enable tooltip -->
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
   </body>
 </html>

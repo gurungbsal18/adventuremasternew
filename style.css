@@ -190,6 +190,13 @@ p {
 .fix-departure-date-table .fix-deparute-content-header-sm {
   display: none;
 }
+.fix-departure-date-table .fix-departure-date-status {
+  display: flex;
+  align-items: center;
+}
+.fix-departure-date-table .fix-departure-date-status button {
+  padding: 0;
+}
 .fix-departure-date-table .button-container {
   text-align: center;
 }

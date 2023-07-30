@@ -221,6 +221,14 @@ $gray-900: #212529;
     display: none;
   }
 
+  .fix-departure-date-status {
+    display: flex;
+    align-items: center;
+    button {
+      padding: 0;
+    }
+  }
+
   .button-container {
     text-align: center;
   }
