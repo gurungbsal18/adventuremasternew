@@ -781,6 +781,7 @@ $gray-900: #212529;
 }
 
 .review {
+  justify-content: center;
   &-section {
     background: #f8f9fa;
     height: auto;
@@ -796,6 +797,14 @@ $gray-900: #212529;
 
   .traveler-review {
     font-size: 18px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 100px;
+  }
+  .review-read-btn {
+    width: max-content !important;
   }
 }
 

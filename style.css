@@ -722,6 +722,9 @@ p {
   width: 100%;
 }
 
+.review {
+  justify-content: center;
+}
 .review-section {
   background: #f8f9fa;
   height: auto;
@@ -736,6 +739,15 @@ p {
 }
 .review .traveler-review {
   font-size: 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 100px;
+}
+.review .review-read-btn {
+  width: -moz-max-content !important;
+  width: max-content !important;
 }
 
 .review-image img {
