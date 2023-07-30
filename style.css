@@ -201,6 +201,12 @@ p {
   border-radius: 4px;
   cursor: pointer;
 }
+.fix-departure-date-table tbody .fix-departure-date-table-btn {
+  text-align: left;
+}
+.fix-departure-date-table tbody .fix-departure-date-table-btn-disable {
+  text-align: left;
+}
 @media screen and (max-width: 600px) {
   .fix-departure-date-table table thead {
     display: none;
@@ -221,10 +227,12 @@ p {
   .fix-departure-date-table tbody .fix-departure-date-table-btn {
     width: 100%;
     background-color: #198754;
+    text-align: center;
   }
   .fix-departure-date-table tbody .fix-departure-date-table-btn-disable {
     width: 100%;
     background-color: #6c757d;
+    text-align: center;
   }
 }
 
