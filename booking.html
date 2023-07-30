@@ -18,6 +18,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
+    <!-- Flatpickr CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
   </head>
   <body>
     <nav class="top-nav-booking row">
@@ -33,42 +39,150 @@
       </div>
     </nav>
 
-    <div class="container">
-      <h4 class="fw-bold mt-5">Booking Details</h4>
-      <div class="row mt-4">
-        <div class="col-8">
-          <h5 class="fw-bold">Traveler Information</h5>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="UTF-8" />
+        <title>Booking Form</title>
+        <!-- Bootstrap 5 CSS -->
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        />
+      </head>
+      <body>
+        <div class="container my-5">
           <div class="row">
-            <div class="col-auto">
-              <label for="Arrival date">Arrival date</label><br />
-              <input type="date" />
-            </div>
-            <div class="col-auto">
-              <label for="Departure date">Departure Date</label><br />
-              <input type="date" />
-            </div>
-          </div>
-          <div class="row mt-4">
-            <p class="mb-0 fw-bold">Number of traveller</p>
-            <div class="col-auto">
-              <label for="Adult Number">Adult</label><br />
-              <input type="number" />
-            </div>
-            <div class="col-auto">
-              <label for="Children Number">Children</label><br />
-              <input type="number" />
-            </div>
-          </div>
+            <div class="col-md-8">
+              <h2>Booking Form</h2>
+              <form id="bookingForm" class="form-group bookingform-page">
+                <div class="row mb-3">
+                  <div class="col">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="fullName"
+                      required
+                    />
+                  </div>
+                  <div class="col">
+                    <label for="dateOfTravel" class="form-label"
+                      >Date of Travel</label
+                    >
+                    <!-- <input
+                      type="date"
+                      class="form-control"
+                      id="dateOfTravel"
+                      required
+                    /> -->
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="dateOfTravel"
+                      placeholder="Select a date"
+                    />
+                  </div>
+                </div>
 
-          <div class="row mt-4">
-            <p class="fw-bold mb-0">Name of trip</p>
-            <p class="fw-bold">Everest Base Camp Trek - 14 Days</p>
+                <div class="row mb-3">
+                  <div class="col">
+                    <label for="numAdults" class="form-label"
+                      >Number of Adults</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="numAdults"
+                      min="1"
+                      required
+                    />
+                  </div>
+                  <div class="col">
+                    <div class="mb-3">
+                      <label for="numChildren" class="form-label"
+                        >Number of Children</label
+                      >
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="numChildren"
+                        min="0"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <label for="emailAddress" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="emailAddress"
+                      min="0"
+                      required
+                    />
+                  </div>
+                  <div class="col">
+                    <label for="phoneNumber" class="form-label"
+                      >Phone/WhatsApp/Wechat</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="phoneNumber"
+                      min="0"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-4">
+              <h2>Booking Details</h2>
+              <p>
+                <strong>Full Name:</strong> <span id="outputFullName"></span>
+              </p>
+              <p>
+                <strong>Date of Travel:</strong>
+                <span id="outputDateOfTravel"></span>
+              </p>
+              <p>
+                <strong>Number of Adults:</strong>
+                <span id="outputNumAdults"></span>
+              </p>
+              <p>
+                <strong>Number of Children:</strong>
+                <span id="outputNumChildren"></span>
+              </p>
+              <p>
+                <strong>Email Address:</strong>
+                <span id="outputemailAddress"></span>
+              </p>
+              <p>
+                <strong>Phone Number:</strong>
+                <span id="outputphoneNumber"></span>
+              </p>
+              <p><strong>Message:</strong> <span id="outputMessage"></span></p>
+            </div>
           </div>
         </div>
-        <div class="col-4">
-          <h5 class="fw-bold">Booking Information</h5>
-        </div>
-      </div>
-    </div>
+
+        <!-- Bootstrap 5 JS  -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+        <!-- Flatpickr JS -->
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script src="js/bookingPage.js"></script>
+      </body>
+    </html>
   </body>
 </html>

@@ -53,3 +53,11 @@ costExcludeTab.addEventListener("click", function () {
   document.querySelector(".cost-exclude-tab-content").style.display = "block";
   document.querySelector(".cost-include-tab-content").style.display = "none";
 });
+
+// enable tooltip
+const tooltipTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="tooltip"]'
+);
+const tooltipList = [...tooltipTriggerList].map(
+  (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+);
