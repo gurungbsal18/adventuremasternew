@@ -40,32 +40,30 @@
             <p><span class="text-warning">Activity: </span>Trekking</p>
             <p><span class="text-warning">Price: </span> US$ 1400/- pp</p>
             <!-- Fix departure date Button trigger modal -->
+            <!-- Button to trigger the modal -->
             <button
               type="button"
               class="btn btn-warning"
               data-bs-toggle="modal"
-              data-bs-target="#EBCFixDateModal"
+              data-bs-target="#exampleModal"
             >
               View Fix Departure Date
             </button>
 
-            <!-- fix depadture date Modal -->
+            <!-- Modal -->
             <div
-              class="modal fade fix-departure-date-table"
-              id="EBCFixDateModal"
+              class="modal fade"
+              id="exampleModal"
               tabindex="-1"
-              aria-labelledby="EBCFixDateModalLabel"
+              aria-labelledby="exampleModalLabel"
               aria-hidden="true"
             >
-              <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1
-                      class="modal-title text-dark fs-5"
-                      id="EBCFixDateModalLabel"
-                    >
-                      EBC Trek Fix Departure Date
-                    </h1>
+                    <h5 class="modal-title text-dark" id="exampleModalLabel">
+                      Fix Departure Date
+                    </h5>
                     <button
                       type="button"
                       class="btn-close"
@@ -74,81 +72,134 @@
                     ></button>
                   </div>
                   <div class="modal-body">
-                    <table class="table table-hover">
-                      <thead>
-                        <tr>
-                          <td>Date</td>
-                          <td>Avaibility</td>
-                          <td>Status</td>
-                          <td>Action</td>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <i class="fa-regular fa-calendar-check me-1"></i>
-                            April 5, 2023
-                          </td>
-                          <td><i class="fa-solid fa-users me-1"></i>2/12</td>
-                          <td>
-                            <button
-                              type="button"
-                              class="btn fix-departure-date-tooltip"
-                              data-bs-toggle="tooltip"
-                              data-bs-placement="top"
-                              data-bs-title="Trip is available and you can book your trip"
+                    <!-- Table goes here -->
+                    <div class="fix-departure-date-table">
+                      <table class="table table-bordered">
+                        <thead class="thead-light">
+                          <tr>
+                            <th>Date</th>
+                            <th>Group</th>
+                            <th>Status</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <span class="fix-deparute-content">
+                                <span
+                                  class="fw-bold fix-deparute-content-header-sm"
+                                  >Date</span
+                                >
+                                <span class="text-muted">August 15, 2023</span>
+                              </span>
+                            </td>
+                            <td>
+                              <span class="fix-deparute-content">
+                                <span
+                                  class="fw-bold fix-deparute-content-header-sm"
+                                  >Group</span
+                                >
+                                <span class="text-muted"
+                                  ><i class="fa-solid fa-user-group me-1"></i
+                                  >2/12</span
+                                >
+                              </span>
+                            </td>
+                            <td>
+                              <span class="fix-deparute-content">
+                                <span
+                                  class="fw-bold fix-deparute-content-header-sm"
+                                  >Status</span
+                                >
+                                <span class="text-muted"
+                                  ><i
+                                    class="fa-regular fa-circle-check me-1 text-success"
+                                  ></i
+                                  >Available</span
+                                >
+                              </span>
+                            </td>
+                            <td>
+                              <span class="fix-deparute-content">
+                                <span
+                                  class="fw-bold fix-deparute-content-header-sm"
+                                  >Price</span
+                                >
+                                <span class="text-muted">US$ 1090/- pp</span>
+                              </span>
+                            </td>
+                            <td
+                              class="text-center fix-departure-date-table-btn"
                             >
-                              <i
-                                class="fa-solid fa-circle-check me-1 text-success"
-                              ></i>
-                              Available
-                            </button>
-                          </td>
-                          <td>
-                            <button class="btn btn-sm btn-outline-dark">
-                              Book Now
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <i class="fa-regular fa-calendar-xmark me-1"></i>
-                            April 25, 2023
-                          </td>
-                          <td><i class="fa-solid fa-users me-1"></i>12/12</td>
-                          <td>
-                            <button
-                              type="button"
-                              class="btn fix-departure-date-tooltip"
-                              data-bs-toggle="tooltip"
-                              data-bs-placement="top"
-                              data-bs-title="Trip is available and you can book your trip"
+                              <button class="btn btn-success">Book Now</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="fix-deparute-content">
+                                <span
+                                  class="fw-bold fix-deparute-content-header-sm"
+                                  >Date</span
+                                >
+                                <span class="text-muted">August 25, 2023</span>
+                              </span>
+                            </td>
+                            <td>
+                              <span class="fix-deparute-content">
+                                <span
+                                  class="fw-bold fix-deparute-content-header-sm"
+                                  >Group</span
+                                >
+                                <span class="text-muted"
+                                  ><i class="fa-solid fa-user-group me-1"></i
+                                  >12/12</span
+                                >
+                              </span>
+                            </td>
+                            <td>
+                              <span class="fix-deparute-content">
+                                <span
+                                  class="fw-bold fix-deparute-content-header-sm"
+                                  >Status</span
+                                >
+                                <span class="text-muted"
+                                  ><i
+                                    class="fa-regular fa-circle-xmark me-1 text-danger"
+                                  ></i
+                                  >Closed</span
+                                >
+                              </span>
+                            </td>
+                            <td>
+                              <span class="fix-deparute-content">
+                                <span
+                                  class="fw-bold fix-deparute-content-header-sm"
+                                  >Price</span
+                                >
+                                <span class="text-muted">US$ 1090/- pp</span>
+                              </span>
+                            </td>
+                            <td
+                              class="text-center fix-departure-date-table-btn-disable"
                             >
-                              <i
-                                class="fa-solid fa-circle-xmark me-1 text-danger"
-                              ></i>
-                              Close
-                            </button>
-                          </td>
-                          <td>
-                            <button class="btn btn-sm btn-danger disabled">
-                              Unavailable
-                            </button>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                              <button class="btn btn-secondary disabled">
+                                Unavailable
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                   <div class="modal-footer">
                     <button
                       type="button"
-                      class="btn btn-sm btn-outline-secondary"
+                      class="btn btn-secondary"
                       data-bs-dismiss="modal"
                     >
                       Close
-                    </button>
-                    <button type="button" class="btn btn-sm btn-dark">
-                      Send Inquiry
                     </button>
                   </div>
                 </div>
