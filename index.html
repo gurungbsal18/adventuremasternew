@@ -2829,25 +2829,7 @@
       onload="this.loadtrk=true"
     ></script>
     <script src="js/script.js"></script>
-
-    <!-- searchbar date picker -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        flatpickr("#dateInput", {
-          dateFormat: "Y-m-d", // Format of the selected date (change as needed)
-          enableTime: false, // Set to true if you want to enable time selection as well
-        });
-      });
-    </script>
-
-    <!-- enable tooltip -->
-    <script>
-      const tooltipTriggerList = document.querySelectorAll(
-        '[data-bs-toggle="tooltip"]'
-      );
-      const tooltipList = [...tooltipTriggerList].map(
-        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
-      );
-    </script>
+    <script src="js/tooltip.js"></script>
+    <script src="js/datePicker.js"></script>
   </body>
 </html>
