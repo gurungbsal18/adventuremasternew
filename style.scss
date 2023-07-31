@@ -738,6 +738,8 @@ $gray-900: #212529;
   }
   &-icon-title {
     font-size: 16px;
+    font-weight: 700;
+    color: #212529bf;
   }
   &-icon-content {
     font-size: 14px;
@@ -863,5 +865,37 @@ $gray-900: #212529;
       line-height: 1.7;
       padding: 0;
     }
+  }
+}
+
+.itinerary-icon-info {
+  margin-top: 0.5rem;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+    li {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      &::before {
+        font-family: FontAwesome;
+        margin-right: 5px;
+        color: #212529bf;
+      }
+    }
+  }
+  li.meals::before {
+    content: "\f2e7";
+  }
+  li.accommodation::before {
+    content: "\f236";
+  }
+  li.travel-distance::before {
+    content: "\f6ec";
+  }
+  li.duration::before {
+    content: "\f017";
   }
 }

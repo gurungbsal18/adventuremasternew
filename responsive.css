@@ -805,6 +805,16 @@ p {
   padding: 0;
 }
 
+.itinerary-icon-info ul {
+  display: flex;
+}
+.itinerary-icon-info ul li {
+  list-style: none;
+}
+.itinerary-icon-info li.meals::before {
+  content: "\f1fe";
+}
+
 @media (max-width: 567px) {
   p {
     font-size: 14px;
