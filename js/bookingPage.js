@@ -27,6 +27,7 @@ document.getElementById("message").addEventListener("input", function () {
   document.getElementById("outputMessage").innerText = this.value;
 });
 
+// date picker
 document.addEventListener("DOMContentLoaded", function () {
   flatpickr("#dateOfTravel", {
     dateFormat: "Y-m-d", // Format of the selected date (change as needed)
