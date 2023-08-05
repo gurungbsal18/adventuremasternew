@@ -899,3 +899,18 @@ $gray-900: #212529;
     content: "\f017";
   }
 }
+
+.booking-image {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.booking-safe-msg {
+  // background: $gray-200;
+  border-radius: 7px;
+  p {
+    margin: 0;
+  }
+}

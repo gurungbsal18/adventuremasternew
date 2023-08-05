@@ -685,6 +685,8 @@ p {
 }
 .detail-itinerary-icon-title {
   font-size: 16px;
+  font-weight: 700;
+  color: rgba(33, 37, 41, 0.7490196078);
 }
 .detail-itinerary-icon-content {
   font-size: 14px;
@@ -805,14 +807,42 @@ p {
   padding: 0;
 }
 
+.itinerary-icon-info {
+  margin-top: 0.5rem;
+}
 .itinerary-icon-info ul {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
 }
 .itinerary-icon-info ul li {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.itinerary-icon-info ul li::before {
+  font-family: FontAwesome;
+  margin-right: 5px;
+  color: rgba(33, 37, 41, 0.7490196078);
 }
 .itinerary-icon-info li.meals::before {
-  content: "\f1fe";
+  content: "\f2e7";
+}
+.itinerary-icon-info li.accommodation::before {
+  content: "\f236";
+}
+.itinerary-icon-info li.travel-distance::before {
+  content: "\f6ec";
+}
+.itinerary-icon-info li.duration::before {
+  content: "\f017";
+}
+
+.booking-image {
+  height: 300px;
+  width: 100%;
+  border: 1px solid #000;
 }
 
 @media (max-width: 567px) {

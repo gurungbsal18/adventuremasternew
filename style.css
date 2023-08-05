@@ -837,4 +837,18 @@ p {
 }
 .itinerary-icon-info li.duration::before {
   content: "\f017";
+}
+
+.booking-image {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.booking-safe-msg {
+  border-radius: 7px;
+}
+.booking-safe-msg p {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
