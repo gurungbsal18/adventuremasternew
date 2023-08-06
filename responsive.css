@@ -897,6 +897,30 @@ p {
   position: relative;
 }
 
+.popover .popover-header {
+  background: #ffc107;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 4px 5px;
+  border: 0;
+}
+.popover .popover-header a {
+  text-decoration: none;
+  color: #000;
+}
+.popover .popover-header a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.popover-arrow:before {
+  display: none;
+}
+
+.popover-arrow:after {
+  border-top-color: #ffc107 !important;
+}
+
 .menu img {
   width: 100%;
   -o-object-fit: cover;
@@ -914,6 +938,12 @@ p {
 .menu-map ul li a {
   color: #ffc107;
   cursor: pointer !important;
+}
+
+.menu-map .location {
+  background: transparent;
+  border: none;
+  color: #ffc107;
 }
 
 .menu-map ul li:nth-child(1) {
@@ -944,6 +974,42 @@ p {
   top: 60%;
   left: 59%;
   position: absolute;
+}
+
+.menu-whtasapp::before {
+  content: "\f232";
+  font-family: "FontAwesome";
+  color: #198754;
+  margin-right: 5px;
+  font-size: 21px;
+}
+
+.menu-email::before {
+  content: "\f0e0";
+  font-family: "FontAwesome";
+  margin-right: 5px;
+}
+
+.menu-bar::after {
+  content: "\f00d";
+  font-family: "FontAwesome";
+  margin-left: 5px;
+}
+
+.expand-menu {
+  display: none;
+  position: fixed;
+  z-index: 101;
+}
+.expand-menu .menu-logo img {
+  width: 140px;
+}
+.expand-menu .menu-logo .container {
+  padding: 0 !important;
+}
+
+.menu-list-2 {
+  display: hide;
 }
 
 @media (max-width: 567px) {
@@ -1110,6 +1176,15 @@ p {
   .menu .dropdown-menu a {
     white-space: break-spaces;
     font-size: 14px;
+  }
+  .top-nav-booking {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+  }
+  .top-nav-booking .logo img {
+    height: 90px !important;
   }
 }
 @media (max-width: 900px) {

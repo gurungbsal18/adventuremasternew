@@ -1006,4 +1006,8 @@ p {
 }
 .expand-menu .menu-logo .container {
   padding: 0 !important;
+}
+
+.menu-list-2 {
+  display: hide;
 }/*# sourceMappingURL=style.css.map */
