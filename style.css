@@ -487,6 +487,10 @@ p {
   align-items: center;
   padding-left: calc(var(--bs-gutter-x) * 0.5);
 }
+.trip-nav-price a {
+  text-decoration: none;
+  color: #000;
+}
 
 .trip-nav-menu-item {
   gap: 60px;
