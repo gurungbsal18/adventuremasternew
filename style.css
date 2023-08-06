@@ -1004,6 +1004,7 @@ p {
   display: none;
   position: fixed;
   z-index: 101;
+  overflow-y: scroll;
 }
 .expand-menu .menu-logo img {
   width: 140px;

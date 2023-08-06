@@ -1075,6 +1075,7 @@ $gray-900: #212529;
   display: none;
   position: fixed;
   z-index: 101;
+  overflow-y: scroll;
   .menu-logo {
     img {
       width: 140px;
