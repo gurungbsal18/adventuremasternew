@@ -12,6 +12,10 @@
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous" />
+    <!-- Flatpickr CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
     <!-- fontawesome 6 cdn -->
     <link
       rel="stylesheet"
@@ -2049,6 +2053,8 @@
       </div>
     </div>
 
+    <!-- footer starts -->
+
     <footer class="footer pt-5">
       <div class="container">
         <div class="row footer-row">
@@ -2163,9 +2169,36 @@
           </div>
         </div>
         <div class="text-center mt-3">
-          <h4>Recommended On</h4>
+          <h4 class="fw-bold">Recommended On</h4>
           <div class="tripadvisor-footer">
-            <TripAdvisorReview />
+            <div
+              class="container d-flex justify-content-center align-items-center pb-4">
+              <div
+                id="TA_cdsratingsonlynarrow708"
+                class="TA_cdsratingsonlynarrow">
+                <ul id="TSTiuTynyd" class="TA_links VVCIg3ncaQz">
+                  <li id="vynAYhYSN" class="NRG3HDT8">
+                    <a
+                      target="_blank"
+                      href="https://www.tripadvisor.com/Attraction_Review-g293890-d8661857-Reviews-Adventure_Master_Trek-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html"
+                      ><img
+                        src="https://www.tripadvisor.com/img/cdsi/img2/branding/v2/Tripadvisor_lockup_horizontal_secondary_registered-18034-2.svg"
+                        alt="TripAdvisor"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="trip-advisor-traveler-choice">
+                <a
+                  href="https://www.tripadvisor.com/Attraction_Review-g293890-d8661857-Reviews-Adventure_Master_Trek-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html"
+                  target="_blank">
+                  <img
+                    src="images/tripadvisor.gif"
+                    alt="trip advisor travller choice award" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="text-center mt-5">
@@ -2239,7 +2272,7 @@
             Registration No: 74651/067/068 | Tourism Registration No: 1180-067
           </strong>
         </p>
-        <p style="font-size: 18px">
+        <p>
           <strong>Privacy and Policy</strong>
         </p>
 
@@ -2250,6 +2283,7 @@
         </p>
       </div>
     </footer>
+    <!-- footer ends -->
 
     <div class="mobile-trip-price d-md-none d-sm-block">
       <p class="m-0 trip-title">Everest Base Camp Trel - 14 Days</p>
@@ -2268,13 +2302,31 @@
       <button class="scroll-top"><i class="fa-solid fa-up-long"></i></button>
     </div>
     <!-- Bootstrap js cdn -->
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"></script>
+
+    <!-- Bootstrap 5 JS and Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <!-- tripadvisor -->
+    <script
+      async
+      src="https://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&amp;uniq=708&amp;locationId=8661857&amp;lang=en_US&amp;border=true&amp;shadow=false&amp;backgroundColor=white&amp;display_version=2"
+      data-loadtrk
+      onload="this.loadtrk=true"></script>
+    <script
+      async
+      src="https://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=884&amp;locationId=8661857&amp;lang=en_US&amp;year=2023&amp;display_version=2"
+      data-loadtrk
+      onload="this.loadtrk=true"></script>
     <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
     <script src="js/tooltip.js"></script>
+    <script src="js/datePicker.js"></script>
   </body>
 </html>
