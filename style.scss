@@ -243,6 +243,10 @@ $gray-900: #212529;
   }
   tbody .fix-departure-date-table-btn {
     text-align: left;
+    a {
+      text-decoration: none;
+      color: $white;
+    }
   }
   tbody .fix-departure-date-table-btn-disable {
     text-align: left;
