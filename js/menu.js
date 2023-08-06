@@ -18,16 +18,16 @@ mobileMenuBar.addEventListener("click", function () {
   //   console.log("helo");
 });
 
-let menuItem1 = document.querySelector(".menu-item-1");
-let menuItem2 = document.querySelector(".menu-item-2");
-let menuList1 = document.querySelector(".menu-list-1");
-let menuList2 = document.querySelector(".menu-list-2");
+let menuItem1 = document.getElementById("menu-item-1");
+let menuItem2 = document.getElementById("menu-item-2");
+let menuList1 = document.getElementById("menu-list-1");
+let menuList2 = document.getElementById("menu-list-2");
 
 menuItem1.addEventListener("click", function () {
   menuList1.style.display = "block";
-  menuList2.style.display = "hide";
+  menuList2.style.display = "none";
 });
 menuItem2.addEventListener("click", function () {
-  menuList1.style.display = "hide";
+  menuList1.style.display = "none";
   menuList2.style.display = "block";
 });
