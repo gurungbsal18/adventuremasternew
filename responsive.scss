@@ -188,6 +188,26 @@
       text-align: center;
     }
   }
+
+  .menu {
+    ul {
+      padding: 0;
+    }
+    h4 {
+      font-size: 21px;
+      text-align: center;
+    }
+    &-map {
+      border: none;
+    }
+  }
+
+  .menu .dropdown-menu {
+    a {
+      white-space: break-spaces;
+      font-size: 14px;
+    }
+  }
 }
 
 @media (max-width: 900px) {

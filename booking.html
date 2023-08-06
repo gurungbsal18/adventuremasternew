@@ -1,47 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adventure Master Trek</title>
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- bootstrap cdn -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
-  <!-- fontawesome 6 cdn -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-  <!-- Flatpickr CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
-</head>
-
-<body>
-  <nav class="top-nav-booking row">
-    <div class="col-auto logo">
-      <a href="index.html"><img src="images/logo-white.png" alt="" /></a>
-    </div>
-    <div class="col-auto nav-icons">
-      <div class="navbar">
-        <i class="fa-solid fa-magnifying-glass fs-5"></i>
-      </div>
-      <div class="navbar"><i class="fa-solid fa-language fs-5"></i></div>
-      <div class="navbar"><i class="fa-solid fa-bars fs-5"></i></div>
-    </div>
-  </nav>
-
-  <!DOCTYPE html>
-  <html>
-
   <head>
     <meta charset="UTF-8" />
-    <title>Booking Form</title>
-    <!-- Bootstrap 5 CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventure Master Trek</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous" />
+    <!-- fontawesome 6 cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Flatpickr CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
   </head>
 
   <body>
+    <div class="container-fluid expand-menu" style="background: #1a1a1a">
+      <div class="menu container">
+        <div
+          class="menu-logo d-flex justify-content-between align-items-center">
+          <img src="images/logo-white.png" alt="adventure master trek logo" />
+          <span class="menu-bar" id="sm-menu-toggle"></span>
+        </div>
+        <div class="row">
+          <h4 class="mt-5">Most Popular Trekking Region</h4>
+          <div class="col-md-8 col-sm-12 menu-map">
+            <img src="images/map.png" alt="" />
+            <div>
+              <ul>
+                <li>
+                  <!-- <a href="#"> -->
+                  <button
+                    class="location"
+                    data-bs-toggle="popover"
+                    data-bs-placement="top"
+                    data-bs-html="true"
+                    data-bs-trigger="focus"
+                    data-bs-title="<a href='#'>Explore Everest Region</a>">
+                    <i class="fa-solid fa-location-dot fa-beat-fade"></i>
+                  </button>
+                  <!-- </a> -->
+                </li>
+                <li>
+                  <!-- <a href="#"> -->
+                  <button
+                    class="location"
+                    data-bs-toggle="popover"
+                    data-bs-placement="top"
+                    data-bs-html="true"
+                    data-bs-trigger="focus"
+                    data-bs-title="<a href='#'>Explore Annapurna Region</a>">
+                    <i class="fa-solid fa-location-dot fa-beat-fade"></i>
+                  </button>
+                  <!-- </a> -->
+                </li>
+                <li>
+                  <!-- <a href="#"> -->
+                  <button
+                    class="location"
+                    data-bs-toggle="popover"
+                    data-bs-placement="top"
+                    data-bs-html="true"
+                    data-bs-trigger="focus"
+                    data-bs-title="<a href='#'>Explore Manaslu Region</a>">
+                    <i class="fa-solid fa-location-dot fa-beat-fade"></i>
+                  </button>
+                  <!-- </a> -->
+                </li>
+                <li>
+                  <!-- <a href="#"> -->
+                  <button
+                    class="location"
+                    data-bs-toggle="popover"
+                    data-bs-placement="top"
+                    data-bs-html="true"
+                    data-bs-trigger="focus"
+                    data-bs-title="<a href='#'>Explore Everest Region</a>">
+                    <i class="fa-solid fa-location-dot fa-beat-fade"></i>
+                  </button>
+                  <!-- </a> -->
+                </li>
+                <li>
+                  <!-- <a href="contact.html"> -->
+                  <button
+                    class="location"
+                    data-bs-toggle="popover"
+                    data-bs-placement="top"
+                    data-bs-html="true"
+                    data-bs-trigger="focus"
+                    data-bs-title="<a href='#'>About us</a>">
+                    <i class="fa-solid fa-map-pin fa-bounce"></i>
+                  </button>
+                  <!-- </a> -->
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 d-flex flex-column">
+            <ul>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Trekking
+                </a>
+                <ul class="dropdown-menu pb-0">
+                  <li>
+                    <a class="dropdown-item" href="trip.html"
+                      >Everest Base Camp Trek - 14 Days</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="trip.html"
+                      >Everest Base Camp Heli Return Trek - 9 Days</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Annapurna Base Camp Trek -12 Days</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider mt-0" /></li>
+                  <li
+                    class="menu-view-btn bg-secondary-subtle text-center py-1">
+                    <a href="#" style="text-decoration: none; color: #000"
+                      >View all</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Heli Tours
+                </a>
+                <ul class="dropdown-menu pb-0">
+                  <li>
+                    <a class="dropdown-item" href="trip.html"
+                      >Everest Base Camp Heli Tour</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="trip.html"
+                      >Annapurna Base Camp Heli Tour</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Gosainkunda Heli Tour</a>
+                  </li>
+                  <li><hr class="dropdown-divider mt-0" /></li>
+                  <li
+                    class="menu-view-btn bg-secondary-subtle text-center py-1">
+                    <a href="#" style="text-decoration: none; color: #000"
+                      >View all</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Day Tour
+                </a>
+                <ul class="dropdown-menu pb-0">
+                  <li>
+                    <a class="dropdown-item" href="trip.html"
+                      >Kathmandu Heritage Tour</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="trip.html"
+                      >Nagarkot Hiking</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Chandragiri Hiking</a>
+                  </li>
+                  <li><hr class="dropdown-divider mt-0" /></li>
+                  <li
+                    class="menu-view-btn bg-secondary-subtle text-center py-1">
+                    <a href="#" style="text-decoration: none; color: #000"
+                      >View all</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Destination
+                </a>
+                <ul class="dropdown-menu pb-0">
+                  <li>
+                    <a class="dropdown-item" href="trip.html">Nepal</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="trip.html">Tibet</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Bhutan</a>
+                  </li>
+                  <li><hr class="dropdown-divider mt-0" /></li>
+                  <li
+                    class="menu-view-btn bg-secondary-subtle text-center py-1">
+                    <a href="#" style="text-decoration: none; color: #000"
+                      >View all</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="menu-dropdown">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+            <ul class="">
+              <li>For more information</li>
+              <li class="menu-whtasapp">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=9779841033195&text&type=phone_number&app_absent=0"
+                  target="_blank"
+                  >+977 9851033195</a
+                >
+              </li>
+              <li class="menu-email">
+                <a href="mailto:info@adventuremastertrek.com"
+                  >info@adventuremastertrek.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="top-nav-booking row">
+      <div class="col-auto logo">
+        <a href="index.html"><img src="images/logo-white.png" alt="" /></a>
+      </div>
+      <div class="col-auto nav-icons">
+        <div class="navbar">
+          <i class="fa-solid fa-magnifying-glass fs-5"></i>
+        </div>
+        <div class="navbar"><i class="fa-solid fa-language fs-5"></i></div>
+        <div class="navbar" id="menu-toggle">
+          <i class="fa-solid fa-bars fs-5"></i>
+        </div>
+      </div>
+    </nav>
+
     <div class="container my-5">
       <div class="row">
         <div class="col-md-8">
@@ -50,68 +283,106 @@
             <div class="row mb-3">
               <div class="col">
                 <label for="fullName" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="fullName" required />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  required />
               </div>
               <div class="col">
-                <label for="dateOfTravel" class="form-label">Date of Travel</label>
+                <label for="dateOfTravel" class="form-label"
+                  >Date of Travel</label
+                >
                 <!-- <input
                       type="date"
                       class="form-control"
                       id="dateOfTravel"
                       required
                     /> -->
-                <input type="text" class="form-control" id="dateOfTravel" placeholder="Select a date" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="dateOfTravel"
+                  placeholder="Select a date" />
               </div>
             </div>
 
             <div class="row mb-3">
               <div class="col">
-                <label for="numAdults" class="form-label">Number of Adults</label>
-                <input type="number" class="form-control" id="numAdults" min="1" required />
+                <label for="numAdults" class="form-label"
+                  >Number of Adults</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="numAdults"
+                  min="1"
+                  required />
               </div>
               <div class="col">
                 <div class="mb-3">
-                  <label for="numChildren" class="form-label">Number of Children</label>
-                  <input type="number" class="form-control" id="numChildren" min="0" />
+                  <label for="numChildren" class="form-label"
+                    >Number of Children</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="numChildren"
+                    min="0" />
                 </div>
               </div>
             </div>
             <div class="row mb-3">
               <div class="col">
                 <label for="emailAddress" class="form-label">Email</label>
-                <input type="email" class="form-control" id="emailAddress" min="0" required />
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailAddress"
+                  min="0"
+                  required />
               </div>
               <div class="col">
-                <label for="phoneNumber" class="form-label">Phone/WhatsApp/Wechat</label>
-                <input type="number" class="form-control" id="phoneNumber" min="0" required />
+                <label for="phoneNumber" class="form-label"
+                  >Phone/WhatsApp/Wechat</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="phoneNumber"
+                  min="0"
+                  required />
               </div>
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="4" required></textarea>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="4"
+                required></textarea>
             </div>
             <div class="text-end">
               <button class="btn btn-dark">Send</button>
             </div>
           </form>
           <div class="booking-safe-msg bg-success-subtle p-3 mt-4">
-            <p class="text-success">"Your online safety is our top priority. Rest assured, we employ state-of-the-art
-              security measures to
-              safeguard your
-              personal information while booking on our website."</p>
+            <p class="text-success">
+              "Your online safety is our top priority. Rest assured, we employ
+              state-of-the-art security measures to safeguard your personal
+              information while booking on our website."
+            </p>
           </div>
         </div>
         <div class="col-md-4">
           <h2>Booking Details</h2>
           <div class="booking-image">
-            <img src="images/EBCTrek/ebc.jpg" alt="">
+            <img src="images/EBCTrek/ebc.jpg" alt="" />
           </div>
           <p>
             <strong>Everest Base Camp Trek -14 Days</strong>
           </p>
-          <p>
-            <strong>Full Name:</strong> <span id="outputFullName"></span>
-          </p>
+          <p><strong>Full Name:</strong> <span id="outputFullName"></span></p>
           <p>
             <strong>Date of Travel:</strong>
             <span id="outputDateOfTravel"></span>
@@ -137,34 +408,49 @@
       </div>
     </div>
 
-
     <footer class="footer pt-5">
       <div class="container">
         <div class="row footer-row">
           <div class="col-sm-12 col-md-12 col-lg-3 mb-3 footer-content">
             <h4 class="footer-title">Adventure Master Trek</h4>
             <p class="footer-contact">
-              <a href="https://api.whatsapp.com/send/?phone=9779851033195&text&type=phone_number&app_absent=0"
-                target="_blank" rel="noreferrer" class="link-hover-black">
+              <a
+                href="https://api.whatsapp.com/send/?phone=9779851033195&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer"
+                class="link-hover-black">
                 <i class="fa-brands fa-whatsapp"></i> +977 9851033195
               </a>
               <br />
-              <a href="mailto:info@adventuremastertrek.com" target="_blank" rel="noreferrer" class="link-hover-black">
+              <a
+                href="mailto:info@adventuremastertrek.com"
+                target="_blank"
+                rel="noreferrer"
+                class="link-hover-black">
                 <i class="fa-regular fa-envelope"></i>
                 info@adventuremastertrek.com
               </a>
               <br />
-              <a href="mailto:advmt2009@gmail.com" target="_blank" rel="noreferrer" class="link-hover-black">
+              <a
+                href="mailto:advmt2009@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+                class="link-hover-black">
                 <i class="fa-regular fa-envelope"></i> advmt2009@gmail.com
               </a>
               <br />
-              <a href="mailto:adventuremastertrek@gmail.com" target="_blank" rel="noreferrer" class="link-hover-black">
+              <a
+                href="mailto:adventuremastertrek@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+                class="link-hover-black">
                 <i class="fa-regular fa-envelope"></i>
                 adventuremastertrek@gmail.com
               </a>
             </p>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 mb-3 useful-link footer-content footer-useful-link">
+          <div
+            class="col-sm-12 col-md-6 col-lg-3 mb-3 useful-link footer-content footer-useful-link">
             <h4 class="footer-title">Useful Links</h4>
             <ul>
               <li class="link-hover-black">Contact us</li>
@@ -192,10 +478,14 @@
           </div>
           <div class="col-md-12 col-lg-3 mb-3 footer-content footer-connect">
             <h4 class="footer-title">Connect with us</h4>
-            <div class="row footer-social-icon d-flex justify-content-center justify-content-md-start">
+            <div
+              class="row footer-social-icon d-flex justify-content-center justify-content-md-start">
               <div class="col-auto">
                 <span class="instaIcon">
-                  <a href="https://www.instagram.com/adventuremastertrek/" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://www.instagram.com/adventuremastertrek/"
+                    target="_blank"
+                    rel="noreferrer">
                     <i class="fa-brands fa-instagram"></i>
                   </a>
                 </span>
@@ -239,7 +529,10 @@
         </div>
         <div class="text-center mt-5">
           <h1>Meet our leadership team</h1>
-          <img src="images/FooterImg/teamFooter.png" alt="adventure master team" style="width: 600px"
+          <img
+            src="images/FooterImg/teamFooter.png"
+            alt="adventure master team"
+            style="width: 600px"
             class="img-fluid" />
         </div>
         <h4 class="text-center pt-5 mb-4 footer-title global-title mb-4">
@@ -249,8 +542,10 @@
           <div class="col-6 col-md-3 col-lg-3 mb-3 text-center">
             <h5 class="footer-title">Nepal</h5>
             <p>
-              <a href="https://api.whatsapp.com/send/?phone=9779849780311&text&type=phone_number&app_absent=0"
-                target="_blank" rel="noreferrer">
+              <a
+                href="https://api.whatsapp.com/send/?phone=9779849780311&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer">
                 <i class="fa-brands fa-whatsapp"></i> +977 9851 033195
               </a>
             </p>
@@ -259,8 +554,10 @@
             <h5 class="footer-title">UK</h5>
 
             <p>
-              <a href="https://api.whatsapp.com/send/?phone=447983806200&text&type=phone_number&app_absent=0"
-                target="_blank" rel="noreferrer">
+              <a
+                href="https://api.whatsapp.com/send/?phone=447983806200&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer">
                 <i class="fa-brands fa-whatsapp"></i> +44 7983 806200
               </a>
             </p>
@@ -269,8 +566,10 @@
           <div class="col-6 col-md-3 col-lg-3 mb-3 text-center">
             <h5 class="footer-title">Bahrain</h5>
             <p>
-              <a href="https://api.whatsapp.com/send/?phone=97334383250&text&type=phone_number&app_absent=0"
-                target="_blank" rel="noreferrer">
+              <a
+                href="https://api.whatsapp.com/send/?phone=97334383250&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer">
                 <i class="fa-brands fa-whatsapp"></i> +973 3438 3250
               </a>
               <br />
@@ -279,8 +578,10 @@
           <div class="col-6 col-md-3 col-lg-3 mb-3 text-center">
             <h5 class="footer-title">Russia</h5>
             <p>
-              <a href="https://api.whatsapp.com/send/?phone=79531748198&text&type=phone_number&app_absent=0"
-                target="_blank" rel="noreferrer">
+              <a
+                href="https://api.whatsapp.com/send/?phone=79531748198&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer">
                 <i class="fa-brands fa-whatsapp"></i> +79 5317 48198
               </a>
               <br />
@@ -313,9 +614,7 @@
     <!-- Flatpickr JS -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="js/bookingPage.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/script.js"></script>
   </body>
-
-  </html>
-</body>
-
 </html>

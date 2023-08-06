@@ -856,9 +856,37 @@ p {
 }
 
 .menu {
+  height: 100vh;
   padding: 15px;
   color: #fff;
   background-color: #1a1a1a;
+}
+.menu ul {
+  list-style: none;
+  line-height: 2;
+}
+.menu ul a {
+  text-decoration: none;
+  color: #fff;
+}
+.menu ul a:hover {
+  color: #ffc107;
+}
+.menu .dropdown-menu a {
+  color: #000;
+}
+.menu .dropdown-menu a:hover {
+  color: #fff;
+  background-color: #6c757d;
+}
+.menu .dropdown-menu .menu-view-btn {
+  color: #000;
+}
+.menu .dropdown-menu .menu-view-btn:hover {
+  background: #6c757d !important;
+}
+.menu .dropdown-menu .menu-view-btn:hover a {
+  color: #fff !important;
 }
 
 .menu-map {
@@ -867,6 +895,30 @@ p {
   display: flex;
   justify-content: flex-start;
   position: relative;
+}
+
+.popover .popover-header {
+  background: #ffc107;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 4px 5px;
+  border: 0;
+}
+.popover .popover-header a {
+  text-decoration: none;
+  color: #000;
+}
+.popover .popover-header a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.popover-arrow:before {
+  display: none;
+}
+
+.popover-arrow:after {
+  border-top-color: #ffc107 !important;
 }
 
 .menu img {
@@ -879,43 +931,79 @@ p {
 .menu-map ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: column !important;
 }
 
 .menu-map ul li a {
   color: #ffc107;
+  cursor: pointer !important;
+}
+
+.menu-map .location {
+  background: transparent;
+  border: none;
+  color: #ffc107;
 }
 
 .menu-map ul li:nth-child(1) {
-  color: #ffc107;
   top: 51%;
   left: 74%;
   position: absolute;
 }
 
 .menu-map ul li:nth-child(2) {
-  color: #ffc107;
   top: 35%;
   left: 43%;
   position: absolute;
 }
 
 .menu-map ul li:nth-child(3) {
-  color: #ffc107;
   top: 45%;
   left: 56%;
   position: absolute;
 }
 
 .menu-map ul li:nth-child(4) {
-  color: #ffc107;
   top: 48%;
   left: 64%;
   position: absolute;
 }
 
 .menu-map ul li:nth-child(5) {
-  color: #ffc107;
   top: 60%;
   left: 59%;
   position: absolute;
+}
+
+.menu-whtasapp::before {
+  content: "\f232";
+  font-family: "FontAwesome";
+  color: #198754;
+  margin-right: 5px;
+  font-size: 21px;
+}
+
+.menu-email::before {
+  content: "\f0e0";
+  font-family: "FontAwesome";
+  margin-right: 5px;
+}
+
+.menu-bar::after {
+  content: "\f00d";
+  font-family: "FontAwesome";
+  margin-left: 5px;
+}
+
+.expand-menu {
+  display: none;
+  position: fixed;
+  z-index: 101;
+}
+.expand-menu .menu-logo img {
+  width: 140px;
+}
+.expand-menu .menu-logo .container {
+  padding: 0 !important;
 }/*# sourceMappingURL=style.css.map */

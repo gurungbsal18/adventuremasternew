@@ -53,3 +53,8 @@ costExcludeTab.addEventListener("click", function () {
   document.querySelector(".cost-exclude-tab-content").style.display = "block";
   document.querySelector(".cost-include-tab-content").style.display = "none";
 });
+
+let menuToggle = document.querySelector(".menu-toggle");
+let expandMenu = document.querySelector(".expand-menu");
+let topNav = document.querySelector(".top-nav");
+let searchBar = document.querySelector(".search-bar");

@@ -924,9 +924,39 @@ $gray-900: #212529;
 // }
 
 .menu {
+  height: 100vh;
   padding: 15px;
   color: $white;
   background-color: #1a1a1a;
+  ul {
+    list-style: none;
+    line-height: 2;
+    a {
+      text-decoration: none;
+      color: $white;
+      &:hover {
+        color: $warning;
+      }
+    }
+  }
+  .dropdown-menu {
+    a {
+      color: $black;
+      &:hover {
+        color: $white;
+        background-color: $secondary;
+      }
+    }
+    .menu-view-btn {
+      color: $black;
+      &:hover {
+        background: $secondary !important;
+        a {
+          color: $white !important;
+        }
+      }
+    }
+  }
 }
 
 .menu-map {
@@ -935,6 +965,29 @@ $gray-900: #212529;
   display: flex;
   justify-content: flex-start;
   position: relative;
+}
+
+.popover .popover-header {
+  background: $warning;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 4px 5px;
+  border: 0;
+  a {
+    text-decoration: none;
+    color: $black;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+.popover-arrow:before {
+  display: none;
+}
+.popover-arrow:after {
+  border-top-color: $warning !important;
 }
 
 .menu img {
@@ -951,9 +1004,18 @@ $gray-900: #212529;
 .menu-map ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: column !important;
 }
 
 .menu-map ul li a {
+  color: $warning;
+  cursor: pointer !important;
+}
+
+.menu-map .location {
+  background: transparent;
+  border: none;
   color: $warning;
 }
 
@@ -981,4 +1043,40 @@ $gray-900: #212529;
   top: 60%;
   left: 59%;
   position: absolute;
+}
+
+.menu-whtasapp::before {
+  content: "\f232";
+  font-family: "FontAwesome";
+  color: $success;
+  margin-right: 5px;
+  font-size: 21px;
+}
+
+.menu-email::before {
+  content: "\f0e0";
+  // color: $warning;
+  font-family: "FontAwesome";
+  margin-right: 5px;
+  // font-size: 21px;
+}
+
+.menu-bar::after {
+  content: "\f00d";
+  font-family: "FontAwesome";
+  margin-left: 5px;
+}
+
+.expand-menu {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  .menu-logo {
+    img {
+      width: 140px;
+    }
+    .container {
+      padding: 0 !important;
+    }
+  }
 }
