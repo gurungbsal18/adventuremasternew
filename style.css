@@ -839,11 +839,13 @@ p {
   content: "\f017";
 }
 
-.booking-image {
+.booking-image img {
   height: 300px;
   width: 100%;
   margin-bottom: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .booking-safe-msg {
@@ -851,4 +853,69 @@ p {
 }
 .booking-safe-msg p {
   margin: 0;
+}
+
+.menu {
+  padding: 15px;
+  color: #fff;
+  background-color: #1a1a1a;
+}
+
+.menu-map {
+  width: 100%;
+  border-right: 1px solid #6c757d;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.menu img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+.menu-map ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-map ul li a {
+  color: #ffc107;
+}
+
+.menu-map ul li:nth-child(1) {
+  color: #ffc107;
+  top: 51%;
+  left: 74%;
+  position: absolute;
+}
+
+.menu-map ul li:nth-child(2) {
+  color: #ffc107;
+  top: 35%;
+  left: 43%;
+  position: absolute;
+}
+
+.menu-map ul li:nth-child(3) {
+  color: #ffc107;
+  top: 45%;
+  left: 56%;
+  position: absolute;
+}
+
+.menu-map ul li:nth-child(4) {
+  color: #ffc107;
+  top: 48%;
+  left: 64%;
+  position: absolute;
+}
+
+.menu-map ul li:nth-child(5) {
+  color: #ffc107;
+  top: 60%;
+  left: 59%;
+  position: absolute;
 }/*# sourceMappingURL=style.css.map */
