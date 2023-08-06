@@ -1016,6 +1016,10 @@ p {
   display: hide;
 }
 
+.menu-list {
+  display: none;
+}
+
 @media (max-width: 567px) {
   p {
     font-size: 14px;
@@ -1194,6 +1198,9 @@ p {
   .top-nav-booking .logo img {
     height: 90px !important;
   }
+  .menu-map {
+    border: none;
+  }
 }
 @media (max-width: 900px) {
   .affiliated-img img {
@@ -1239,5 +1246,8 @@ p {
   }
   .gallery img {
     height: 200px !important;
+  }
+  .menu-map {
+    border: none;
   }
 }/*# sourceMappingURL=responsive.css.map */

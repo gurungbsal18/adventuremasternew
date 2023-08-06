@@ -221,6 +221,9 @@
       height: 90px !important;
     }
   }
+  .menu-map {
+    border: none;
+  }
 }
 
 @media (max-width: 900px) {
@@ -277,6 +280,9 @@
     img {
       height: 200px !important;
     }
+  }
+  .menu-map {
+    border: none;
   }
 }
 
