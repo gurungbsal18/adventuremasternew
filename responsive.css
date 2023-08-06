@@ -487,6 +487,10 @@ p {
   align-items: center;
   padding-left: calc(var(--bs-gutter-x) * 0.5);
 }
+.trip-nav-price a {
+  text-decoration: none;
+  color: #000;
+}
 
 .trip-nav-menu-item {
   gap: 60px;
@@ -1099,6 +1103,10 @@ p {
   }
   .mobile-trip-price .trip-title {
     font-size: 16px;
+  }
+  .mobile-trip-price a {
+    text-decoration: none;
+    color: inherit;
   }
   .trip-price-box {
     display: none;

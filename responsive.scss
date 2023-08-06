@@ -101,6 +101,10 @@
     .trip-title {
       font-size: 16px;
     }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
   }
   .trip-price-box {
     display: none;
