@@ -1097,3 +1097,8 @@ $gray-900: #212529;
 .menu-list {
   display: none;
 }
+
+.menu-item:hover {
+  color: $warning;
+  cursor: pointer;
+}

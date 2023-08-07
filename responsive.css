@@ -211,6 +211,10 @@ p {
 .fix-departure-date-table tbody .fix-departure-date-table-btn {
   text-align: left;
 }
+.fix-departure-date-table tbody .fix-departure-date-table-btn a {
+  text-decoration: none;
+  color: #fff;
+}
 .fix-departure-date-table tbody .fix-departure-date-table-btn-disable {
   text-align: left;
 }
@@ -1004,6 +1008,7 @@ p {
   display: none;
   position: fixed;
   z-index: 101;
+  overflow-y: scroll;
 }
 .expand-menu .menu-logo img {
   width: 140px;

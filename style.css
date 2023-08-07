@@ -1023,4 +1023,9 @@ p {
 
 .menu-list {
   display: none;
+}
+
+.menu-item:hover {
+  color: #ffc107;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
