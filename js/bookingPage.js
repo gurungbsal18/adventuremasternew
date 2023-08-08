@@ -23,6 +23,11 @@ document.getElementById("phoneNumber").addEventListener("input", function () {
   document.getElementById("outputphoneNumber").innerText = this.value;
 });
 
+document.getElementById("country").addEventListener("input", function () {
+  document.getElementById("outputCountry").innerText = this.value;
+});
+
+
 document.getElementById("message").addEventListener("input", function () {
   document.getElementById("outputMessage").innerText = this.value;
 });
