@@ -1025,6 +1025,11 @@ p {
   display: none;
 }
 
+.menu-item:hover {
+  color: #ffc107;
+  cursor: pointer;
+}
+
 @media (max-width: 567px) {
   p {
     font-size: 14px;
