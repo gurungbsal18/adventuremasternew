@@ -21,6 +21,10 @@ p {
   line-height: 1.7;
 }
 
+a {
+  text-decoration: none;
+}
+
 $success: #198754;
 $danger: #dc3545;
 $warning: #ffc107;
@@ -1101,4 +1105,14 @@ $gray-900: #212529;
 .menu-item:hover {
   color: $warning;
   cursor: pointer;
+}
+
+.cost-include-tab::before{
+  content: '\f058';
+  font-family: 'FontAwesome';
+}
+
+.cost-exclude-tab::before{
+  content:'\f057';
+  font-family: 'FontAwesome';
 }

@@ -48,8 +48,16 @@ let costExcludeTab = document.querySelector(".cost-exclude-tab");
 costIncludeTab.addEventListener("click", function () {
   document.querySelector(".cost-include-tab-content").style.display = "block";
   document.querySelector(".cost-exclude-tab-content").style.display = "none";
+  costIncludeTab.classList.add('btn-success');
+  costIncludeTab.classList.remove('btn-outline-success')
+  costExcludeTab.classList.add('btn-outline-danger')
+  costExcludeTab.classList.remove('btn-danger')
 });
 costExcludeTab.addEventListener("click", function () {
   document.querySelector(".cost-exclude-tab-content").style.display = "block";
   document.querySelector(".cost-include-tab-content").style.display = "none";
+  costExcludeTab.classList.add('btn-danger')
+  costExcludeTab.classList.remove('btn-outline-danger')
+  costIncludeTab.classList.add('btn-outline-success')
+  costIncludeTab.classList.remove('btn-success');
 });
