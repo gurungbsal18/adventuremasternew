@@ -39,3 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
     enableTime: false, // Set to true if you want to enable time selection as well
   });
 });
+// date picker
+document.addEventListener("DOMContentLoaded", function () {
+  flatpickr("#inquiryDateOfTravel", {
+    dateFormat: "Y-m-d", // Format of the selected date (change as needed)
+    enableTime: false, // Set to true if you want to enable time selection as well
+  });
+});

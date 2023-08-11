@@ -1074,4 +1074,8 @@ a {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.inquiry-form input {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=style.css.map */
