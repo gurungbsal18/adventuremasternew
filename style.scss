@@ -281,6 +281,7 @@ $gray-900: #212529;
   height: 100vh;
   color: $white;
   background-attachment: fixed;
+  width: 100%;
   .trip-box-content {
     height: 92vh;
     display: flex;
@@ -1134,18 +1135,18 @@ $gray-900: #212529;
   }
 }
 
-.hero-banner-video {
-  // position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: -1;
-  overflow: hidden;
-}
+// .hero-banner-video {
+//   // position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100vh;
+//   z-index: -1;
+//   overflow: hidden;
+// }
 
-.hero-banner-video video {
-  width: 100%;
+.trip-header video {
+  width: 100% !important;
   height: 100vh;
   object-fit: cover;
 }
