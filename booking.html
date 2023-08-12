@@ -165,11 +165,11 @@
 
     <div class="container my-5">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-lg-8 col-md-12">
           <h2>Booking Form</h2>
           <form id="bookingForm" class="form-group bookingform-page">
             <div class="row mb-3">
-              <div class="col">
+              <div class="col-md-6 col-sm-12">
                 <label for="fullName" class="form-label">Full Name</label>
                 <input
                   type="text"
@@ -177,16 +177,10 @@
                   id="fullName"
                   required />
               </div>
-              <div class="col">
+              <div class="col-md-6 col-sm-12">
                 <label for="dateOfTravel" class="form-label"
                   >Date of Travel</label
                 >
-                <!-- <input
-                      type="date"
-                      class="form-control"
-                      id="dateOfTravel"
-                      required
-                    /> -->
                 <input
                   type="text"
                   class="form-control"
@@ -196,7 +190,7 @@
             </div>
 
             <div class="row mb-3">
-              <div class="col">
+              <div class="col-md-6 col-sm-12">
                 <div class="row">
                   <div class="col-lg-6 col-sm-12">
                     <label for="numAdults" class="form-label"
@@ -484,7 +478,7 @@
               </div>
             </div>
             <div class="row mb-3">
-              <div class="col">
+              <div class="col-md-6 col-sm-12">
                 <label for="emailAddress" class="form-label">Email</label>
                 <input
                   type="email"
@@ -493,7 +487,7 @@
                   min="0"
                   required />
               </div>
-              <div class="col">
+              <div class="col-md-6 col-sm-12">
                 <label for="phoneNumber" class="form-label"
                   >Phone/WhatsApp/Wechat</label
                 >
@@ -514,7 +508,7 @@
                 required></textarea>
             </div>
             <div class="text-end">
-              <button class="btn btn-dark">Send</button>
+              <button class="btn btn-dark">Book Now</button>
             </div>
           </form>
           <div class="booking-safe-msg bg-success-subtle p-3 mt-4">
@@ -525,8 +519,8 @@
             </p>
           </div>
         </div>
-        <div class="col-md-4">
-          <h2>Booking Details</h2>
+        <div class="col-lg-4 col-md-12">
+          <h2 class="booking-form-header">Booking Details</h2>
           <div class="booking-image">
             <img src="images/EBCTrek/ebc.jpg" alt="" />
           </div>

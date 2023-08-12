@@ -1076,6 +1076,10 @@ a {
      object-fit: cover;
 }
 
+.inquiry-form input {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 567px) {
   p {
     font-size: 14px;
@@ -1266,6 +1270,9 @@ a {
   .menu-map {
     border: none;
   }
+  .booking-form-header {
+    margin-top: 30px;
+  }
 }
 @media (min-width: 568px) and (max-width: 820px) {
   .search-bar {
@@ -1305,5 +1312,8 @@ a {
   }
   .gallery img {
     height: 200px !important;
+  }
+  .top-nav, .top-nav-booking {
+    padding: 0;
   }
 }/*# sourceMappingURL=responsive.css.map */
