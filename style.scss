@@ -1153,3 +1153,11 @@ $gray-900: #212529;
 .form-group input {
   margin-bottom: 30px;
 }
+
+.explore-region-content.expand {
+  max-height: max-content;
+}
+.explore-region-content.collapsed {
+  height: 50px;
+  overflow: hidden;
+}
