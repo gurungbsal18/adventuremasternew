@@ -1093,23 +1093,44 @@ a {
 }
 
 .trip-card {
-  border: 1px solid #dfdfdf;
   padding-bottom: 10px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  position: relative;
 }
 .trip-card:hover {
-  border: none;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
 .trip-card:hover img {
-  overflow: hidden;
   transform: scale(1.2);
 }
 .trip-card-image {
   overflow: hidden;
+  height: 300px;
 }
-.trip-card-image img {
+.trip-card-image figure {
+  overflow: hidden;
+}
+.trip-card-image figure img {
   transition: 0.3s;
   width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  overflow: hidden;
+}
+.trip-card .trip-badge .feature-trip {
+  background-color: #ffc107;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 0 5px 5px 0;
+  position: absolute;
+  top: 10;
+  left: 0;
+}
+.trip-card .trip-badge .group-trip {
+  top: 0;
+  background-color: red;
 }
 .trip-card-content {
   margin-top: 10px;
