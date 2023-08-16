@@ -1125,6 +1125,10 @@ a {
 .trip-card-content .trip-card-review .review-icon {
   color: #ffc107;
 }
+.trip-card-content .trip-card-title a {
+  text-decoration: none;
+  color: inherit;
+}
 .trip-card-content .trip-card-title h4 {
   font-size: 18px;
   font-weight: bold;

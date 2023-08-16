@@ -1082,15 +1082,82 @@ a {
   overflow: hidden;
 }
 
+.trip-card-container ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.trip-card-container ul li {
+  padding: 12px;
+}
+
+.trip-card {
+  border: 1px solid #dfdfdf;
+  padding-bottom: 10px;
+}
+.trip-card:hover {
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.trip-card:hover img {
+  overflow: hidden;
+  transform: scale(1.2);
+}
+.trip-card-image {
+  overflow: hidden;
+}
 .trip-card-image img {
+  transition: 0.3s;
   width: 100%;
 }
-.trip-card-content-review {
+.trip-card-content {
+  margin-top: 10px;
+  padding: 0 10px;
+}
+.trip-card-content .trip-card-review {
   display: flex;
   align-items: center;
+  gap: 5px;
+  margin: 10px 0;
+  font-size: 14px;
 }
-.trip-card-content-review .review-icon {
+.trip-card-content .trip-card-review .review-icon {
   color: #ffc107;
+}
+.trip-card-content .trip-card-title h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.trip-card-content .trip-card-title p {
+  font-size: 14px;
+}
+.trip-card-content .trip-card-title p::before {
+  content: "$";
+  font-family: "FontAwesome";
+}
+.trip-card-footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+.trip-card-footer .trip-card-days:before {
+  content: "\f133";
+  font-family: "FontAwesome";
+}
+
+.pagination .page-item.active span {
+  background-color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+}
+.pagination li a {
+  color: #1a1a1a;
+}
+.pagination li a:focus {
+  box-shadow: none;
+  color: #1a1a1a;
 }
 
 @media (max-width: 567px) {
