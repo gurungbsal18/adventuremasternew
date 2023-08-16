@@ -1107,14 +1107,14 @@ $gray-900: #212529;
   cursor: pointer;
 }
 
-.cost-include-tab::before{
-  content: '\f058';
-  font-family: 'FontAwesome';
+.cost-include-tab::before {
+  content: "\f058";
+  font-family: "FontAwesome";
 }
 
-.cost-exclude-tab::before{
-  content:'\f057';
-  font-family: 'FontAwesome';
+.cost-exclude-tab::before {
+  content: "\f057";
+  font-family: "FontAwesome";
 }
 
 .hero-banner {
@@ -1131,7 +1131,6 @@ $gray-900: #212529;
   align-items: center;
   h1 {
     margin: 0 auto;
-    ;
   }
 }
 
@@ -1161,4 +1160,92 @@ $gray-900: #212529;
 .explore-region-content.collapsed {
   height: 50px;
   overflow: hidden;
+}
+
+// trip card container starts
+
+.trip-card-container {
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    li {
+      padding: 12px;
+    }
+  }
+}
+
+.trip-card {
+  border: 1px solid #dfdfdf;
+  padding-bottom: 10px;
+  &:hover {
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    img {
+      overflow: hidden;
+      transform: scale(1.2);
+    }
+  }
+  &-image {
+    overflow: hidden;
+    img {
+      transition: 0.3s;
+      width: 100%;
+    }
+  }
+  &-content {
+    margin-top: 10px;
+    padding: 0 10px;
+    .trip-card-review {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin: 10px 0;
+      font-size: 14px;
+      .review-icon {
+        color: $warning;
+      }
+    }
+    .trip-card-title {
+      h4 {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 14px;
+        &::before{
+          content: '\24';
+          font-family: 'FontAwesome';
+        }
+      }
+    }
+  }
+  &-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    .trip-card-days:before {
+      content: "\f133";
+      font-family: "FontAwesome";
+    }
+  }
+}
+
+.pagination{
+  .page-item.active {
+    span {
+      background-color: #1a1a1a;
+      border: 1px solid #1a1a1a;
+    }
+  }
+  li a{
+    color: #1a1a1a;
+    &:focus {
+      box-shadow: none;
+      color: #1a1a1a;
+    }
+  }
 }

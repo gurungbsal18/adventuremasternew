@@ -1082,6 +1082,17 @@ a {
   overflow: hidden;
 }
 
+.trip-card-image img {
+  width: 100%;
+}
+.trip-card-content-review {
+  display: flex;
+  align-items: center;
+}
+.trip-card-content-review .review-icon {
+  color: #ffc107;
+}
+
 @media (max-width: 567px) {
   p {
     font-size: 14px;
