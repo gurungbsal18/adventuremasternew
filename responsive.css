@@ -1125,8 +1125,12 @@ a {
 .trip-card-content .trip-card-review .review-icon {
   color: #ffc107;
 }
-.trip-card-content .trip-card-title h4 {
-  font-size: 18px;
+.trip-card-content .trip-card-title a {
+  text-decoration: none;
+  color: inherit;
+}
+.trip-card-content .trip-card-title a h4 {
+  font-size: 25px;
   font-weight: bold;
 }
 .trip-card-content .trip-card-title p {
@@ -1136,14 +1140,14 @@ a {
   content: "$";
   font-family: "FontAwesome";
 }
-.trip-card-footer {
+.trip-card .trip-card-footer {
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
 }
-.trip-card-footer .trip-card-days:before {
+.trip-card .trip-card-footer .trip-card-days:before {
   content: "\f133";
   font-family: "FontAwesome";
 }

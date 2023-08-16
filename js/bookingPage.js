@@ -1,4 +1,8 @@
 // custon realtime booking
+document.getElementById('tripType').addEventListener('input', function () {
+  document.getElementById('outputTripType').innerText = this.value;
+})
+
 document.getElementById("fullName").addEventListener("input", function () {
   document.getElementById("outputFullName").innerText = this.value;
 });
