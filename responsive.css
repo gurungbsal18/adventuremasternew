@@ -247,7 +247,6 @@ a {
   height: 100vh;
   color: #fff;
   background-attachment: fixed;
-  background-size: cover;
   width: 100%;
 }
 .trip-header .trip-box-content {
@@ -1062,7 +1061,7 @@ a {
   margin: 0 auto;
 }
 
-.-trip-header video {
+.trip-header video {
   width: 100% !important;
   height: 100vh;
   -o-object-fit: cover;
