@@ -191,7 +191,7 @@ a {
 .fix-departure-date-table th {
   background-color: #f2f2f2;
 }
-.fix-departure-date-table .fix-deparute-content-header-sm {
+.fix-departure-date-table .fix-departure-content-header-sm {
   display: none;
 }
 .fix-departure-date-table .fix-departure-date-status {
@@ -1323,11 +1323,11 @@ a {
     box-sizing: border-box;
     float: left;
   }
-  .fix-departure-date-table tbody td .fix-deparute-content {
+  .fix-departure-date-table tbody td .fix-departure-content {
     display: flex;
     flex-direction: column;
   }
-  .fix-departure-date-table tbody td .fix-deparute-content-header-sm {
+  .fix-departure-date-table tbody td .fix-departure-content-header-sm {
     display: block;
   }
   .fix-departure-date-table tbody .fix-departure-date-table-btn {

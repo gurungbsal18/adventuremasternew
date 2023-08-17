@@ -221,7 +221,7 @@ $gray-900: #212529;
     background-color: #f2f2f2;
   }
 
-  .fix-deparute-content-header-sm {
+  .fix-departure-content-header-sm {
     display: none;
   }
 
@@ -1116,6 +1116,12 @@ $gray-900: #212529;
   content: "\f057";
   font-family: "FontAwesome";
 }
+
+// .luxury-cost-tab::after{
+//   content: '\f059';
+//   font-family: "FontAwesome";
+//   margin-left: 5px;
+// }
 
 .hero-banner {
   background-color: $black;

@@ -175,37 +175,29 @@
     <div class="container my-5">
       <div class="row">
         <div class="col-lg-8 col-md-12">
-          <h2>Booking Form</h2>
+          <h2>Fix Departure Date Booking Form</h2>
+          <p>Fix Departure Date: <span id="fixDepartureOutputDateOfTravel"></span></p>
           <form id="bookingForm" class="form-group bookingform-page">
             <div class="row mb-3">
               <div class="col-md-6 col-sm-12">
-                <label for="tripType" class="form-label">Trip Type</label>
-                <select class="form-select" id="tripType" name="trip type">
-                  <option value="">Choose Trip Type</option>
-                  <option value="Budget Trip">Budget Trip</option>
-                  <option value="Luxury Trip">Luxury Trip</option>
-                </select>
-              </div>
-            </div>
-            <div class="row mb-3">
-              <div class="col-md-6 col-sm-12">
-                <label for="fullName" class="form-label">Full Name</label>
+                <label for="name" class="form-label">Full Name</label>
                 <input
                   type="text"
-                  class="form-control"
-                  id="fullName"
+                  class="form-control fixDepartureName"
+                  id="name"
                   required
                 />
               </div>
               <div class="col-md-6 col-sm-12">
-                <label for="dateOfTravel" class="form-label"
+                <label for="fixDepartureDateOfTravel" class="form-label"
                   >Date of Travel</label
                 >
                 <input
                   type="text"
                   class="form-control"
-                  id="dateOfTravel"
-                  placeholder="Select a date"
+                  id="fixDepartureDateOfTravel"
+                  value="August 15, 2023"
+                  disabled
                 />
               </div>
             </div>
@@ -214,26 +206,26 @@
               <div class="col-md-6 col-sm-12">
                 <div class="row">
                   <div class="col-lg-6 col-sm-12">
-                    <label for="numAdults" class="form-label"
+                    <label for="fixDepartureNumAdults" class="form-label"
                       >Number of Adults</label
                     >
                     <input
                       type="number"
                       class="form-control"
-                      id="numAdults"
+                      id="fixDepartureNumAdults"
                       min="1"
                       required
                     />
                   </div>
                   <div class="col-lg-6 col-sm-12">
                     <div class="mb-3">
-                      <label for="numChildren" class="form-label"
+                      <label for="fixDepartureNumChildren" class="form-label"
                         >Number of Children</label
                       >
                       <input
                         type="number"
                         class="form-control"
-                        id="numChildren"
+                        id="fixDepartureNumChildren"
                         min="0"
                       />
                     </div>
@@ -242,7 +234,7 @@
               </div>
               <div class="col">
                 <label for="country">Country</label>
-                <select class="form-select" id="country" name="country">
+                <select class="form-select" id="fixDepartureCountry" name="country">
                   <option value="">country</option>
                   <option value="Afghanistan">Afghanistan</option>
                   <option value="Aland Islands">Aland Islands</option>
@@ -575,33 +567,33 @@
             </div>
             <div class="row mb-3">
               <div class="col-md-6 col-sm-12">
-                <label for="emailAddress" class="form-label">Email</label>
+                <label for="fixDepartureEmailAddress" class="form-label">Email</label>
                 <input
                   type="email"
                   class="form-control"
-                  id="emailAddress"
+                  id="fixDepartureEmailAddress"
                   min="0"
                   required
                 />
               </div>
               <div class="col-md-6 col-sm-12">
-                <label for="phoneNumber" class="form-label"
+                <label for="fixDeparturePhoneNumber" class="form-label"
                   >Phone/WhatsApp/Wechat</label
                 >
                 <input
                   type="number"
                   class="form-control"
-                  id="phoneNumber"
+                  id="fixDeparturePhoneNumber"
                   min="0"
                   required
                 />
               </div>
             </div>
             <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
+              <label for="fixDepartureMessage" class="form-label">Message</label>
               <textarea
                 class="form-control"
-                id="message"
+                id="fixDepartureMessage"
                 rows="4"
                 required
               ></textarea>
@@ -627,42 +619,38 @@
             <strong>Everest Base Camp Trek -14 Days</strong>
           </p>
           <p>
-            <strong>Trip Type:</strong>
-            <span id="outputTripType"></span>
-          </p>
-          <p>
             <strong>Price:</strong> US $1400/- pp
             <!-- price will change according to trip type, whether budget or luxury -->
           </p>
           <p>
             <strong>Full Name:</strong>
-            <span id="outputFullName"></span>
+            <span class="fixDepartureOutputFullName"></span>
           </p>
           <p>
             <strong>Date of Travel:</strong>
-            <span id="outputDateOfTravel"></span>
+            <span id="fixDepartureOutputDateOfTravel"></span>
           </p>
           <p>
             <strong>Country:</strong>
-            <span id="outputCountry"></span>
+            <span id="fixDepartureOutputCountry"></span>
           </p>
           <p>
             <strong>Number of Adults:</strong>
-            <span id="outputNumAdults"></span>
+            <span id="fixDepartureOutputNumAdults"></span>
           </p>
           <p>
             <strong>Number of Children:</strong>
-            <span id="outputNumChildren"></span>
+            <span id="fixDepartureOutputNumChildren"></span>
           </p>
           <p>
             <strong>Email Address:</strong>
-            <span id="outputemailAddress"></span>
+            <span id="fixDepartureOutputemailAddress"></span>
           </p>
           <p>
             <strong>Phone Number:</strong>
-            <span id="outputphoneNumber"></span>
+            <span id="fixDepartureOutputphoneNumber"></span>
           </p>
-          <p><strong>Message:</strong> <span id="outputMessage"></span></p>
+          <p><strong>Message:</strong> <span id="fixDepartureOutputMessage"></span></p>
         </div>
       </div>
     </div>
@@ -944,6 +932,7 @@
     <script src="js/script.js"></script>
     <script src="js/tooltip.js"></script>
     <script src="js/datePicker.js"></script>
-    <script src="js/bookingPage.js"></script>
+    <script src="js/fix-departure-booking.js"></script>
+    <!-- <script src="js/bookingPage.js"></script> -->
   </body>
 </html>
