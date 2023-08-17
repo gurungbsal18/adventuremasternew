@@ -225,6 +225,11 @@
   .menu-map {
     border: none;
   }
+  .trip-card-container {
+    ul {
+      flex-direction: column;
+    }
+  }
 }
 
 @media (max-width: 900px) {
