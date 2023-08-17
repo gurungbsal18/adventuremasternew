@@ -1,6 +1,6 @@
 // // scroll to the top
 let scrollToTop = document.querySelector(".scroll-top");
-document.addEventListener('DOMContentLoaded', function (){
+document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener("scroll", function () {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
       scrollToTop.style.display = "block";
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function (){
 let exploreRegionContent = document.querySelector('.explore-region-content');
 let readMoreBtn = document.querySelector('.readmore-btn');
 
-readMoreBtn.addEventListener('click', function(){
+readMoreBtn.addEventListener('click', () => {
   if(exploreRegionContent.classList.contains('collapsed')){
     exploreRegionContent.classList.remove('collapsed')
     exploreRegionContent.classList.add('expand')

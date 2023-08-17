@@ -36,7 +36,7 @@ a {
 }
 .top-nav .logo img,
 .top-nav-booking .logo img {
-  height: 150px;
+  height: 100px;
 }
 .top-nav .navbar,
 .top-nav-booking .navbar {
@@ -1016,7 +1016,7 @@ a {
   overflow-y: scroll;
 }
 .expand-menu .menu-logo img {
-  width: 140px;
+  width: 100px;
 }
 .expand-menu .menu-logo .container {
   padding: 0 !important;
@@ -1101,7 +1101,6 @@ a {
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
 .trip-card:hover img {
-  overflow: hidden;
   transform: scale(1.2);
 }
 .trip-card-image {
@@ -1118,6 +1117,7 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
+  overflow: hidden;
 }
 .trip-card .trip-badge .feature-trip {
   background-color: #ffc107;
