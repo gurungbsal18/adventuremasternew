@@ -17,17 +17,17 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 // explore region content read more and less
-let exploreRegionContent = document.querySelector('.explore-region-content');
+let readMoreContent = document.querySelector('.readmore-content');
 let readMoreBtn = document.querySelector('.readmore-btn');
 
 readMoreBtn.addEventListener('click', () => {
-  if(exploreRegionContent.classList.contains('collapsed')){
-    exploreRegionContent.classList.remove('collapsed')
-    exploreRegionContent.classList.add('expand')
+  if(readMoreContent.classList.contains('collapsed')){
+    readMoreContent.classList.remove('collapsed')
+    readMoreContent.classList.add('expand')
     readMoreBtn.innerText = "Read Less"
   } else {
-    exploreRegionContent.classList.add('collapsed')
-    exploreRegionContent.classList.remove('expand')
+    readMoreContent.classList.add('collapsed')
+    readMoreContent.classList.remove('expand')
     readMoreBtn.innerText = "Read More"
   }
 })

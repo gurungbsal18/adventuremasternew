@@ -243,9 +243,9 @@ a {
 }
 
 .trip-header {
-  background-color: #000;
   height: 100vh;
   color: #fff;
+  background: url(images/MeraPeak/meraPeakClimbing.jpg);
   background-attachment: fixed;
   width: 100%;
 }
@@ -1072,12 +1072,12 @@ a {
   margin-bottom: 30px;
 }
 
-.explore-region-content.expand {
+.readmore-content.expand {
   max-height: -moz-max-content;
   max-height: max-content;
 }
 
-.explore-region-content.collapsed {
+.readmore-content.collapsed {
   height: 50px;
   overflow: hidden;
 }
