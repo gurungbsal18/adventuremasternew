@@ -43,6 +43,10 @@ $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
 
+.top-nav {
+  z-index: 1;
+}
+
 .top-nav,
 .top-nav-booking {
   display: flex;
@@ -698,7 +702,7 @@ $gray-900: #212529;
 }
 
 .cost-exclude-tab-content,
-.trip-highlight-tab-content {
+.trip-highlight-tab-content, .luxury-cost-include-tab-content, .luxury-cost-exclude-tab-content {
   display: none;
 }
 
@@ -1113,7 +1117,17 @@ $gray-900: #212529;
   font-family: "FontAwesome";
 }
 
+.luxury-cost-include-tab::before {
+  content: "\f058";
+  font-family: "FontAwesome";
+}
+
 .cost-exclude-tab::before {
+  content: "\f057";
+  font-family: "FontAwesome";
+}
+
+.luxury-cost-exclude-tab::before {
   content: "\f057";
   font-family: "FontAwesome";
 }

@@ -31,23 +31,68 @@ document.addEventListener('DOMContentLoaded', function (){
 // cost include exclude and trip highlight tab section
 let costIncludeTab = document.querySelector(".cost-include-tab");
 let costExcludeTab = document.querySelector(".cost-exclude-tab");
+let luxuryCostIncludeTab = document.querySelector('.luxury-cost-include-tab')
+let luxuryCostExcludeTab = document.querySelector('.luxury-cost-exclude-tab')
 
 document.addEventListener('DOMContentLoaded', function (){
   costIncludeTab.addEventListener("click", function () {
     document.querySelector(".cost-include-tab-content").style.display = "block";
     document.querySelector(".cost-exclude-tab-content").style.display = "none";
+    document.querySelector(".luxury-cost-include-tab-content").style.display = "none";
+    document.querySelector(".luxury-cost-exclude-tab-content").style.display = "none";
     costIncludeTab.classList.add('btn-success');
     costIncludeTab.classList.remove('btn-outline-success')
     costExcludeTab.classList.add('btn-outline-danger')
     costExcludeTab.classList.remove('btn-danger')
+    luxuryCostIncludeTab.classList.add('btn-outline-dark')
+    luxuryCostIncludeTab.classList.remove('btn-dark')
+    luxuryCostExcludeTab.classList.add('btn-outline-dark')
+    luxuryCostExcludeTab.classList.remove('btn-dark')
   });
   costExcludeTab.addEventListener("click", function () {
     document.querySelector(".cost-exclude-tab-content").style.display = "block";
     document.querySelector(".cost-include-tab-content").style.display = "none";
+    document.querySelector(".luxury-cost-include-tab-content").style.display = "none";
+    document.querySelector(".luxury-cost-exclude-tab-content").style.display = "none";
     costExcludeTab.classList.add('btn-danger')
     costExcludeTab.classList.remove('btn-outline-danger')
     costIncludeTab.classList.add('btn-outline-success')
     costIncludeTab.classList.remove('btn-success');
+    luxuryCostIncludeTab.classList.add('btn-outline-dark')
+    luxuryCostIncludeTab.classList.remove('btn-dark')
+    luxuryCostExcludeTab.classList.add('btn-outline-dark')
+    luxuryCostExcludeTab.classList.remove('btn-dark')
   });
+  luxuryCostIncludeTab.addEventListener('click', function (){
+    document.querySelector('.luxury-cost-include-tab-content').style.display = "block";
+    document.querySelector('.luxury-cost-exclude-tab-content').style.display = "none";
+    document.querySelector(".cost-exclude-tab-content").style.display = "none";
+    document.querySelector(".cost-include-tab-content").style.display = "none";
+
+    costIncludeTab.classList.add('btn-outline-success')
+    costIncludeTab.classList.remove('btn-success');
+    costExcludeTab.classList.add('btn-outline-danger');
+    costExcludeTab.classList.remove('btn-danger');
+    luxuryCostIncludeTab.classList.add('btn-dark')
+    luxuryCostIncludeTab.classList.remove('btn-outline-dark')
+    luxuryCostExcludeTab.classList.add('btn-outline-dark')
+    luxuryCostExcludeTab.classList.remove('btn-dark')
+
+  })
+  luxuryCostExcludeTab.addEventListener('click', function (){
+    document.querySelector('.luxury-cost-exclude-tab-content').style.display = "block";
+    document.querySelector('.luxury-cost-include-tab-content').style.display = "none";
+    document.querySelector(".cost-exclude-tab-content").style.display = "none";
+    document.querySelector(".cost-include-tab-content").style.display = "none";
+
+    costIncludeTab.classList.add('btn-outline-success')
+    costIncludeTab.classList.remove('btn-success');
+    costExcludeTab.classList.add('btn-outline-danger');
+    costExcludeTab.classList.remove('btn-danger');
+    luxuryCostIncludeTab.classList.add('btn-outline-dark')
+    luxuryCostIncludeTab.classList.remove('btn-dark')
+    luxuryCostExcludeTab.classList.add('btn-dark')
+    luxuryCostExcludeTab.classList.remove('btn-outline-dark')
+  })
   
 })
