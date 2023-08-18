@@ -1314,3 +1314,55 @@ $gray-900: #212529;
     }
   }
 }
+
+.team-container {
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 60px;
+    li {
+      padding: 12px;
+    }
+  }
+  .team-card {
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    padding-bottom: 10px;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+    .team-card-img img{
+      width: 100%;
+    }
+    &-body {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      .team-card-title h4 {
+        font-size: 20px;
+      }
+      .team-card-number::before{
+        content: '\f232';
+        font-family: 'FontAwesome';
+        margin-right: 5px;
+        color: $success;
+      }
+      .team-card-email::before{
+        content: '\f0e0';
+        font-family: 'FontAwesome';
+        margin-right: 5px;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+  }
+}

@@ -225,10 +225,12 @@
   .menu-map {
     border: none;
   }
-  .trip-card-container {
-    ul {
-      flex-direction: column;
-    }
+  .trip-card-container ul {
+    flex-direction: column;
+  }
+
+  .team-container ul {
+    flex-direction: column;
   }
 }
 
@@ -293,7 +295,8 @@
       height: 200px !important;
     }
   }
-  .top-nav, .top-nav-booking{
+  .top-nav,
+  .top-nav-booking {
     padding: 0;
   }
 }

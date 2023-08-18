@@ -1214,4 +1214,53 @@ a {
 .pagination li a:focus {
   box-shadow: none;
   color: #1a1a1a;
+}
+
+.team-container ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 60px;
+}
+.team-container ul li {
+  padding: 12px;
+}
+.team-container .team-card {
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  padding-bottom: 10px;
+}
+.team-container .team-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.team-container .team-card .team-card-img img {
+  width: 100%;
+}
+.team-container .team-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.team-container .team-card-body .team-card-title h4 {
+  font-size: 20px;
+}
+.team-container .team-card-body .team-card-number::before {
+  content: "\f232";
+  font-family: "FontAwesome";
+  margin-right: 5px;
+  color: #198754;
+}
+.team-container .team-card-body .team-card-email::before {
+  content: "\f0e0";
+  font-family: "FontAwesome";
+  margin-right: 5px;
+}
+.team-container .team-card-body a {
+  text-decoration: none;
+  color: inherit;
+}
+.team-container .team-card-body a:hover {
+  color: #6c757d;
 }/*# sourceMappingURL=style.css.map */

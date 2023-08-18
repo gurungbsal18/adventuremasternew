@@ -243,9 +243,9 @@ a {
 }
 
 .trip-header {
-  background-color: #000;
   height: 100vh;
   color: #fff;
+  background: url(images/MeraPeak/meraPeakClimbing.jpg);
   background-attachment: fixed;
   width: 100%;
 }
@@ -1072,12 +1072,12 @@ a {
   margin-bottom: 30px;
 }
 
-.explore-region-content.expand {
+.readmore-content.expand {
   max-height: -moz-max-content;
   max-height: max-content;
 }
 
-.explore-region-content.collapsed {
+.readmore-content.collapsed {
   height: 50px;
   overflow: hidden;
 }
@@ -1089,6 +1089,9 @@ a {
   padding: 0;
 }
 .trip-card-container ul li {
+  padding: 12px;
+}
+.trip-card-container .trip-filter {
   padding: 12px;
 }
 
@@ -1211,6 +1214,45 @@ a {
 .pagination li a:focus {
   box-shadow: none;
   color: #1a1a1a;
+}
+
+.team-container ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 60px;
+}
+.team-container .team-card {
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  padding-bottom: 10px;
+}
+.team-container .team-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.team-container .team-card .team-card-img img {
+  width: 100%;
+}
+.team-container .team-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.team-container .team-card-body .team-card-title h4 {
+  font-size: 20px;
+}
+.team-container .team-card-body .team-card-number::before {
+  content: "\f232";
+  font-family: "FontAwesome";
+  margin-right: 5px;
+  color: #198754;
+}
+.team-container .team-card-body .team-card-email::before {
+  content: "\f0e0";
+  font-family: "FontAwesome";
+  margin-right: 5px;
 }
 
 @media (max-width: 567px) {
@@ -1397,6 +1439,9 @@ a {
   .trip-card-container ul {
     flex-direction: column;
   }
+  .team-container ul {
+    flex-direction: column;
+  }
 }
 @media (max-width: 900px) {
   .affiliated-img img {
@@ -1449,7 +1494,8 @@ a {
   .gallery img {
     height: 200px !important;
   }
-  .top-nav, .top-nav-booking {
+  .top-nav,
+  .top-nav-booking {
     padding: 0;
   }
 }/*# sourceMappingURL=responsive.css.map */
