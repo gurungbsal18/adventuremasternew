@@ -281,10 +281,8 @@ $gray-900: #212529;
 }
 
 .trip-header {
-  
   height: 100vh;
   color: $white;
-  background: url(images/MeraPeak/meraPeakClimbing.jpg);
   background-attachment: fixed;
   width: 100%;
   .trip-box-content {
@@ -1165,11 +1163,34 @@ $gray-900: #212529;
 //   overflow: hidden;
 // }
 
-.trip-header video {
-  width: 100% !important;
+.trip-header-about {
   height: 100vh;
-  object-fit: cover;
+  color: $white;
+  background: url(images/MeraPeak/meraPeakClimbing.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  width: 100%;
+  video {
+    width: 100% !important;
+    height: 100vh;
+    object-fit: cover;
+  }
 }
+
+.trip-header-region {
+    height: 100vh;
+    color: $white;
+    background: url(images/EBCTrek/ebc4.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100%;
+    video {
+      width: 100% !important;
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+
 
 .form-group input {
   margin-bottom: 30px;
