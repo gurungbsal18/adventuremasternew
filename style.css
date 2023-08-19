@@ -1091,6 +1091,7 @@ a {
   background: url(images/MeraPeak/meraPeakClimbing.jpg);
   background-attachment: fixed;
   background-position: center center;
+  background-size: cover;
   width: 100%;
 }
 .trip-header-about video {
@@ -1106,6 +1107,7 @@ a {
   background: url(images/EBCTrek/ebc4.jpg);
   background-attachment: fixed;
   background-position: center center;
+  background-size: cover;
   width: 100%;
 }
 .trip-header-region video {

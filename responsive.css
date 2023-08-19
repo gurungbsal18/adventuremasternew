@@ -92,10 +92,6 @@ a {
   margin: 0;
   color: #5f5f5f;
 }
-.search-bar a {
-  text-decoration: none;
-  color: inherit;
-}
 .search-bar .outline-warning-btn a {
   color: #ffc107 !important;
 }
@@ -1095,6 +1091,7 @@ a {
   background: url(images/MeraPeak/meraPeakClimbing.jpg);
   background-attachment: fixed;
   background-position: center center;
+  background-size: cover;
   width: 100%;
 }
 .trip-header-about video {
@@ -1110,6 +1107,7 @@ a {
   background: url(images/EBCTrek/ebc4.jpg);
   background-attachment: fixed;
   background-position: center center;
+  background-size: cover;
   width: 100%;
 }
 .trip-header-region video {
@@ -1583,6 +1581,9 @@ a {
   }
   .why-choose img {
     display: none;
+  }
+  .trip-header-about {
+    height: 50vh;
   }
 }
 @media (min-width: 568px) and (max-width: 820px) {
