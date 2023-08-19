@@ -43,6 +43,10 @@ $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
 
+.text-justify {
+  text-align: justify;
+}
+
 .top-nav {
   z-index: 1;
 }
@@ -67,6 +71,10 @@ $gray-900: #212529;
     justify-content: flex-end;
     gap: 30px;
   }
+}
+
+#menu-toggle, #sm-menu-toggle {
+  cursor: pointer;
 }
 
 .top-nav-booking {
@@ -106,10 +114,14 @@ $gray-900: #212529;
     margin: 0;
     color: #5f5f5f;
   }
+ 
+  .outline-warning-btn a {
+    color: $warning !important;
+  }
   .title {
     font-size: 21px;
     font-family: "Bitter", serif;
-    font-weight: 600;
+    font-weight: bold;
     margin-bottom: 10px;
   }
 
@@ -1354,6 +1366,12 @@ $gray-900: #212529;
   .team-guide, .team-porter {
     display: none;
   }
+  .team-location::before{
+    content: '\f3c5';
+    font-family: 'FontAwesome';
+    margin-right: 5px;
+    color: $secondary;
+  }
   ul {
     list-style: none;
     display: flex;
@@ -1393,6 +1411,7 @@ $gray-900: #212529;
         content: '\f0e0';
         font-family: 'FontAwesome';
         margin-right: 5px;
+        color: $secondary;
       }
       a {
         text-decoration: none;
@@ -1403,4 +1422,70 @@ $gray-900: #212529;
       }
     }
   }
+}
+
+.why-choose {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-image img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    
+    animation: animate-image 2s ease-in-out infinite alternate-reverse both;
+  }
+  &-content.collapsed {
+    height: 300px;
+    overflow: hidden;
+  }
+  &-content.expand {
+    height: max-content;
+  }
+}
+
+@-webkit-keyframes animate-image {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px)
+  }
+}
+
+@keyframes animate-image {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.about-banner {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/EBCTrek/ebc-banner.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h4 {
+      font-size: 2.5rem;
+      text-align: center;
+      color: $white;
+    }
+    p {
+      color: $white;
+      text-align: center;
+    }
+    &-cta {
+      display: flex;
+      justify-content: center;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
 }

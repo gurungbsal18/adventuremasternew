@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .top-nav {
   z-index: 1;
 }
@@ -51,6 +55,10 @@ a {
   display: flex;
   justify-content: flex-end;
   gap: 30px;
+}
+
+#menu-toggle, #sm-menu-toggle {
+  cursor: pointer;
 }
 
 .top-nav-booking {
@@ -84,10 +92,13 @@ a {
   margin: 0;
   color: #5f5f5f;
 }
+.search-bar .outline-warning-btn a {
+  color: #ffc107 !important;
+}
 .search-bar .title {
   font-size: 21px;
   font-family: "Bitter", serif;
-  font-weight: 600;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 .search-bar-row {
@@ -1255,6 +1266,12 @@ a {
 .team-container .team-guide, .team-container .team-porter {
   display: none;
 }
+.team-container .team-location::before {
+  content: "\f3c5";
+  font-family: "FontAwesome";
+  margin-right: 5px;
+  color: #6c757d;
+}
 .team-container ul {
   list-style: none;
   display: flex;
@@ -1295,6 +1312,7 @@ a {
   content: "\f0e0";
   font-family: "FontAwesome";
   margin-right: 5px;
+  color: #6c757d;
 }
 .team-container .team-card-body a {
   text-decoration: none;
@@ -1302,4 +1320,60 @@ a {
 }
 .team-container .team-card-body a:hover {
   color: #6c757d;
+}
+
+.why-choose {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.why-choose-image img {
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: animate-image 2s ease-in-out infinite alternate-reverse both;
+}
+.why-choose-content.collapsed {
+  height: 300px;
+  overflow: hidden;
+}
+.why-choose-content.expand {
+  height: -moz-max-content;
+  height: max-content;
+}
+@keyframes animate-image {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.about-banner {
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/EBCTrek/ebc-banner.jpg);
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-banner h4 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #fff;
+}
+.about-banner p {
+  color: #fff;
+  text-align: center;
+}
+.about-banner-cta {
+  display: flex;
+  justify-content: center;
+}
+.about-banner-cta a {
+  text-decoration: none;
+  color: inherit;
 }/*# sourceMappingURL=style.css.map */

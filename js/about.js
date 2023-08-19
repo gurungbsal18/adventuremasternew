@@ -42,3 +42,19 @@ document.querySelector('.team-porter-btn').addEventListener('click', () => {
     teamGuideBtn.classList.remove('btn-dark')
     teamGuideBtn.classList.add('btn-outline-dark')
 })
+
+let whyChooseContent = document.querySelector('.why-choose-content')
+let whyChooseBtn = document.querySelector('.why-choose-readmore-btn')
+
+whyChooseBtn.addEventListener('click', function() {
+    console.log('hi')
+    if (whyChooseContent.classList.contains('collapsed')) {
+        whyChooseContent.classList.remove('collapsed')
+        whyChooseContent.classList.add('expand')
+        whyChooseBtn.innerText = "Read Less"
+    } else {
+        whyChooseContent.classList.remove('expand')
+        whyChooseContent.classList.add('collapsed')
+        whyChooseBtn.innerText = "Read More"
+    }
+})

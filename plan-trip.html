@@ -135,8 +135,8 @@
               </ul>
             </ul>
             <ul class="menu-dropdown">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Contact us</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact.html">Contact us</a></li>
             </ul>
             <ul class="">
               <li>For more information</li>
@@ -177,31 +177,45 @@
       <form id="bookingForm" class="form-group bookingform-page">
         <div class="row mb-3">
           <div class="col-md-6 col-sm-12">
+            <label for="tripType" class="form-label">Choose Trip Type</label>
+            <select name="tripType" class="form-select">
+              <option value="luxuryTrip">Luxury Trip</option>
+              <option value="budgetTrip">Budget Trip</option>
+              <option value="notSureTrip">Not Sure</option>
+            </select>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <label for="trip-name" class="form-label">Choose Your Trip</label>
+            <select name="trip-name" id="trip-name" class="form-select">
+              <option value="select your trip">Select your trip</option>
+              <option value="everest-base-camp-trek-14-days">
+                Everest Base Camp Trek - 14 Days
+              </option>
+              <option value="everest-heli-return-trek-12-days">
+                Everest Heli Return Trek -12 Days
+              </option>
+              <option value="everest-three-pass-trek-23-Days">
+                Everest Three Pass Trek - 23 Days
+              </option>
+              <option value="island-peak-climbing-19-days">
+                Island Peak Climbing - 19 Days
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-6 col-sm-12">
             <label for="fullName" class="form-label">Full Name</label>
             <input type="text" class="form-control" id="fullName" required />
           </div>
           <div class="col-md-6 col-sm-12">
-           <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <label for="dateOfTravel" class="form-label">Date of Travel</label>
-              <input
-                type="text"
-                class="form-control"
-                id="dateOfTravel"
-                placeholder="Select a date"
-              />
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <label for="trip-name" class="form-label">Choose Your Trip</label>
-              <select name="trip-name" id="trip-name" class="form-select">
-                <option value="select your trip">Select your trip</option>
-                <option value="everest-base-camp-trek-14-days">Everest Base Camp Trek - 14 Days</option>
-                <option value="everest-heli-return-trek-12-days">Everest Heli Return Trek -12 Days</option>
-                <option value="everest-three-pass-trek-23-Days">Everest Three Pass Trek - 23 Days</option>
-                <option value="island-peak-climbing-19-days">Island Peak Climbing - 19 Days</option>
-              </select>
-            </div>
-           </div>
+            <label for="dateOfTravel" class="form-label">Date of Travel</label>
+            <input
+              type="text"
+              class="form-control"
+              id="dateOfTravel"
+              placeholder="Select a date"
+            />
           </div>
         </div>
 
