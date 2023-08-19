@@ -1330,6 +1330,9 @@ $gray-900: #212529;
 }
 
 .team-container {
+  .team-guide, .team-porter {
+    display: none;
+  }
   ul {
     list-style: none;
     display: flex;

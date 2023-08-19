@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+.top-nav {
+  z-index: 1;
+}
+
 .top-nav,
 .top-nav-booking {
   display: flex;
@@ -646,7 +650,7 @@ a {
 }
 
 .cost-exclude-tab-content,
-.trip-highlight-tab-content {
+.trip-highlight-tab-content, .luxury-cost-include-tab-content, .luxury-cost-exclude-tab-content {
   display: none;
 }
 
@@ -1040,7 +1044,17 @@ a {
   font-family: "FontAwesome";
 }
 
+.luxury-cost-include-tab::before {
+  content: "\f058";
+  font-family: "FontAwesome";
+}
+
 .cost-exclude-tab::before {
+  content: "\f057";
+  font-family: "FontAwesome";
+}
+
+.luxury-cost-exclude-tab::before {
   content: "\f057";
   font-family: "FontAwesome";
 }
@@ -1223,6 +1237,9 @@ a {
   padding: 0;
   margin-top: 60px;
 }
+.team-container ul li {
+  padding: 12px;
+}
 .team-container .team-card {
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   padding-bottom: 10px;
@@ -1253,6 +1270,13 @@ a {
   content: "\f0e0";
   font-family: "FontAwesome";
   margin-right: 5px;
+}
+.team-container .team-card-body a {
+  text-decoration: none;
+  color: inherit;
+}
+.team-container .team-card-body a:hover {
+  color: #6c757d;
 }
 
 @media (max-width: 567px) {

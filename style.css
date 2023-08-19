@@ -1230,6 +1230,9 @@ a {
   color: #1a1a1a;
 }
 
+.team-container .team-guide, .team-container .team-porter {
+  display: none;
+}
 .team-container ul {
   list-style: none;
   display: flex;
