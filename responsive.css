@@ -1380,6 +1380,29 @@ a {
   color: inherit;
 }
 
+.location::before {
+  content: "\f3c5";
+  font-family: "FontAwesome";
+  margin-right: 5px;
+  color: #6c757d;
+}
+
+.contact-container {
+  padding: 60px 0;
+}
+.contact-container a {
+  text-decoration: none;
+  color: inherit;
+}
+.contact-container a:hover {
+  color: #6c757d;
+}
+
+.blog-card-section .blog-card-image img {
+  width: 100%;
+  height: 300px;
+}
+
 @media (max-width: 567px) {
   p {
     font-size: 14px;
