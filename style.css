@@ -1436,4 +1436,8 @@ a {
 }
 .blog-section-card-container .blog-section-card-btn {
   padding: 0 20px 20px 20px;
+}
+
+.trip-gallery {
+  flex-wrap: nowrap !important;
 }/*# sourceMappingURL=style.css.map */

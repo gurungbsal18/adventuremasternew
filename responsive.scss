@@ -232,6 +232,9 @@
   .team-container ul {
     flex-direction: column;
   }
+  .trip-gallery img {
+    height: 300px !important;
+  }
 }
 
 @media (max-width: 900px) {
