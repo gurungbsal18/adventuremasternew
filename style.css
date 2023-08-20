@@ -1396,7 +1396,7 @@ a {
   color: inherit;
 }
 
-.location::before {
+.team-location::before {
   content: "\f3c5";
   font-family: "FontAwesome";
   margin-right: 5px;

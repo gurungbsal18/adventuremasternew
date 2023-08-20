@@ -1101,6 +1101,22 @@ a {
      object-fit: cover;
 }
 
+.trip-header-common {
+  height: 100vh;
+  color: #fff;
+  background: url(images/MardiHimal/mardiHimal.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+}
+.trip-header-common video {
+  width: 100% !important;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .trip-header-region {
   height: 100vh;
   color: #fff;
@@ -1380,7 +1396,7 @@ a {
   color: inherit;
 }
 
-.location::before {
+.team-location::before {
   content: "\f3c5";
   font-family: "FontAwesome";
   margin-right: 5px;
