@@ -1189,6 +1189,20 @@ $gray-900: #212529;
     object-fit: cover;
   }
 }
+.trip-header-common {
+  height: 100vh;
+  color: $white;
+  background: url(images/MardiHimal/mardiHimal.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  video {
+    width: 100% !important;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
 
 .trip-header-region {
     height: 100vh;
