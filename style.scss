@@ -1491,3 +1491,21 @@ $gray-900: #212529;
       }
     }
 }
+
+.location::before{
+  content: '\f3c5';
+  font-family: 'FontAwesome';
+  margin-right: 5px;
+  color: $secondary;
+}
+
+.contact-container {
+  padding: 60px 0;
+  a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: $secondary;
+    }
+  }
+}

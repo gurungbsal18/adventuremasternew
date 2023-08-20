@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventure Master Trek</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <!-- bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- Flatpickr CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <!-- fontawesome 6 cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container-fluid expand-menu" style="background: #1a1a1a">
+      <div class="menu container">
+        <div
+          class="menu-logo d-flex justify-content-between align-items-center"
+        >
+          <a href="index.html"
+            ><img src="images/logo-white.png" alt="adventure master trek logo"
+          /></a>
+          <span class="menu-bar" id="sm-menu-toggle"></span>
+        </div>
+        <div class="row">
+          <h4 class="mt-5">Most Popular Trekking Region In Nepal</h4>
+          <div class="col-lg-8 col-md-12 menu-map">
+            <img src="images/map.png" alt="" />
+            <div>
+              <ul>
+                <li>
+                  <button
+                    class="location"
+                    data-bs-toggle="popover"
+                    data-bs-placement="top"
+                    data-bs-html="true"
+                    data-bs-trigger="focus"
+                    data-bs-title="<a href='#'>Explore Everest Region</a>"
+                  >
+                    <i class="fa-solid fa-location-dot fa-beat-fade"></i>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="location"
+                    data-bs-toggle="popover"
+                    data-bs-placement="top"
+                    data-bs-html="true"
+                    data-bs-trigger="focus"
+                    data-bs-title="<a href='#'>Explore Annapurna Region</a>"
+                  >
+                    <i class="fa-solid fa-location-dot fa-beat-fade"></i>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="location"
+                    data-bs-toggle="popover"
+                    data-bs-placement="top"
+                    data-bs-html="true"
+                    data-bs-trigger="focus"
+                    data-bs-title="<a href='#'>Explore Manaslu Region</a>"
+                  >
+                    <i class="fa-solid fa-location-dot fa-beat-fade"></i>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="location"
+                    data-bs-toggle="popover"
+                    data-bs-placement="top"
+                    data-bs-html="true"
+                    data-bs-trigger="focus"
+                    data-bs-title="<a href='#'>Explore Langtang Region</a>"
+                  >
+                    <i class="fa-solid fa-location-dot fa-beat-fade"></i>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="location"
+                    data-bs-toggle="popover"
+                    data-bs-placement="top"
+                    data-bs-html="true"
+                    data-bs-trigger="focus"
+                    data-bs-title="<a href='#'>About us</a>"
+                  >
+                    <i class="fa-solid fa-map-pin fa-bounce"></i>
+                  </button>
+                  <!-- </a> -->
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 d-flex flex-column">
+            <ul>
+              <li id="menu-item-1" class="menu-item">Trekking</li>
+              <ul id="menu-list-1" class="menu-list">
+                <li><a href="#">Everest Base Camp Trek - 14 Days</a></li>
+                <li><a href="#">Everest Base Heli Return Trek - 9 Days</a></li>
+                <li><a href="#">Annapurna Base Camp Trek - 9 Days</a></li>
+              </ul>
+              <li id="menu-item-2" class="menu-item">Heli Tours</li>
+              <ul id="menu-list-2" class="menu-list">
+                <li><a href="#">Everest Base Camp Heli Tour</a></li>
+                <li><a href="#">Annapurna Base Camp Heli Tour</a></li>
+              </ul>
+              <li id="menu-item-3" class="menu-item">Day Tours</li>
+              <ul id="menu-list-3" class="menu-list">
+                <li><a href="#">Kathmandu Heritage Tour</a></li>
+                <li><a href="#">Chisapani Nagarkot Hiking</a></li>
+                <li><a href="#">Trishuli Rafting</a></li>
+              </ul>
+              <li id="menu-item-4" class="menu-item">Destinations</li>
+              <ul id="menu-list-4" class="menu-list">
+                <li><a href="#">Nepal</a></li>
+                <li><a href="#">Tibet</a></li>
+                <li><a href="#">Bhutan</a></li>
+              </ul>
+            </ul>
+            <ul class="menu-dropdown">
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+            <ul class="">
+              <li>For more information</li>
+              <li class="menu-whtasapp">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=9779841033195&text&type=phone_number&app_absent=0"
+                  target="_blank"
+                  >+977 9851033195</a
+                >
+              </li>
+              <li class="menu-email">
+                <a href="mailto:info@adventuremastertrek.com"
+                  >info@adventuremastertrek.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="top-nav-booking row m-0">
+      <div class="col-auto logo">
+        <a href="index.html"><img src="images/logo-white.png" alt="" /></a>
+      </div>
+      <div class="col-auto nav-icons">
+        <div class="navbar">
+          <i class="fa-solid fa-magnifying-glass fs-5"></i>
+        </div>
+        <div class="navbar"><i class="fa-solid fa-language fs-5"></i></div>
+        <div class="navbar" id="menu-toggle">
+          <i class="fa-solid fa-bars fs-5"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1248.7662326626312!2d85.31152830246947!3d27.715918923641755!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18fd00c02ef5%3A0xfaf91016f607366d!2sAdventure%20Master%20Trek!5e0!3m2!1sen!2snp!4v1692521850073!5m2!1sen!2snp"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <h4 class="title">Send Inquiry</h4>
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" class="form-control" />
+          <label for="email" class="form-label mt-3">Email Address</label>
+          <input type="email" class="form-control" />
+          <label for="phoneNumber" class="form-label mt-3"
+            >Phone/WhatsApp</label
+          >
+          <input type="number" class="form-control" />
+          <label for="" class="form-label mt-3">Message</label>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="5"
+            class="form-control"
+          ></textarea>
+          <div class="mt-3">
+            <button class="btn btn-dark">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-secondary-subtle mt-5">
+      <div class="container contact-container">
+        <div class="row">
+          <h4 class="title fw-bold text-center mb-4">Contact Us</h4>
+          <div class="col-sm-12 col-md-4 text-center">
+            <i class="fa-solid fa-location-dot"></i>
+            <br />
+            <span>
+              <a
+                href="https://www.google.com/maps/place/Adventure+Master+Trek/@27.7159189,85.3115283,18.5z/data=!4m6!3m5!1s0x39eb18fd00c02ef5:0xfaf91016f607366d!8m2!3d27.7159795!4d85.3114125!16s%2Fg%2F11c20qlmfs?entry=ttu"
+                target="_blank"
+              >
+                Thamel, Kathmandu, Nepal</a
+              ></span
+            >
+          </div>
+          <div class="col-sm-12 col-md-4 text-center">
+            <i class="fa-brands fa-whatsapp"></i>
+            <br />
+            <span
+              ><a
+                href="https://api.whatsapp.com/send/?phone=9779851033195&text&type=phone_number&app_absent=0"
+                >+977 9851033195</a
+              ></span
+            >
+          </div>
+          <div class="col-sm-12 col-md-4 text-center">
+            <i class="fa-solid fa-envelope-circle-check"></i>
+            <br />
+            <span><a href="">info@adventuremastertrek.com</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter sectino starts -->
+    <div class="newsletter pt-5 pb-1">
+      <div class="container">
+        <h4 class="fw-bold text-muted text-center header">
+          Sign-up for updates
+        </h4>
+
+        <p class="text-center">
+          <i class="fa-solid fa-envelope-circle-check text-muted"></i>Your email
+          is safe with us, we don't spam
+        </p>
+        <div class="row d-flex justify-content-center align-items-center mb-5">
+          <div class="col-auto">
+            <svg
+              width="352"
+              height="308"
+              viewBox="0 0 352 308"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.18"
+                d="M194.927 2.84139C190.508 3.63398 186.15 4.72974 181.881 6.12092C153.586 15.3491 99.8311 29.6466 78.8607 50.6998C54.5487 75.167 62.0078 107.362 37.5924 131.685C17.3669 151.807 0.493313 171.505 0.54504 202.034C0.627805 255.831 47.0999 274.525 90.5511 288.078C142.03 304.113 196.779 311.49 250.462 304.165C273.222 301.062 296.2 295.092 314.77 281.591C342.547 261.417 355.904 224.381 350.131 190.882C347.203 173.884 342.082 158.521 340.685 141.058C338.864 118.297 342.703 94.9373 336.019 72.684C324.381 33.9194 283.65 10.6109 243.799 3.55523C227.681 0.679174 210.983 -0.0760504 194.927 2.84139Z"
+                fill="#485757"
+                fill-opacity="0.3"
+              />
+              <path
+                d="M322.808 42.1543V244.099C322.808 247.485 321.463 250.732 319.069 253.126C316.675 255.52 313.428 256.865 310.042 256.865H41.9583C38.5724 256.865 35.3252 255.52 32.9311 253.126C30.5369 250.732 29.1919 247.485 29.1919 244.099V45.9304C29.1919 42.5446 30.5369 39.2974 32.9311 36.9032C35.3252 34.5091 38.5724 33.1641 41.9583 33.1641H313.818C316.202 33.1641 318.489 34.1112 320.175 35.7972C321.861 37.4833 322.808 39.77 322.808 42.1543Z"
+                fill="white"
+              />
+              <path
+                opacity="0.33"
+                d="M204.6 76.9775H76.4502V155.738H204.6V76.9775Z"
+                fill="#D7D9E1"
+              />
+              <path
+                opacity="0.33"
+                d="M204.6 163.29H76.4502V242.051H204.6V163.29Z"
+                fill="#D7D9E1"
+              />
+              <path
+                d="M322.808 42.3509V42.6819H29.1919V42.3509C29.1919 38.965 30.5369 35.7178 32.9311 33.3237C35.3252 30.9295 38.5724 29.5845 41.9583 29.5845H310.042C311.719 29.5831 313.38 29.9124 314.929 30.5535C316.479 31.1946 317.886 32.1349 319.072 33.3206C320.258 34.5064 321.198 35.9143 321.839 37.4638C322.48 39.0133 322.81 40.674 322.808 42.3509Z"
+                fill="#202222"
+              />
+              <path
+                d="M68.8049 42.6821V256.835H41.9583C38.5724 256.835 35.3252 255.489 32.9311 253.095C30.5369 250.701 29.1919 247.454 29.1919 244.068V42.6821H68.8049Z"
+                fill="#D7D9E1"
+              />
+              <path
+                d="M62.6907 96.6133H42.01V98.6617H62.6907V96.6133Z"
+                fill="white"
+              />
+              <path
+                d="M62.7009 90.561H37.2095V93.1578H62.7009V90.561Z"
+                fill="white"
+              />
+              <path
+                d="M62.6907 120.822H42.01V122.87H62.6907V120.822Z"
+                fill="white"
+              />
+              <path
+                d="M62.7009 114.759H37.2095V117.356H62.7009V114.759Z"
+                fill="white"
+              />
+              <path
+                d="M62.6907 145.02H42.01V147.068H62.6907V145.02Z"
+                fill="white"
+              />
+              <path
+                d="M62.7009 138.968H37.2095V141.564H62.7009V138.968Z"
+                fill="white"
+              />
+              <path
+                d="M62.6907 169.218H42.01V171.267H62.6907V169.218Z"
+                fill="white"
+              />
+              <path
+                d="M62.7009 163.166H37.2095V165.763H62.7009V163.166Z"
+                fill="white"
+              />
+              <path
+                d="M340.147 66.5491V109.307C340.148 112.275 339.006 115.129 336.958 117.277C334.911 119.425 332.114 120.702 329.15 120.842C328.967 120.853 328.784 120.853 328.602 120.842H257.89L251.807 134.974L245.393 120.842H148C145.498 120.841 143.064 120.027 141.064 118.523C139.064 117.019 137.606 114.907 136.909 112.504C136.621 111.463 136.481 110.387 136.496 109.307V66.5491C136.496 63.4932 137.706 60.5617 139.862 58.3961C142.018 56.2304 144.944 55.0068 148 54.9932H328.602C330.119 54.9932 331.621 55.2921 333.022 55.873C334.424 56.4539 335.697 57.3052 336.769 58.3785C337.842 59.4517 338.692 60.7257 339.271 62.1276C339.851 63.5296 340.149 65.0321 340.147 66.5491Z"
+                fill="#202222"
+              />
+              <path
+                opacity="0.33"
+                d="M340.147 70.8735V109.307C340.148 112.275 339.006 115.129 336.958 117.277C334.911 119.425 332.114 120.701 329.15 120.842C328.967 120.853 328.784 120.853 328.602 120.842H257.89L251.807 134.974L245.393 120.842H148C145.498 120.841 143.064 120.027 141.064 118.523C139.064 117.019 137.606 114.907 136.909 112.504C136.621 111.463 136.481 110.387 136.496 109.307V70.8735H340.147Z"
+                fill="white"
+              />
+              <path
+                d="M42.8584 39.0302C44.4696 39.0302 45.7758 37.724 45.7758 36.1127C45.7758 34.5015 44.4696 33.1953 42.8584 33.1953C41.2471 33.1953 39.9409 34.5015 39.9409 36.1127C39.9409 37.724 41.2471 39.0302 42.8584 39.0302Z"
+                fill="white"
+              />
+              <path
+                d="M52.8623 39.0302C54.4735 39.0302 55.7797 37.724 55.7797 36.1127C55.7797 34.5015 54.4735 33.1953 52.8623 33.1953C51.251 33.1953 49.9448 34.5015 49.9448 36.1127C49.9448 37.724 51.251 39.0302 52.8623 39.0302Z"
+                fill="white"
+              />
+              <path
+                d="M62.8664 39.0302C64.4777 39.0302 65.7839 37.724 65.7839 36.1127C65.7839 34.5015 64.4777 33.1953 62.8664 33.1953C61.2552 33.1953 59.949 34.5015 59.949 36.1127C59.949 37.724 61.2552 39.0302 62.8664 39.0302Z"
+                fill="white"
+              />
+              <path
+                d="M275.26 244.203C275.26 255.293 270.855 265.93 263.012 273.772C255.17 281.614 244.534 286.019 233.444 286.019C222.353 286.019 211.717 281.614 203.875 273.772C196.033 265.93 191.627 255.293 191.627 244.203C191.627 243.127 191.668 242.061 191.751 241.006C192.583 230.229 197.557 220.192 205.628 213.002C213.699 205.812 224.242 202.026 235.043 202.44C245.845 202.853 256.067 207.434 263.565 215.22C271.063 223.006 275.254 233.393 275.26 244.203Z"
+                fill="#68E1FD"
+              />
+              <path
+                opacity="0.14"
+                d="M215.866 263.197C214.48 269.239 216.177 275.684 214.935 281.705C205.275 276.927 197.825 268.614 194.13 258.49C193.931 256.422 193.983 254.338 194.286 252.282C194.565 250.058 194.979 247.751 194.348 245.599C193.748 243.942 192.869 242.399 191.751 241.037C192.215 234.923 194.021 228.986 197.039 223.649C200.057 218.311 204.214 213.704 209.214 210.155C209.266 210.436 209.266 210.723 209.214 211.004L207.466 218.97C207.818 221.329 207.818 223.728 207.466 226.087C207.274 227.264 206.828 228.385 206.158 229.372C205.488 230.358 204.61 231.186 203.586 231.798C202.814 232.117 202.064 232.487 201.341 232.905C200.647 233.481 200.067 234.183 199.634 234.974C198.479 236.587 197.618 238.39 197.089 240.302C196.834 241.259 196.821 242.264 197.052 243.227C197.283 244.19 197.751 245.08 198.413 245.816L210.073 243.551C211.294 243.313 212.773 243.147 213.611 244.068C214.646 245.165 213.984 246.913 214.201 248.392C214.48 250.275 216.156 251.631 216.932 253.379C218.277 256.41 216.632 259.897 215.866 263.197Z"
+                fill="#020202"
+              />
+              <path
+                opacity="0.4"
+                d="M200.39 222.725C200.93 223.896 201.791 224.89 202.873 225.591C207.762 229.26 213.667 231.327 219.777 231.509C217.801 231.995 215.711 232.543 214.304 234.023C212.897 235.502 212.597 238.161 214.232 239.413C214.807 239.797 215.461 240.048 216.146 240.147C219.26 240.759 222.482 240.498 225.457 239.392C227.257 238.72 229.026 237.726 230.95 237.747C232.491 237.875 233.992 238.304 235.368 239.009C237.437 239.858 239.599 240.623 241.751 240.189C243.903 239.754 245.889 237.685 245.403 235.533C245.289 235.026 245.072 234.499 245.32 234.033C245.529 233.754 245.823 233.551 246.158 233.454L265.949 224.65C267.201 224.081 268.639 223.284 268.773 221.919C268.908 220.553 267.522 219.384 266.239 218.722C259.421 215.163 251.465 214.708 243.779 214.335L230.133 213.663C223.533 213.342 216.87 213.021 210.28 213.797C207.994 214.066 203.959 214.097 202.21 215.804C200.69 217.253 199.686 220.853 200.39 222.725Z"
+                fill="#020202"
+              />
+              <path
+                opacity="0.14"
+                d="M275.26 244.203C275.267 250.527 273.836 256.77 271.076 262.461C268.316 268.151 264.299 273.14 259.328 277.05C258.754 276.668 258.261 276.176 257.88 275.601C256.628 273.708 257.042 270.718 259.059 269.653C258.356 270.025 255.593 269.115 254.766 268.991L250.462 268.318C248.393 267.998 244.813 268.132 243.603 266.063C243.463 265.774 243.301 265.498 243.117 265.235C242.86 264.979 242.558 264.772 242.227 264.625C240.934 263.994 239.413 263.28 239.123 261.873C238.906 260.838 239.423 259.659 238.896 258.769C238.73 258.48 238.472 258.252 238.306 257.973C238.124 257.549 238.055 257.085 238.106 256.626C238.156 256.167 238.325 255.729 238.596 255.355C240.406 252.179 244.172 250.648 247.772 250.038C251.372 249.427 255.107 249.51 258.625 248.496C260.839 247.855 262.939 246.779 265.225 246.427C266.487 246.251 268.06 246.127 268.525 244.937C268.784 244.265 268.525 243.489 268.794 242.806C268.898 242.516 269.094 242.268 269.198 241.979C269.278 241.735 269.303 241.477 269.27 241.223C269.237 240.969 269.149 240.725 269.01 240.51C268.871 240.295 268.686 240.113 268.467 239.979C268.249 239.845 268.004 239.761 267.749 239.734C268.039 238.947 268.287 237.944 267.667 237.385C267.451 237.227 267.2 237.123 266.935 237.081C266.671 237.04 266.4 237.062 266.146 237.147C264.646 237.53 263.559 238.792 262.297 239.682C258.159 242.651 252.407 241.596 248.91 238.109C248.344 237.612 247.94 236.956 247.751 236.226C247.699 235.605 247.841 234.982 248.158 234.444C248.475 233.907 248.951 233.481 249.521 233.226C250.663 232.733 251.897 232.49 253.141 232.512L251.745 223.408C244.793 225.27 241.968 218.649 240.975 213.146C239.982 207.642 243.893 205.676 248.931 205.314C256.708 208.416 263.375 213.781 268.069 220.714C272.763 227.648 275.268 235.83 275.26 244.203Z"
+                fill="#020202"
+              />
+              <path
+                d="M250.503 150.438L249.533 150.515C248.929 150.562 248.479 151.091 248.526 151.694L249.033 158.109C249.081 158.713 249.609 159.164 250.213 159.116L251.183 159.039C251.786 158.992 252.237 158.463 252.189 157.86L251.682 151.445C251.635 150.841 251.106 150.39 250.503 150.438Z"
+                fill="#68E1FD"
+              />
+              <path
+                d="M243.706 147.875L244.151 150.348C244.296 151.145 244.875 151.672 245.496 151.569C247.896 151.155 253.772 150.338 258.004 151.414C260.303 151.999 262.552 152.767 264.728 153.71C265.587 154.093 266.446 153.131 266.301 151.952L264.78 138.792C264.635 137.633 263.621 137.054 262.887 137.757C259.856 140.509 252.831 145.982 244.958 145.951C244.089 145.92 243.53 146.872 243.706 147.875Z"
+                fill="#6A6B6B"
+              />
+              <path
+                d="M265.383 153.782C267.57 153.609 269.05 149.761 268.688 145.187C268.327 140.613 266.26 137.046 264.073 137.219C261.886 137.392 260.406 141.24 260.767 145.813C261.129 150.387 263.195 153.955 265.383 153.782Z"
+                fill="#68E1FD"
+              />
+              <path
+                d="M265.383 153.782C267.57 153.609 269.05 149.761 268.688 145.187C268.327 140.613 266.26 137.046 264.073 137.219C261.886 137.392 260.406 141.24 260.767 145.813C261.129 150.387 263.195 153.955 265.383 153.782Z"
+                fill="url(#paint0_linear_493_43420)"
+              />
+              <path
+                d="M218.029 163.239C213.146 163.932 201.476 191.358 204.952 197.638C208.428 203.917 227.619 211.242 227.619 211.242L226.584 200.431C226.584 200.431 213.456 194.844 214.501 191.358C215.546 187.871 223.098 174.857 223.098 174.857L218.029 163.239Z"
+                fill="#6C757D"
+              />
+              <path
+                d="M249.262 162.494C249.262 161.811 253.803 163.725 254.01 163.838C256.618 165.278 259.09 166.951 261.397 168.835C263.466 170.491 265.628 172.104 267.604 173.936C269.394 175.632 271.815 177.722 271.38 180.474C271.039 182.543 268.794 183.909 266.684 183.919C264.568 183.757 262.531 183.043 260.776 181.85C257.093 179.729 253.607 177.443 250.027 175.115L249.262 162.494Z"
+                fill="#6C757D"
+              />
+              <path
+                d="M221.039 162.442H247.855C248.793 162.422 249.726 162.592 250.597 162.941C251.469 163.289 252.261 163.81 252.927 164.471C253.594 165.132 254.12 165.921 254.475 166.79C254.83 167.659 255.006 168.59 254.993 169.529C254.993 169.529 249.883 190.406 249.82 197.41C249.82 201.248 251.031 212.711 251.031 212.711H217.925C217.925 212.711 219.456 200.731 219.425 196.706C219.363 189.878 213.953 169.529 213.953 169.529C213.94 168.595 214.115 167.667 214.466 166.802C214.818 165.936 215.34 165.15 216 164.49C216.661 163.829 217.447 163.308 218.313 162.956C219.178 162.604 220.105 162.429 221.039 162.442Z"
+                fill="#6C757D"
+              />
+              <path
+                d="M253.566 150.596C253.11 149.958 252.497 149.449 251.786 149.117C251.111 148.918 250.392 148.918 249.717 149.117C248.801 149.331 247.944 149.745 247.205 150.328C246.467 150.91 245.866 151.649 245.444 152.49C245.266 152.835 245.17 153.218 245.165 153.607C245.199 153.994 245.3 154.372 245.465 154.724C246.106 156.348 246.955 158.169 248.641 158.645C249.534 158.758 250.432 158.823 251.331 158.842C251.921 158.935 252.479 159.162 253.069 159.266C254.559 159.535 257.549 158.521 257.662 156.648C257.714 155.728 256.535 154.497 256.038 153.783C255.231 152.676 254.435 151.621 253.566 150.596Z"
+                fill="#FCA89E"
+              />
+              <path
+                d="M238.575 166.363C238.464 167.147 238.057 167.86 237.438 168.354C236.818 168.849 236.033 169.087 235.244 169.021C231.954 168.866 231.716 166.363 231.716 166.363V153.307H238.575V166.363Z"
+                fill="#FCA89E"
+              />
+              <path
+                d="M231.675 159.763C231.675 159.763 235.968 166.456 238.534 163.239V158.004L231.675 159.763Z"
+                fill="url(#paint1_linear_493_43420)"
+              />
+              <path
+                d="M228.829 156.431C230.547 161.759 239.082 161.915 241.947 157.683C243.48 155.111 243.961 152.046 243.292 149.127C242.838 146.255 241.959 143.466 240.685 140.851C239.806 139.206 238.916 137.747 236.92 137.499C234.641 137.351 232.368 137.861 230.371 138.968C228.479 139.988 226.998 141.631 226.18 143.619C225.361 145.606 225.256 147.816 225.881 149.872C226.224 150.901 226.657 151.898 227.174 152.852C227.817 154.001 228.371 155.197 228.829 156.431Z"
+                fill="#FCA89E"
+              />
+              <path
+                d="M256.918 188.782H211.997V215.566H256.918V188.782Z"
+                fill="#CBCBCB"
+              />
+              <path
+                d="M231.447 229.854C230.51 230.592 229.462 231.178 228.343 231.592C225.933 232.626 221.174 234.488 221.888 236.557C222.85 239.351 226.202 239.144 228.426 238.482C231.899 237.291 235.206 235.66 238.265 233.63L231.447 229.854Z"
+                fill="#473F47"
+              />
+              <path
+                d="M233.444 234.033C234.709 235.662 236.152 237.143 237.747 238.451C240.51 240.592 242.424 241.296 244.669 240.251C247.917 238.74 244.927 235.543 242.403 233.009C240.477 230.997 238.32 229.219 235.978 227.712L233.444 234.033Z"
+                fill="#473F47"
+              />
+              <path
+                d="M233.857 226.212L237.344 229.098C238.063 229.681 238.679 230.38 239.165 231.167C240.292 233.237 236.382 237.592 233.837 235.057C231.292 232.523 229.016 229.812 229.016 229.812L233.857 226.212Z"
+                fill="#FCA89E"
+              />
+              <path
+                d="M242.982 140.344C242.615 141.229 242.073 142.031 241.389 142.703C239.998 144.047 238.215 144.913 236.299 145.175C233.505 145.62 230.671 145.175 227.857 144.896C227.794 145.35 227.604 145.777 227.309 146.128C227.015 146.48 226.627 146.741 226.191 146.882C226.616 148.848 227.183 150.781 227.888 152.665C228.581 154.507 229.574 156.224 230.319 158.024C228.002 156.421 226.181 153.69 224.526 151.476C223.628 150.424 222.908 149.232 222.394 147.948C222.138 147.305 222.039 146.609 222.105 145.92C222.172 145.231 222.402 144.568 222.777 143.985C223.164 143.595 223.479 143.14 223.708 142.641C223.786 142.206 223.786 141.761 223.708 141.327C223.673 140.294 223.87 139.267 224.285 138.322C224.701 137.376 225.324 136.536 226.108 135.864C227.695 134.536 229.557 133.578 231.561 133.061C233.275 132.458 235.105 132.259 236.909 132.481C239.516 132.926 242.641 135.802 243.189 138.399C243.306 139.054 243.235 139.728 242.982 140.344Z"
+                fill="#473F47"
+              />
+              <path
+                d="M226.988 152.934C226.687 152.988 226.399 153.1 226.142 153.265C225.884 153.43 225.662 153.645 225.488 153.896C225.392 154.093 225.336 154.307 225.323 154.525C225.311 154.744 225.342 154.963 225.416 155.169C225.563 155.584 225.783 155.97 226.067 156.307C226.211 156.512 226.389 156.691 226.595 156.834C226.942 157.029 227.335 157.129 227.733 157.124C228.043 157.124 228.354 157.124 228.664 157.124C228.823 157.115 228.978 157.072 229.119 157C229.265 156.89 229.373 156.739 229.43 156.565C229.642 155.917 229.642 155.217 229.43 154.569C229.285 153.957 228.99 153.392 228.571 152.924C228.167 152.541 227.536 152.758 226.988 152.934Z"
+                fill="#FCA89E"
+              />
+              <path
+                d="M261.594 178.809C262.192 180.229 263.104 181.496 264.263 182.512C265.082 183.124 266.065 183.479 267.086 183.533C268.107 183.587 269.122 183.336 270.001 182.814C270.88 182.291 271.584 181.52 272.025 180.597C272.466 179.674 272.623 178.642 272.477 177.629C272.135 176.139 271.468 174.744 270.522 173.543C266.466 167.542 262.297 161.611 258.014 155.749C256.876 156.4 252.841 157.88 252.562 159.173C252.283 160.466 254.714 164.346 255.314 165.67C256.349 167.905 257.383 170.139 258.418 172.353C259.452 174.567 260.932 176.615 261.594 178.809Z"
+                fill="#6C757D"
+              />
+              <path
+                d="M250.024 156.098L248.708 156.536C248.128 156.729 247.814 157.356 248.007 157.936L248.445 159.251C248.638 159.831 249.265 160.145 249.845 159.952L251.16 159.514C251.74 159.321 252.054 158.695 251.861 158.115L251.424 156.799C251.231 156.219 250.604 155.905 250.024 156.098Z"
+                fill="#6A6B6B"
+              />
+              <path
+                d="M143.593 61.6455L148.455 66.4976"
+                stroke="white"
+                stroke-width="2.06911"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+              />
+              <path
+                d="M148.745 61.6455L143.882 66.4976"
+                stroke="white"
+                stroke-width="2.06911"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+              />
+              <path
+                d="M266.187 85.4297H158.252C156.835 85.4297 155.687 86.5784 155.687 87.9954C155.687 89.4124 156.835 90.5611 158.252 90.5611H266.187C267.604 90.5611 268.753 89.4124 268.753 87.9954C268.753 86.5784 267.604 85.4297 266.187 85.4297Z"
+                fill="white"
+              />
+              <path
+                d="M266.187 98.2271H158.252C156.835 98.2271 155.687 99.3757 155.687 100.793C155.687 102.21 156.835 103.358 158.252 103.358H266.187C267.604 103.358 268.753 102.21 268.753 100.793C268.753 99.3757 267.604 98.2271 266.187 98.2271Z"
+                fill="white"
+              />
+              <g style="mix-blend-mode: darken" opacity="0.1">
+                <path d="M256.92 189H212V215.785H256.92V189Z" fill="#020202" />
+              </g>
+              <path
+                d="M237.209 222.57C245.362 216.621 249.624 212.224 258.78 206.659C260.963 205.334 262.453 204.941 266.229 206.421C269.446 207.683 269.105 213.218 267.346 215.525C262.08 222.446 241.782 232.005 237.675 233.454C235.916 234.074 229.657 228.808 232.192 226.294C233.782 224.945 235.458 223.701 237.209 222.57Z"
+                fill="#473F47"
+              />
+              <path
+                d="M223.491 230.754C214.015 225.984 208.2 224.267 202.107 215.69C200.555 213.497 199.934 209.887 200.534 208.097C201.279 205.904 204.486 204.579 208.273 205.479C211.438 206.245 232.73 222.922 236.061 226.067C237.489 227.422 233.123 234.199 229.543 233.03C227.461 232.455 225.436 231.693 223.491 230.754Z"
+                fill="#473F47"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_493_43420"
+                  x1="255.192"
+                  y1="141.431"
+                  x2="313.209"
+                  y2="166.136"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0.01" />
+                  <stop offset="0.08" stop-opacity="0.69" />
+                  <stop offset="0.21" stop-opacity="0.32" />
+                  <stop offset="1" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_493_43420"
+                  x1="236.651"
+                  y1="148.796"
+                  x2="232.761"
+                  y2="181.695"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0.01" />
+                  <stop offset="0.08" stop-opacity="0.69" />
+                  <stop offset="0.21" stop-opacity="0.32" />
+                  <stop offset="1" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="col-auto">
+            <div class="newsletter-fields">
+              <input type="text" placeholder="Name" class="form-control" />
+              <input type="email" placeholder="Email" class="form-control" />
+            </div>
+            <button class="btn btn-sm btn-dark mt-2 newsletter-btn">
+              Subscribe
+            </button>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <!-- Newsletter sectino endss -->
+
+    <!-- footer starts -->
+
+    <footer class="footer pt-5">
+      <div class="container">
+        <div class="row footer-row">
+          <div class="col-sm-12 col-md-12 col-lg-3 mb-3 footer-content">
+            <h4 class="footer-title">Adventure Master Trek</h4>
+            <p class="footer-contact">
+              <a
+                href="https://api.whatsapp.com/send/?phone=9779851033195&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer"
+                class="link-hover-black"
+              >
+                <i class="fa-brands fa-whatsapp"></i> +977 9851033195
+              </a>
+              <br />
+              <a
+                href="mailto:info@adventuremastertrek.com"
+                target="_blank"
+                rel="noreferrer"
+                class="link-hover-black"
+              >
+                <i class="fa-regular fa-envelope"></i>
+                info@adventuremastertrek.com
+              </a>
+              <br />
+              <a
+                href="mailto:advmt2009@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+                class="link-hover-black"
+              >
+                <i class="fa-regular fa-envelope"></i> advmt2009@gmail.com
+              </a>
+              <br />
+              <a
+                href="mailto:adventuremastertrek@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+                class="link-hover-black"
+              >
+                <i class="fa-regular fa-envelope"></i>
+                adventuremastertrek@gmail.com
+              </a>
+            </p>
+          </div>
+          <div
+            class="col-sm-12 col-md-6 col-lg-3 mb-3 useful-link footer-content footer-useful-link"
+          >
+            <h4 class="footer-title">Useful Links</h4>
+            <ul>
+              <li class="link-hover-black">Contact us</li>
+              <li class="link-hover-black">About us</li>
+              <li class="link-hover-black">Travel Insurance</li>
+              <li class="link-hover-black">Terms and condition</li>
+            </ul>
+          </div>
+          <div class="col-md-12 col-lg-3 mb-3 footer-affiliated">
+            <h4 class="footer-title">We are affiliated</h4>
+            <div class="affiliated-img mt-3">
+              <ul>
+                <li><img src="images/FooterImg/1.png" alt="footer" /></li>
+                <li>
+                  <img src="images/FooterImg/nma.png" alt="footer" />
+                </li>
+                <li>
+                  <img src="images/FooterImg/ntb.png" alt="footer" />
+                </li>
+                <li>
+                  <img src="images/FooterImg/taan.png" alt="footer" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-3 mb-3 footer-content footer-connect">
+            <h4 class="footer-title">Connect with us</h4>
+            <div
+              class="row footer-social-icon d-flex justify-content-center justify-content-md-start"
+            >
+              <div class="col-auto">
+                <span class="instaIcon">
+                  <a
+                    href="https://www.instagram.com/adventuremastertrek/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </span>
+              </div>
+              <div class="col-auto">
+                <span class="fbIcon">
+                  <a href="https://www.facebook.com/Advmt2009" target="_blank">
+                    <i class="fa-brands fa-square-facebook"></i>
+                  </a>
+                </span>
+              </div>
+              <div class="col-auto">
+                <span class="twitterIcon">
+                  <a href="https://twitter.com/AdvMasterTreks" target="_blank">
+                    <i class="fa-brands fa-square-twitter"></i>
+                  </a>
+                </span>
+              </div>
+              <div class="col-auto">
+                <span class="linkedinIcon">
+                  <a href="https://twitter.com/AdvMasterTreks" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div class="mt-3">
+              We accept:
+              <br />
+              <span class="payment-img">
+                <img src="images/FooterImg/payment.png" alt="footer" />
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <h4 class="fw-bold">Recommended On</h4>
+          <div class="tripadvisor-footer">
+            <div
+              class="container d-flex justify-content-center align-items-center pb-4"
+            >
+              <div
+                id="TA_cdsratingsonlynarrow708"
+                class="TA_cdsratingsonlynarrow"
+              >
+                <ul id="TSTiuTynyd" class="TA_links VVCIg3ncaQz">
+                  <li id="vynAYhYSN" class="NRG3HDT8">
+                    <a
+                      target="_blank"
+                      href="https://www.tripadvisor.com/Attraction_Review-g293890-d8661857-Reviews-Adventure_Master_Trek-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html"
+                      ><img
+                        src="https://www.tripadvisor.com/img/cdsi/img2/branding/v2/Tripadvisor_lockup_horizontal_secondary_registered-18034-2.svg"
+                        alt="TripAdvisor"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="trip-advisor-traveler-choice">
+                <a
+                  href="https://www.tripadvisor.com/Attraction_Review-g293890-d8661857-Reviews-Adventure_Master_Trek-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html"
+                  target="_blank"
+                >
+                  <img
+                    src="images/tripadvisor.gif"
+                    alt="trip advisor travller choice award"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <h1>Meet our leadership team</h1>
+          <img
+            src="images/FooterImg/teamFooter.png"
+            alt="adventure master team"
+            style="width: 600px"
+            class="img-fluid"
+          />
+        </div>
+        <h4 class="text-center pt-5 mb-4 footer-title global-title mb-4">
+          Our Global Headquaters
+        </h4>
+        <div class="row wrap footer-headquater flex-wrap">
+          <div class="col-6 col-md-3 col-lg-3 mb-3 text-center">
+            <h5 class="footer-title">Nepal</h5>
+            <p>
+              <a
+                href="https://api.whatsapp.com/send/?phone=9779849780311&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa-brands fa-whatsapp"></i> +977 9851 033195
+              </a>
+            </p>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3 mb-3 text-center">
+            <h5 class="footer-title">UK</h5>
+
+            <p>
+              <a
+                href="https://api.whatsapp.com/send/?phone=447983806200&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa-brands fa-whatsapp"></i> +44 7983 806200
+              </a>
+            </p>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-3 mb-3 text-center">
+            <h5 class="footer-title">Bahrain</h5>
+            <p>
+              <a
+                href="https://api.whatsapp.com/send/?phone=97334383250&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa-brands fa-whatsapp"></i> +973 3438 3250
+              </a>
+              <br />
+            </p>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3 mb-3 text-center">
+            <h5 class="footer-title">Russia</h5>
+            <p>
+              <a
+                href="https://api.whatsapp.com/send/?phone=79531748198&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa-brands fa-whatsapp"></i> +79 5317 48198
+              </a>
+              <br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container copyright">
+        <p class="copyright-text">
+          &copy; Copyright 2023 Adventure Master Trek
+        </p>
+        <p>
+          <strong>
+            Registration No: 74651/067/068 | Tourism Registration No: 1180-067
+          </strong>
+        </p>
+        <p>
+          <strong>Privacy and Policy</strong>
+        </p>
+
+        <p class="copyright-text">
+          <a href="https://itsansaar.com.np" target="_blank" rel="noreferrer">
+            <i class="fa-solid fa-code"></i> Develop By: IT Sansaar
+          </a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer ends -->
+
+    <div class="to-top">
+      <button class="scroll-top"><i class="fa-solid fa-up-long"></i></button>
+    </div>
+    <!-- Bootstrap js cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap 5 JS and Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <!-- tripadvisor -->
+    <script
+      async
+      src="https://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&amp;uniq=708&amp;locationId=8661857&amp;lang=en_US&amp;border=true&amp;shadow=false&amp;backgroundColor=white&amp;display_version=2"
+      data-loadtrk
+      onload="this.loadtrk=true"
+    ></script>
+    <script
+      async
+      src="https://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=884&amp;locationId=8661857&amp;lang=en_US&amp;year=2023&amp;display_version=2"
+      data-loadtrk
+      onload="this.loadtrk=true"
+    ></script>
+    <script src="js/menu.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/tooltip.js"></script>
+    <script src="js/about.js"></script>
+  </body>
+</html>

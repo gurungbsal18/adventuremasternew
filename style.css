@@ -1378,4 +1378,22 @@ a {
 .about-banner-cta a {
   text-decoration: none;
   color: inherit;
+}
+
+.location::before {
+  content: "\f3c5";
+  font-family: "FontAwesome";
+  margin-right: 5px;
+  color: #6c757d;
+}
+
+.contact-container {
+  padding: 60px 0;
+}
+.contact-container a {
+  text-decoration: none;
+  color: inherit;
+}
+.contact-container a:hover {
+  color: #6c757d;
 }/*# sourceMappingURL=style.css.map */
