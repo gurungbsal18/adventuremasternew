@@ -232,6 +232,9 @@
   .team-container ul {
     flex-direction: column;
   }
+  .contact-map {
+    width: 100%;
+  }
 }
 
 @media (max-width: 900px) {
@@ -304,6 +307,9 @@
   .top-nav,
   .top-nav-booking {
     padding: 0;
+  }
+  .contact-map {
+    width: 100%;
   }
 }
 

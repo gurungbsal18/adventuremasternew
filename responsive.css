@@ -57,7 +57,8 @@ a {
   gap: 30px;
 }
 
-#menu-toggle, #sm-menu-toggle {
+#menu-toggle,
+#sm-menu-toggle {
   cursor: pointer;
 }
 
@@ -660,7 +661,9 @@ a {
 }
 
 .cost-exclude-tab-content,
-.trip-highlight-tab-content, .luxury-cost-include-tab-content, .luxury-cost-exclude-tab-content {
+.trip-highlight-tab-content,
+.luxury-cost-include-tab-content,
+.luxury-cost-exclude-tab-content {
   display: none;
 }
 
@@ -1127,7 +1130,7 @@ a {
 }
 
 .readmore-content.collapsed {
-  height: 50px;
+  height: 150px;
   overflow: hidden;
 }
 
@@ -1265,7 +1268,8 @@ a {
   color: #1a1a1a;
 }
 
-.team-container .team-guide, .team-container .team-porter {
+.team-container .team-guide,
+.team-container .team-porter {
   display: none;
 }
 .team-container .team-location::before {
@@ -1380,13 +1384,6 @@ a {
   color: inherit;
 }
 
-.location::before {
-  content: "\f3c5";
-  font-family: "FontAwesome";
-  margin-right: 5px;
-  color: #6c757d;
-}
-
 .contact-container {
   padding: 60px 0;
 }
@@ -1398,9 +1395,70 @@ a {
   color: #6c757d;
 }
 
-.blog-card-section .blog-card-image img {
+.blog-section-card-container .blog-section-card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 10px;
+}
+.blog-section-card-container .blog-section-card-image img {
   width: 100%;
-  height: 300px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-section-card-container .blog-section-card-date p {
+  font-size: 14px;
+}
+.blog-section-card-container .blog-section-card-content {
+  margin-top: 20px;
+  padding: 0 20px;
+}
+.blog-section-card-container .blog-section-card-desc {
+  font-size: 14px;
+}
+.blog-section-card-container .blog-section-card-btn {
+  padding: 0 20px 20px 20px;
+}
+
+.destination-card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.destination-card:hover {
+  box-shadow: rgba(38, 57, 77, 0.562) 0px 20px 30px -10px;
+}
+.destination-card:hover h4 {
+  color: #000 !important;
+}
+.destination-card a {
+  text-decoration: none;
+}
+.destination-card .destination-card-image .roow {
+  flex-wrap: wrap;
+}
+.destination-card .destination-card-image img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.destination-card .destination-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.destination-card .destination-content h4::before {
+  content: "\f3c5";
+  font-family: "FontAwesome";
+  margin-right: 5px;
+}
+.destination-card .destination-content span::before {
+  content: "\e554";
+  font-family: "FontAwesome";
+  margin-right: 5px;
+}
+.destination-card .destination-content-tour-types .destination-tour-types-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 @media (max-width: 567px) {
@@ -1590,6 +1648,9 @@ a {
   .team-container ul {
     flex-direction: column;
   }
+  .contact-map {
+    width: 100%;
+  }
 }
 @media (max-width: 900px) {
   .affiliated-img img {
@@ -1651,5 +1712,8 @@ a {
   .top-nav,
   .top-nav-booking {
     padding: 0;
+  }
+  .contact-map {
+    width: 100%;
   }
 }/*# sourceMappingURL=responsive.css.map */

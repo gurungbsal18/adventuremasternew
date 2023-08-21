@@ -156,7 +156,7 @@
         </div>
       </div>
     </div>
-    <nav class="top-nav-booking row m-0">
+    <nav class="top-nav row">
       <div class="col-auto logo">
         <a href="index.html"><img src="images/logo-white.png" alt="" /></a>
       </div>
@@ -171,75 +171,116 @@
       </div>
     </nav>
 
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-12 col-lg-6">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1248.7662326626312!2d85.31152830246947!3d27.715918923641755!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18fd00c02ef5%3A0xfaf91016f607366d!2sAdventure%20Master%20Trek!5e0!3m2!1sen!2snp!4v1692521850073!5m2!1sen!2snp"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            class="contact-map"
-          ></iframe>
-        </div>
-        <div class="col-md-12 col-lg-6">
-          <h4 class="title">Send Inquiry</h4>
-          <label for="fullName" class="form-label">Full Name</label>
-          <input type="text" class="form-control" />
-          <label for="email" class="form-label mt-3">Email Address</label>
-          <input type="email" class="form-control" />
-          <label for="phoneNumber" class="form-label mt-3"
-            >Phone/WhatsApp</label
-          >
-          <input type="number" class="form-control" />
-          <label for="" class="form-label mt-3">Message</label>
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="5"
-            class="form-control"
-          ></textarea>
-          <div class="mt-3">
-            <button class="btn btn-dark">Send</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- header can be video or image -->
+    <header class="trip-header-about"></header>
 
-    <div class="container-fluid bg-secondary-subtle mt-5">
-      <div class="container contact-container">
+    <div class="container my-5">
+      <div class="readmore-content collapsed">
+        <p>
+          Choosing your next travel destination offers exciting possibilities,
+          and three remarkable options to consider are Nepal, Tibet, and Bhutan.
+        </p>
+        <h4 class="title">Nepal</h4>
+        <p>
+          Nepal beckons with its awe-inspiring Himalayan landscapes, including
+          the world's highest peak, Mount Everest. It's a paradise for trekkers
+          and adventurers, offering not only stunning mountain vistas but also
+          rich cultural experiences in places like Kathmandu's ancient temples
+          and bustling markets.
+        </p>
+        <h4 class="title">Tibet</h4>
+        <p>
+          Tibet, known as the "Roof of the World," captivates with its spiritual
+          essence. From the iconic Potala Palace in Lhasa to the serene shores
+          of Yamdrok Lake, Tibet's landscape is adorned with monasteries, prayer
+          flags, and a deep sense of Tibetan Buddhism. Traveling here provides
+          an opportunity to immerse yourself in a unique blend of cultural and
+          natural beauty.
+        </p>
+        <h4 class="title">Bhutan</h4>
+        <p>
+          Bhutan, often called the "Land of the Thunder Dragon," offers a
+          glimpse into a serene kingdom that values Gross National Happiness
+          over GDP. The country's striking monasteries, such as the cliffside
+          Tiger's Nest, and its commitment to preserving traditions and nature
+          make it a captivating destination. Exploring Bhutan means delving into
+          an environment where tradition and modernity coexist harmoniously.
+        </p>
+        <p>
+          Each of these countries holds its own allure, whether it's the
+          adventure of Nepal, the spirituality of Tibet, or the happiness-driven
+          ethos of Bhutan. Whichever you choose, you're bound to embark on a
+          journey that promises unforgettable experiences and a deeper
+          connection to the world around you.
+        </p>
+      </div>
+      <div class="d-flex justify-content-center mt-3">
+        <button class="btn btn-dark readmore-btn">Read More</button>
+      </div>
+
+      <div class="destination mt-5">
         <div class="row">
-          <h4 class="title fw-bold text-center mb-4">Contact Us</h4>
-          <div class="col-sm-12 col-md-4 text-center">
-            <i class="fa-solid fa-location-dot"></i>
-            <br />
-            <span>
-              <a
-                href="https://www.google.com/maps/place/Adventure+Master+Trek/@27.7159189,85.3115283,18.5z/data=!4m6!3m5!1s0x39eb18fd00c02ef5:0xfaf91016f607366d!8m2!3d27.7159795!4d85.3114125!16s%2Fg%2F11c20qlmfs?entry=ttu"
-                target="_blank"
-              >
-                Thamel, Kathmandu, Nepal</a
-              ></span
-            >
+          <div class="col-lg-4 col-md-6 col-sm-12 py-2">
+            <div class="destination-card">
+              <a href="destination.html">
+                <div class="destination-card-image">
+                  <img src="images/boudha-nath.jpg" alt="" />
+                </div>
+                <div class="destination-content px-2 pt-3">
+                  <h4 class="title fw-bold m-0 text-muted">Nepal</h4>
+                  <span class="text-muted">14 Tours</span>
+                </div>
+                <div class="destination-content-tour-types px-2 py-3">
+                  <span class="fw-bold text-muted">Popular activities</span>
+                  <div class="destination-tour-types-badges mt-2">
+                    <span class="badge text-bg-danger p-2">Trekking</span>
+                    <span class="badge text-bg-success p-2"
+                      >Helicopter tour</span
+                    >
+                    <span class="badge text-bg-secondary p-2">Expedition</span>
+                    <span class="badge text-bg-warning p-2">Sightseeing</span>
+                    <span class="badge text-bg-warning p-2">Cultural tour</span>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
-          <div class="col-sm-12 col-md-4 text-center">
-            <i class="fa-brands fa-whatsapp"></i>
-            <br />
-            <span
-              ><a
-                href="https://api.whatsapp.com/send/?phone=9779851033195&text&type=phone_number&app_absent=0"
-                >+977 9851033195</a
-              ></span
-            >
+          <div class="col-lg-4 col-md-6 col-sm-12 py-2">
+            <div class="destination-card">
+              <div class="destination-card-image">
+                <img src="images/tibet.jpg" alt="" />
+              </div>
+              <div class="destination-content px-2 pt-3">
+                <h4 class="title fw-bold m-0 text-muted">Tibet</h4>
+                <span class="text-muted">5 Tours</span>
+              </div>
+              <div class="destination-content-tour-types px-2 py-3">
+                <span class="fw-bold text-muted">Popular activities</span>
+                <div class="destination-tour-types-badges mt-2">
+                  <span class="badge text-bg-warning p-2">Sightseeing</span>
+                  <span class="badge text-bg-warning p-2">Cultural tour</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-12 col-md-4 text-center">
-            <i class="fa-solid fa-envelope-circle-check"></i>
-            <br />
-            <span><a href="">info@adventuremastertrek.com</a></span>
+          <div class="col-lg-4 col-md-6 col-sm-12 py-2">
+            <div class="destination-card">
+              <div class="destination-card-image">
+                <img src="images/bhutan.jpg" alt="" />
+              </div>
+              <div class="destination-content px-2 pt-3">
+                <h4 class="title fw-bold m-0 text-muted">Bhutan</h4>
+                <span class="text-muted">7 Tours</span>
+              </div>
+              <div class="destination-content-tour-types px-2 py-3">
+                <span class="fw-bold text-muted">Popular activities</span>
+                <div class="destination-tour-types-badges mt-2">
+                  <span class="badge text-bg-danger p-2">Trekking</span>
+                  <span class="badge text-bg-warning p-2">Sightseeing</span>
+                  <span class="badge text-bg-warning p-2">Cultural tour</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -799,6 +840,5 @@
     <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
     <script src="js/tooltip.js"></script>
-    <script src="js/about.js"></script>
   </body>
 </html>

@@ -73,7 +73,8 @@ $gray-900: #212529;
   }
 }
 
-#menu-toggle, #sm-menu-toggle {
+#menu-toggle,
+#sm-menu-toggle {
   cursor: pointer;
 }
 
@@ -114,7 +115,7 @@ $gray-900: #212529;
     margin: 0;
     color: #5f5f5f;
   }
- 
+
   .outline-warning-btn a {
     color: $warning !important;
   }
@@ -712,7 +713,9 @@ $gray-900: #212529;
 }
 
 .cost-exclude-tab-content,
-.trip-highlight-tab-content, .luxury-cost-include-tab-content, .luxury-cost-exclude-tab-content {
+.trip-highlight-tab-content,
+.luxury-cost-include-tab-content,
+.luxury-cost-exclude-tab-content {
   display: none;
 }
 
@@ -1191,20 +1194,19 @@ $gray-900: #212529;
 }
 
 .trip-header-region {
+  height: 100vh;
+  color: $white;
+  background: url(images/EBCTrek/ebc4.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  video {
+    width: 100% !important;
     height: 100vh;
-    color: $white;
-    background: url(images/EBCTrek/ebc4.jpg);
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    width: 100%;
-    video {
-      width: 100% !important;
-      height: 100vh;
-      object-fit: cover;
-    }
+    object-fit: cover;
   }
-
+}
 
 .form-group input {
   margin-bottom: 30px;
@@ -1214,7 +1216,7 @@ $gray-900: #212529;
   max-height: max-content;
 }
 .readmore-content.collapsed {
-  height: 50px;
+  height: 150px;
   overflow: hidden;
 }
 
@@ -1242,8 +1244,8 @@ $gray-900: #212529;
   position: relative;
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      overflow: hidden;
-      transition: 0.5s;
+    overflow: hidden;
+    transition: 0.5s;
   }
   &-image {
     overflow: hidden;
@@ -1269,8 +1271,8 @@ $gray-900: #212529;
       top: 0;
       left: 0;
       &::before {
-        content: '\e0b7';
-        font-family: 'FontAwesome';
+        content: "\e0b7";
+        font-family: "FontAwesome";
         margin-right: 5px;
       }
     }
@@ -1282,9 +1284,9 @@ $gray-900: #212529;
       position: absolute;
       top: 0;
       right: 0;
-      &::before{
-        content: '\e533';
-        font-family: 'FontAwesome';
+      &::before {
+        content: "\e533";
+        font-family: "FontAwesome";
         margin-right: 5px;
       }
     }
@@ -1309,7 +1311,7 @@ $gray-900: #212529;
         h4 {
           font-size: 20px;
           font-weight: bold;
-          &:hover{
+          &:hover {
             color: $secondary;
           }
         }
@@ -1331,7 +1333,7 @@ $gray-900: #212529;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    span{
+    span {
       font-size: 12px;
     }
   }
@@ -1365,12 +1367,13 @@ $gray-900: #212529;
 }
 
 .team-container {
-  .team-guide, .team-porter {
+  .team-guide,
+  .team-porter {
     display: none;
   }
-  .team-location::before{
-    content: '\f3c5';
-    font-family: 'FontAwesome';
+  .team-location::before {
+    content: "\f3c5";
+    font-family: "FontAwesome";
     margin-right: 5px;
     color: $secondary;
   }
@@ -1386,14 +1389,14 @@ $gray-900: #212529;
   }
   .team-card {
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
-    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+      rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
     padding-bottom: 10px;
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       overflow: hidden;
       transition: 0.5s;
     }
-    .team-card-img img{
+    .team-card-img img {
       width: 100%;
     }
     &-body {
@@ -1403,15 +1406,15 @@ $gray-900: #212529;
       .team-card-title h4 {
         font-size: 20px;
       }
-      .team-card-number::before{
-        content: '\f232';
-        font-family: 'FontAwesome';
+      .team-card-number::before {
+        content: "\f232";
+        font-family: "FontAwesome";
         margin-right: 5px;
         color: $success;
       }
-      .team-card-email::before{
-        content: '\f0e0';
-        font-family: 'FontAwesome';
+      .team-card-email::before {
+        content: "\f0e0";
+        font-family: "FontAwesome";
         margin-right: 5px;
         color: $secondary;
       }
@@ -1430,11 +1433,11 @@ $gray-900: #212529;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  &-image img{
+  &-image img {
     height: auto;
     width: 100%;
     object-fit: cover;
-    // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    
+    // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     animation: animate-image 2s ease-in-out infinite alternate-reverse both;
   }
   &-content.collapsed {
@@ -1451,7 +1454,7 @@ $gray-900: #212529;
     transform: translateY(10px);
   }
   100% {
-    transform: translateY(-10px)
+    transform: translateY(-10px);
   }
 }
 
@@ -1465,38 +1468,32 @@ $gray-900: #212529;
 }
 
 .about-banner {
-    width: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/EBCTrek/ebc-banner.jpg);
-    height: 100vh;
-    background-attachment: fixed;
-    background-size: cover;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(images/EBCTrek/ebc-banner.jpg);
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h4 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: $white;
+  }
+  p {
+    color: $white;
+    text-align: center;
+  }
+  &-cta {
     display: flex;
     justify-content: center;
-    align-items: center;
-    h4 {
-      font-size: 2.5rem;
-      text-align: center;
-      color: $white;
+    a {
+      text-decoration: none;
+      color: inherit;
     }
-    p {
-      color: $white;
-      text-align: center;
-    }
-    &-cta {
-      display: flex;
-      justify-content: center;
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-    }
-}
-
-.location::before{
-  content: '\f3c5';
-  font-family: 'FontAwesome';
-  margin-right: 5px;
-  color: $secondary;
+  }
 }
 
 .contact-container {
@@ -1526,15 +1523,62 @@ $gray-900: #212529;
         font-size: 14px;
       }
     }
-  &-content {
-    margin-top: 20px;
-    padding: 0 20px;
+    &-content {
+      margin-top: 20px;
+      padding: 0 20px;
+    }
+    &-desc {
+      font-size: 14px;
+    }
+    &-btn {
+      padding: 0 20px 20px 20px;
+    }
   }
-  &-desc {
-    font-size: 14px;
-  }
-  &-btn {
-    padding: 0 20px 20px 20px;
-  }
+}
+
+.destination {
+  &-card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    &:hover {
+      box-shadow: rgba(38, 57, 77, 0.562) 0px 20px 30px -10px;
+      h4 {
+        color: $black !important;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+    .destination-card-image {
+      .roow {
+        flex-wrap: wrap;
+      }
+      img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+    .destination-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      h4::before {
+        content: "\f3c5";
+        font-family: "FontAwesome";
+        margin-right: 5px;
+      }
+      span::before {
+        content: "\e554";
+        font-family: "FontAwesome";
+        margin-right: 5px;
+      }
+    }
+    .destination-content-tour-types {
+      .destination-tour-types-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    }
   }
 }
