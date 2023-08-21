@@ -1599,3 +1599,11 @@ $gray-900: #212529;
     }
   }
 }
+
+.trip-filter-tab {
+  ul {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+}

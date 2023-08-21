@@ -1479,4 +1479,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+}
+
+.trip-filter-tab ul {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=style.css.map */
