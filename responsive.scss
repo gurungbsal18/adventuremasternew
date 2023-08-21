@@ -235,6 +235,9 @@
   .contact-map {
     width: 100%;
   }
+  .trip-gallery img {
+    height: 300px !important;
+  }
 }
 
 @media (max-width: 900px) {
@@ -311,12 +314,4 @@
   .contact-map {
     width: 100%;
   }
-}
-
-@media screen and (min-width: 676px) {
-  // .fix-departure-date-table {
-  //   .modal-dialog {
-  //     max-width: 800px; /* New width for default modal */
-  //   }
-  // }
 }

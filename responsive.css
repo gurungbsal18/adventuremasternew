@@ -1104,6 +1104,22 @@ a {
      object-fit: cover;
 }
 
+.trip-header-common {
+  height: 100vh;
+  color: #fff;
+  background: url(images/MardiHimal/mardiHimal.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+}
+.trip-header-common video {
+  width: 100% !important;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .trip-header-region {
   height: 100vh;
   color: #fff;
@@ -1384,6 +1400,13 @@ a {
   color: inherit;
 }
 
+.team-location::before {
+  content: "\f3c5";
+  font-family: "FontAwesome";
+  margin-right: 5px;
+  color: #6c757d;
+}
+
 .contact-container {
   padding: 60px 0;
 }
@@ -1417,48 +1440,6 @@ a {
 }
 .blog-section-card-container .blog-section-card-btn {
   padding: 0 20px 20px 20px;
-}
-
-.destination-card {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.destination-card:hover {
-  box-shadow: rgba(38, 57, 77, 0.562) 0px 20px 30px -10px;
-}
-.destination-card:hover h4 {
-  color: #000 !important;
-}
-.destination-card a {
-  text-decoration: none;
-}
-.destination-card .destination-card-image .roow {
-  flex-wrap: wrap;
-}
-.destination-card .destination-card-image img {
-  width: 100%;
-  height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.destination-card .destination-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-.destination-card .destination-content h4::before {
-  content: "\f3c5";
-  font-family: "FontAwesome";
-  margin-right: 5px;
-}
-.destination-card .destination-content span::before {
-  content: "\e554";
-  font-family: "FontAwesome";
-  margin-right: 5px;
-}
-.destination-card .destination-content-tour-types .destination-tour-types-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
 }
 
 @media (max-width: 567px) {
@@ -1650,6 +1631,9 @@ a {
   }
   .contact-map {
     width: 100%;
+  }
+  .trip-gallery img {
+    height: 300px !important;
   }
 }
 @media (max-width: 900px) {
