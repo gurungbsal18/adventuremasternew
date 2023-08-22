@@ -1485,4 +1485,48 @@ a {
   display: flex;
   flex-direction: row !important;
   flex-wrap: wrap;
+}
+
+.trip-small-modal {
+  position: sticky;
+  z-index: 999;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.trip-small-modal .trip-modal-box {
+  width: 350px;
+  border: 2px solid #000;
+  background-color: #fff;
+}
+.trip-small-modal .trip-modal-box .trip-modal-title {
+  border-bottom: 1px solid #000;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trip-small-modal .trip-modal-box .trip-modal-title .modal-expand-icon i {
+  color: #6c757d;
+}
+.trip-small-modal .trip-modal-box .trip-modal-title .modal-expand-icon i:hover {
+  color: #198754;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.trip-small-modal .trip-modal-box .trip-modal-body p {
+  margin: 0;
+}
+.trip-small-modal .trip-modal-box .trip-modal-body-title {
+  font-weight: bold;
+}
+.trip-small-modal .trip-modal-box .trip-modal-body-title-content {
+  color: #495057;
+}
+.trip-small-modal .trip-modal-btn {
+  border-radius: 0;
+}
+
+.trip-big-modal .modal-dialog {
+  max-width: 900px;
 }/*# sourceMappingURL=style.css.map */

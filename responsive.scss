@@ -238,6 +238,10 @@
   .trip-gallery img {
     height: 300px !important;
   }
+  .trip-small-modal,
+  .trip-big-modal {
+    display: none;
+  }
 }
 
 @media (max-width: 900px) {

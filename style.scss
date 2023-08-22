@@ -1607,3 +1607,52 @@ $gray-900: #212529;
     flex-wrap: wrap;
   }
 }
+
+.trip-small-modal {
+  position: sticky;
+  z-index: 999;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  .trip-modal-box {
+    // height: 350px;
+    width: 350px;
+    border: 2px solid $black;
+    background-color: $white;
+    .trip-modal-title {
+      border-bottom: 1px solid $black;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .modal-expand-icon i {
+        color: $secondary;
+        &:hover {
+          color: $success;
+          cursor: pointer;
+          pointer-events: auto;
+        }
+      }
+    }
+    .trip-modal-body {
+      p {
+        margin: 0;
+      }
+      &-title {
+        font-weight: bold;
+        &-content {
+          color: $gray-700;
+        }
+      }
+    }
+  }
+  .trip-modal-btn {
+    border-radius: 0;
+  }
+}
+
+.trip-big-modal {
+  .modal-dialog {
+    max-width: 900px;
+  }
+}
